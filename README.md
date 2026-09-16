@@ -4,7 +4,7 @@
 
 > **L.I.M.I.N.A.L. is a multi-agent AI system that analyzes not only what people say, but what they strategically avoid saying.**
 
----
+---LLL
 
 ## 🧠 What Is L.I.M.I.N.A.L.?
 
@@ -195,8 +195,8 @@ It asks:
                                     │
                                     ▼
                    ┌────────────────────────────────┐
-                   │       FASTAPI ORCHESTRATOR      │
-                   │       Async Agent Pipeline       │
+                   │       FASTAPI ORCHESTRATOR     │
+                   │       Async Agent Pipeline     │
                    └───────────────┬────────────────┘
                                    │
               ┌────────────────────┼────────────────────┐
@@ -236,7 +236,7 @@ It asks:
                        │                    │
                        │ Surface Statement  │
                        │ Missing Elements   │
-                       │ Subtext             │
+                       │ Subtext            │
                        │ Confidence         │
                        │ Evidence           │
                        └─────────┬──────────┘
@@ -612,7 +612,7 @@ Instead, the system produces a **visual forensic report**.
 
 ```text
 ┌─────────────────────────────────────────────────────┐
-│              L.I.M.I.N.A.L. REPORT                 │
+│              L.I.M.I.N.A.L. REPORT                  │ 
 ├─────────────────────────────────────────────────────┤
 │                                                     │
 │  SURFACE STATEMENT                                  │
@@ -640,7 +640,7 @@ Instead, the system produces a **visual forensic report**.
 │                                                     │
 │                    78%                              │
 │                                                     │
-│  Evidence strength: Moderate                       │
+│  Evidence strength: Moderate                        │
 │                                                     │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
@@ -655,7 +655,7 @@ Instead, the system produces a **visual forensic report**.
 │                                                     │
 │  GROUNDED EVIDENCE                                  │
 │                                                     │
-│  📚 Communication Theory                             │
+│  📚 Communication Theory                            │
 │  📚 Gricean Conversational Maxims                   │
 │  📚 Negotiation Research                            │
 │                                                     │
