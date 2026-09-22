@@ -1,0 +1,34 @@
+{
+  "version": "m5_contrastive_v4",
+  "seed": 42,
+  "total_examples": 640,
+  "train_examples": 512,
+  "validation_examples": 64,
+  "test_examples": 64,
+  "total_families": 160,
+  "train_families": 128,
+  "validation_families": 16,
+  "test_families": 16,
+  "examples_per_family": 4,
+  "features": 25,
+  "labels": [
+    "NO_SIGNIFICANT_OMISSION",
+    "UNSTATED_PREFERENCE",
+    "AVOIDING_COMMITMENT",
+    "DISTANCING_FROM_RESPONSIBILITY",
+    "EMOTIONAL_DISENGAGEMENT",
+    "WITHHELD_CONTEXT",
+    "UNSUPPORTED_REASONING",
+    "AMBIGUOUS_INTENT"
+  ],
+  "source_type": "controlled_contrastive_scenario",
+  "feature_layout": {
+    "archaeologist": "0-6",
+    "psychologist": "7-13",
+    "logician": "14-19",
+    "historian": "20-24"
+  },
+  "production_feature_source": "LIMINALAgentRunner",
+  "family_isolated": true,
+  "test_used_for_training": false
+}

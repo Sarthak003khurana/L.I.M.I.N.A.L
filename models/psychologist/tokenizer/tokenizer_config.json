@@ -1,0 +1,17 @@
+{
+  "tokenizer_type": "custom_word_tokenizer",
+  "trained_from_scratch": true,
+  "lowercase": true,
+  "special_tokens": [
+    "<PAD>",
+    "<UNK>",
+    "<BOS>",
+    "<EOS>"
+  ],
+  "pad_token": "<PAD>",
+  "unk_token": "<UNK>",
+  "bos_token": "<BOS>",
+  "eos_token": "<EOS>",
+  "vocab_size": 216,
+  "training_examples": 143
+}

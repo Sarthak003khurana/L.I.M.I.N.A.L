@@ -1,0 +1,167 @@
+{"text": "Somebody reported the issue.", "labels": ["MISSING_ACTOR"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "it was changed when things settle down.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "Someone should discuss the issue at some point.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "Our team contacted the client this morning.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "We should that issue should be discussed.", "labels": ["VAGUE_REFERENCE"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "That issue from before still needs attention.", "labels": ["VAGUE_REFERENCE"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "I suppose, we should handle the situation at some point.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The client submitted the request yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The configuration was modified yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "We I guess should consider another option.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "I suppose, it was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "I am not entirely sure, the schedule may need to change.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "Rahul changed the configuration last Friday.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "what happened earlier was changed at some point.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "Perhaps, the schedule may need to change.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "The presentation was reviewed yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "Our team was not responsible for that decision during the project.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "I will discuss the problem when things settle down.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "This approach maybe might need another solution.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "I guess we could maybe consider that option.", "labels": ["HEDGING"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "Everyone approved the request.", "labels": ["MISSING_ACTOR"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The project lead completed the deployment last Friday.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "The engineering team updated the schedule today.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "We should the matter still needs work.", "labels": ["VAGUE_REFERENCE"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "We should address that issue because it needs further discussion.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The finance department changed the configuration today.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "it seems, we should handle the situation at some point.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The document was modified by the engineering team.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "possibly, it was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The presentation was updated by the manager.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "Perhaps we should wait a little longer.", "labels": ["HEDGING"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "perhaps, we should handle the matter later.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "I guess, the situation was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The project lead approved the configuration yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "the manager modified the configuration.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "The schedule was approved by the manager.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "We perhaps should consider another option.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "maybe, that was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The configuration was modified by the finance department.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "it could be, we should handle the matter later.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "Everyone updated the document.", "labels": ["MISSING_ACTOR"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "Sarah discussed the request yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "it could be, we should handle it at some point.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The presentation was approved yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "The engineering team completed the deployment today.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "We should address it because it should be discussed.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The configuration was submitted yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "possibly, we should handle that issue sometime.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "We was only executing the requested task according to the process.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The team will respond to the request sometime.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The employee was only carrying out the assigned task.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The assignment was rejected by Sarah.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "The schedule was reviewed by the client.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "Our team explained the decision before the meeting.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "I had no say in the final decision as instructed.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "It is possible, the team should reconsider the plan.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "I will submit the report by Friday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "the manager changed the schedule.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "The report was submitted by Sarah.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "The issue was handled, but I was only following instructions.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "RESPONSIBILITY_AVOIDANCE"], "source_type": "multi_label_seed", "difficulty": "hard"}
+{"text": "Maybe the issue will be handled later.", "labels": ["HEDGING", "MISSING_ACTOR", "MISSING_COMMITMENT", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_seed", "difficulty": "hard"}
+{"text": "The application was changed yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "It was probably changed without anyone explaining why.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_seed", "difficulty": "hard"}
+{"text": "We should the situation still needs work.", "labels": ["VAGUE_REFERENCE"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "The application was modified yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "It seems, the team should reconsider the plan.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "We should that thing needs to be fixed.", "labels": ["VAGUE_REFERENCE"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "I was only carrying out the assigned task at the time.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "We can address the problem when things settle down.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "maybe, we should handle what happened earlier in the future.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "I I suppose should consider another option.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "I was following the team's direction.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "responsibility_generation", "difficulty": "medium"}
+{"text": "We will investigate the matter soon.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "People involved made the decision.", "labels": ["MISSING_ACTOR"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The presentation was rejected by the team.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The proposal was processed yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "Someone will discuss the problem at some point.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "Our team was only executing the requested task in this case.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "I suppose, what happened earlier was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The manager completed the report yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The project lead completed the assignment yesterday.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "The request was approved by the department.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The manager contacted the client today.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "The team will address the concern eventually.", "labels": ["MISSING_COMMITMENT"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "The request was processed by the manager.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "The request was changed yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "The document was submitted yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "People involved modified the configuration.", "labels": ["MISSING_ACTOR"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "I will fix the issue before the meeting.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "The application was reviewed by the department.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The manager should address the budget issue identified yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "I simply followed the process that was given to me.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "The manager completed the schedule yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The engineering team approved the schedule yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "possibly, we should handle that thing at some point.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The project it seems might require more time.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "I will handle the issue personally.", "labels": ["NO_OMISSION"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "The developer had no authority to make that decision.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "We should address the previous issue because it needs further discussion.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "probably, we should handle that thing when possible.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "We should address the previous issue because it should be reviewed.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "We should address the earlier problem because it should be discussed.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "People modified the configuration.", "labels": ["MISSING_ACTOR"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The developer contacted the client today.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "I reviewed the problem and fixed it.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "I am not entirely sure, we should handle what happened earlier when possible.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "The presentation was approved by the manager.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The developer did not have control over the outcome.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "maybe, we should handle the situation when possible.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "Apparently, someone changed the configuration.", "labels": ["MISSING_ACTOR"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "The engineering team contacted the client today.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "The administrator discussed the request yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "I was acting according to the procedure.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "responsibility_generation", "difficulty": "medium"}
+{"text": "I am not entirely sure, we should handle what happened earlier later.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "People will contact the client.", "labels": ["MISSING_ACTOR"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "I personally decided to change the schedule.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "We will look into it sometime.", "labels": ["MISSING_COMMITMENT"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "I guess, that issue was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "We will handle the situation in the future.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The configuration was discussed by Priya.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "We should the matter should be discussed.", "labels": ["VAGUE_REFERENCE"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "We should address that because it should be addressed.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The payment was discussed yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "The finance team reviewed the report yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The assignment was reviewed by the finance department.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "They will review the proposal.", "labels": ["MISSING_ACTOR"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "I guess, the client might agree.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "We will review the document tomorrow.", "labels": ["NO_OMISSION"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "I guess, we should review the proposal.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "The engineering team explained the decision this morning.", "labels": ["NO_OMISSION"], "source_type": "control_generation", "difficulty": "medium"}
+{"text": "It could be, the approach could work.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "perhaps, what happened earlier was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "Another person was responsible for approving it.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "responsibility_generation", "difficulty": "medium"}
+{"text": "I authorized the deployment.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "The employee had no say in the final decision in this case.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "I do not agree with the proposed change.", "labels": ["NO_OMISSION"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "The proposal was updated by the manager.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "We was not responsible for that decision.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "We should address the earlier problem because it can be handled later.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The request was completed yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "the developer modified the configuration.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "The developer was only carrying out the assigned task in this case.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "We should discuss the issue in the future.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The schedule was discussed yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "The request was updated by James.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "There is a chance, the client might agree.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "I will review the report when things settle down.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "I guess, that thing was probably handled already.", "labels": ["HEDGING", "MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "I suppose, the issue may be resolved soon.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "Someone will respond at some point.", "labels": ["MISSING_COMMITMENT"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "We should address that thing because it still needs work.", "labels": ["VAGUE_REFERENCE"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The department should address the payment issue reported by finance.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "hard"}
+{"text": "The configuration was reviewed by the manager.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "passive_hard_negative", "difficulty": "hard"}
+{"text": "The team rejected the payment yesterday.", "labels": ["NO_OMISSION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "The application was modified by the manager.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "I just did what I was told.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "human_seed", "difficulty": "medium"}
+{"text": "I will handle the situation later.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The schedule was completed by Priya.", "labels": ["PASSIVE_CONSTRUCTION"], "source_type": "hard_negative", "difficulty": "medium"}
+{"text": "I should discuss the matter in the future.", "labels": ["MISSING_COMMITMENT"], "source_type": "controlled_generation", "difficulty": "medium"}
+{"text": "The team will address the concern at some point.", "labels": ["MISSING_COMMITMENT"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "The assignment was submitted yesterday.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "Somebody cancelled the meeting.", "labels": ["MISSING_ACTOR"], "source_type": "weak_label_expansion", "difficulty": "medium"}
+{"text": "We should that thing still needs work.", "labels": ["VAGUE_REFERENCE"], "source_type": "controlled_generation", "difficulty": "easy"}
+{"text": "it seems, we should handle it eventually.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "Someone else gave me the instructions.", "labels": ["RESPONSIBILITY_AVOIDANCE"], "source_type": "responsibility_generation", "difficulty": "medium"}
+{"text": "the situation was changed when possible.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION", "VAGUE_REFERENCE"], "source_type": "multi_label_generation", "difficulty": "hard"}
+{"text": "This approach I guess could change the schedule.", "labels": ["HEDGING"], "source_type": "controlled_generation", "difficulty": "easy"}

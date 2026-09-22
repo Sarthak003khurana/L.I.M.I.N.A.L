@@ -1,0 +1,58 @@
+{"text": "We should reject the proposal because the manager disliked it.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "The project will succeed because everyone wants it to succeed.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "She deserves the promotion because she has been here for years.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "We cannot approve this plan because it is too risky.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "He must be responsible because his name appears on the document.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "The feature should be removed because users complained about it once.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "They will meet the deadline because the team is working hard.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "This solution is better because it is newer.", "labels": ["SKIPPED_PREMISE"]}
+{"text": "Some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"]}
+{"text": "Critics argue that the system is unreliable, but we should deploy it anyway.", "labels": ["UNANSWERED_COUNTERARGUMENT"]}
+{"text": "The customer raised concerns about privacy, but the product offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"]}
+{"text": "Others believe the approach will fail, but our team has decided to proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"]}
+{"text": "The report mentions several objections, yet it concludes that the plan should continue.", "labels": ["UNANSWERED_COUNTERARGUMENT"]}
+{"text": "People have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"]}
+{"text": "The proposal creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"]}
+{"text": "The survey had a low response rate, so the entire population clearly dislikes the product.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "One employee was late, therefore the whole team is unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "Sales increased last month, so the new advertising strategy definitely caused the growth.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "He did not reply to my message, therefore he does not respect me.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "The application crashed once, so it is completely unusable.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "She disagreed with the proposal, therefore she does not support the team.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "The candidate has no previous experience, so they will certainly fail.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "The temperature dropped today, therefore winter has arrived.", "labels": ["UNSUPPORTED_CONCLUSION"]}
+{"text": "We should hire him because he graduated from a good university.", "labels": ["UNSTATED_ASSUMPTION"]}
+{"text": "She works from home, so she probably does less work.", "labels": ["UNSTATED_ASSUMPTION"]}
+{"text": "The product is expensive, so customers will not buy it.", "labels": ["UNSTATED_ASSUMPTION"]}
+{"text": "He speaks confidently, therefore he understands the subject.", "labels": ["UNSTATED_ASSUMPTION"]}
+{"text": "The company is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"]}
+{"text": "They chose the cheaper option, so it must be the better option.", "labels": ["UNSTATED_ASSUMPTION"]}
+{"text": "The meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"]}
+{"text": "The project is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"]}
+{"text": "We never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"]}
+{"text": "She said she had no concerns, then immediately listed several concerns.", "labels": ["CONTRADICTION"]}
+{"text": "The company claims to value privacy while collecting unnecessary personal data.", "labels": ["CONTRADICTION"]}
+{"text": "He said he was unavailable, but he attended the meeting for two hours.", "labels": ["CONTRADICTION"]}
+{"text": "The report states that no errors were found, but later identifies five errors.", "labels": ["CONTRADICTION"]}
+{"text": "They said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"]}
+{"text": "Either we launch the product today or the entire project will fail.", "labels": ["FALSE_DILEMMA"]}
+{"text": "You either support this proposal or you do not care about the team.", "labels": ["FALSE_DILEMMA"]}
+{"text": "We can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"]}
+{"text": "Either the employee is loyal or they are working against us.", "labels": ["FALSE_DILEMMA"]}
+{"text": "Either we accept the plan exactly as written or we have no plan at all.", "labels": ["FALSE_DILEMMA"]}
+{"text": "You are either with the company or against it.", "labels": ["FALSE_DILEMMA"]}
+{"text": "Either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"]}
+{"text": "The product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"]}
+{"text": "Either we approve the proposal today or the company will fail, even though several teams have raised serious objections.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"]}
+{"text": "The system is completely secure, although the audit identified several unresolved vulnerabilities.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"]}
+{"text": "We should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"]}
+{"text": "He ignored one message, so he clearly does not respect anyone, and there is no other possible explanation.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"]}
+{"text": "The team will succeed because everyone supports the idea, despite several members explicitly raising concerns.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"]}
+{"text": "The team finished the prototype and documented every major design decision.", "labels": []}
+{"text": "The report presents both supporting evidence and opposing evidence before reaching a conclusion.", "labels": []}
+{"text": "The manager explained the assumption behind the decision and invited the team to challenge it.", "labels": []}
+{"text": "The proposal considers three possible options and explains the trade-offs between them.", "labels": []}
+{"text": "The analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": []}
+{"text": "The report states that the project is incomplete because two testing stages remain.", "labels": []}
+{"text": "The team rejected the proposal after addressing each major objection raised during the meeting.", "labels": []}
+{"text": "The manager said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": []}

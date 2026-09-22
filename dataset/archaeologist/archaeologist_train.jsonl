@@ -1,0 +1,49 @@
+{"text": "Someone approved the request.", "labels": ["MISSING_ACTOR"]}
+{"text": "Perhaps that would be acceptable.", "labels": ["HEDGING"]}
+{"text": "I just did what I was told.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Apparently, someone changed the configuration.", "labels": ["MISSING_ACTOR"]}
+{"text": "Something should be done about this.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The manager rejected the request.", "labels": ["NO_OMISSION"]}
+{"text": "The changes were approved without explanation.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "We should handle that thing soon.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "We decided to postpone the meeting until Monday.", "labels": ["NO_OMISSION"]}
+{"text": "That should probably be taken care of.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "We need to fix it somehow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The report was written by James and submitted on Friday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "This is probably not the right approach.", "labels": ["HEDGING"]}
+{"text": "Someone should probably handle this.", "labels": ["MISSING_ACTOR"]}
+{"text": "We could possibly revisit the issue next week.", "labels": ["HEDGING"]}
+{"text": "You know what happened last time.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The files were deleted by the administrator.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "That issue from before still needs attention.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Maybe the issue will be handled somehow.", "labels": ["HEDGING", "VAGUE_REFERENCE", "MISSING_COMMITMENT"]}
+{"text": "Something about the project seems wrong.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The mistake was identified later.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "I will get back to you at some point.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Let's discuss that later.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "They say the deadline has changed.", "labels": ["MISSING_ACTOR"]}
+{"text": "I was only following what everyone else was doing.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "I do not agree with the proposed change.", "labels": ["NO_OMISSION"]}
+{"text": "It seems like we might need another option.", "labels": ["HEDGING"]}
+{"text": "The issue was discussed during the meeting.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "I will think about it.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Something was done, but I was not involved in that decision.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "VAGUE_REFERENCE", "RESPONSIBILITY_AVOIDANCE"]}
+{"text": "I will handle the issue personally.", "labels": ["NO_OMISSION"]}
+{"text": "Everyone knows that the system failed.", "labels": ["MISSING_ACTOR"]}
+{"text": "I cannot be blamed for what happened.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "I completed the assignment this afternoon.", "labels": ["NO_OMISSION"]}
+{"text": "It was not really my decision.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "That was decided before I got involved.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "We will review the document tomorrow.", "labels": ["NO_OMISSION"]}
+{"text": "Let's see how things go.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "People are saying the project is delayed.", "labels": ["MISSING_ACTOR"]}
+{"text": "It was decided that someone should probably deal with it.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "HEDGING", "VAGUE_REFERENCE", "MISSING_COMMITMENT"]}
+{"text": "I guess we could maybe consider that option.", "labels": ["HEDGING"]}
+{"text": "I will submit the report by Friday.", "labels": ["NO_OMISSION"]}
+{"text": "The manager clearly explained the decision.", "labels": ["NO_OMISSION"]}
+{"text": "I guess they decided to change it.", "labels": ["HEDGING", "MISSING_ACTOR", "VAGUE_REFERENCE"]}
+{"text": "Sarah will complete the task tomorrow.", "labels": ["NO_OMISSION"]}
+{"text": "There was nothing I could really do.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The team says that the problem is resolved.", "labels": ["NO_OMISSION"]}
+{"text": "The report was submitted by Sarah.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "We should discuss this eventually.", "labels": ["MISSING_COMMITMENT"]}

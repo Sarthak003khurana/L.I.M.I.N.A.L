@@ -1,0 +1,11 @@
+{"text": "The engineering team will deploy the update tonight.", "labels": ["NO_OMISSION"]}
+{"text": "The decision was made yesterday.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "The payment was processed by the finance team.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Perhaps we should wait a little longer.", "labels": ["HEDGING"]}
+{"text": "I suppose that could work.", "labels": ["HEDGING"]}
+{"text": "I am not entirely sure this will work.", "labels": ["HEDGING"]}
+{"text": "The report was submitted this morning.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "The files were deleted accidentally.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "The proposal was approved by the manager.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "I disagree with the proposed timeline.", "labels": ["NO_OMISSION"]}
+{"text": "Maybe we can try something different.", "labels": ["HEDGING"]}

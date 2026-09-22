@@ -1,0 +1,17 @@
+{
+  "tokenizer_type": "liminal_word_tokenizer",
+  "trained_from_scratch": true,
+  "vocab_size": 326,
+  "requested_vocab_size": 8000,
+  "special_tokens": [
+    "<PAD>",
+    "<UNK>",
+    "<BOS>",
+    "<EOS>"
+  ],
+  "dataset": "C:\\Users\\khura\\Desktop\\L.I.M.I.N.A.L\\dataset\\archaeologist\\archaeologist_v3_train.jsonl",
+  "unique_tokens_in_dataset": 322,
+  "lowercase": true,
+  "max_sequence_length": 128,
+  "seed": 42
+}

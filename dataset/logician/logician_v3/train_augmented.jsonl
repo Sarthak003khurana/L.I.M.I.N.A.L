@@ -1,0 +1,688 @@
+{"text": "The proposal suggests that the proposal considers three possible options and explains the trade-offs between them. That is why we should proceed.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "Clearly, some employees say the policy is expensive, but the policy is obviously necessary. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "In the meeting, they stated that the manager said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "In the meeting, they stated that she said she had no concerns, then immediately listed several concerns.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The temperature dropped today, therefore winter has arrived. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The manager argues that the document mentions several objections, yet it concludes that the plan should continue. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "Obviously, she works from home, so she probably does less work. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "He said he was unavailable, but he attended the meeting for two hours. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "Clearly, they said the decision was final, yet they continued asking for new suggestions. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The report claims that either we approve the proposal today or the firm will fail, even though several teams have raised serious objections.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "The proposal suggests that she said she had no concerns, then immediately listed several concerns. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "Obviously, the proposal considers three possible options and explains the trade-offs between them. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "The analyst concluded that sales increased after the campaign, while noting that other factors may have contributed. This seems reasonable.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "Clearly, the report presents both supporting evidence and opposing evidence before reaching a conclusion. This seems reasonable.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "Clearly, either we launch the product today or the entire project will fail.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The feature should be removed because users complained about it once. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The proposal suggests that the product is expensive, so customers will not buy it. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "The analysis concludes that they chose the cheaper option, so it must be the better option.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "We never change the schedule, although we changed it three times this month. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "Clearly, we never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "The proposal suggests that the proposal considers three possible options and explains the trade-offs between them.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "The report claims that we should hire him because he graduated from a good university. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "According to the discussion, the company claims to value privacy while collecting unnecessary personal data. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The team believes that the report presents both supporting evidence and opposing evidence before reaching a conclusion. That is why we should proceed.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "The proposal suggests that either we accept the plan exactly as written or we have no plan at all.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "The analysis concludes that either we launch the product today or the entire project will fail. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "Clearly, you are either with the company or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "He ignored one message, so he clearly does not respect anyone, and there is no other possible explanation. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "Clearly, either the employee is loyal or they are working against us. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "According to the discussion, the company claims to value privacy while collecting unnecessary personal data.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The manager argues that the system is completely secure, although the audit identified several unresolved vulnerabilities. This is presented as sufficient evidence.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "Obviously, the manager said the employee was unavailable yesterday, while the employee attended the meeting today. Therefore, the determination is obvious.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "Either we use this technology or we will fall behind everyone else. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "Clearly, one employee was late, therefore the whole team is unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "The report claims that the program will succeed because everyone wants it to succeed. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "They chose the cheaper option, so it must be the better option. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "According to the discussion, the supervisor explained the assumption behind the decision and invited the team to challenge it. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Obviously, they will meet the deadline because the group is working hard. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "According to the discussion, the company claims to value privacy while collecting unnecessary personal data. This is presented as sufficient evidence.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The analysis concludes that the proposal considers three possible options and explains the trade-offs between them.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "The team believes that the meeting is online, therefore everyone will attend. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "Clearly, the candidate has no previous experience, so they will certainly fail.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "The analysis concludes that the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "The manager argues that the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed. Therefore, the determination is obvious.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "In the meeting, they stated that either the worker is loyal or they are working against us. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "According to the discussion, she disagreed with the proposal, therefore she does not support the team. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The team will succeed because everyone supports the idea, despite several members explicitly raising concerns. That is why we should proceed.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The team believes that the feature should be removed because users complained about it once. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The team believes that the system is completely secure, although the audit identified several unresolved vulnerabilities. This seems reasonable.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "The manager argues that the candidate has no previous experience, so they will certainly fail.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "The team believes that the proposal considers three possible options and explains the trade-offs between them. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "The customer raised concerns about privacy, but the product offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "Clearly, either we accept the plan exactly as written or we have no plan at all. This is presented as sufficient evidence.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "The report states that the project is incomplete because two testing stages remain. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "Obviously, we should choose the expensive option because expensive products are always higher quality. This seems reasonable.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "The team believes that one employee was late, therefore the whole team is unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "The proposal suggests that we should hire him because he graduated from a good university. That is why we should proceed.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "The document presents both supporting evidence and opposing evidence before reaching a conclusion.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "Either we accept the plan exactly as written or we have no plan at all.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "According to the discussion, we should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "According to the discussion, critics argue that the system is unreliable, but we should deploy it anyway.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "The proposal suggests that we should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "In the meeting, they stated that we should hire him because he graduated from a good university. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "The manager argues that they will meet the deadline because the team is working hard.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "Obviously, either the employee is loyal or they are working against us.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The manager argues that the report presents both supporting evidence and opposing evidence before reaching a conclusion. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "The manager argues that we should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "Obviously, they said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "Obviously, she disagreed with the proposal, therefore she does not support the team. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "One employee was late, therefore the whole team is unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "The project will succeed because everyone wants it to succeed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "Either the employee is loyal or they are working against us. Therefore, the decision is obvious.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "In the meeting, they stated that either we approve the proposal today or the company will fail, even though several teams have raised serious objections. This is presented as sufficient evidence.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "He did not reply to my message, therefore he does not respect me.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The analysis concludes that either we launch the product today or the entire project will fail.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "They will meet the deadline because the team is working hard. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The system is completely secure, although the audit identified several unresolved vulnerabilities.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "The analysis concludes that either we accept the plan exactly as written or we have no plan at all.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "According to the discussion, some employees say the policy is expensive, but the policy is obviously necessary. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The team believes that the manager explained the assumption behind the decision and invited the team to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Clearly, she deserves the promotion because she has been here for years. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The manager argues that some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The report claims that they will meet the deadline because the team is working hard.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The analysis concludes that we cannot approve this plan because it is too risky.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The team believes that she deserves the promotion because she has been here for years. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The team believes that the manager explained the assumption behind the decision and invited the team to challenge it. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "In the meeting, they stated that the temperature dropped today, therefore winter has arrived.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "Clearly, the program will succeed because everyone wants it to succeed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "The proposal suggests that one employee was late, therefore the whole team is unreliable. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "The team believes that the approach creates security concerns, although the company still recommends adoption. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "The report claims that he said he was unavailable, but he attended the meeting for two hours.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The proposal suggests that the survey had a low response rate, so the entire population clearly dislikes the product.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "In the meeting, they stated that the report mentions several objections, yet it concludes that the plan should continue. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The proposal suggests that the team rejected the proposal after addressing each major objection raised during the meeting.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "The proposal suggests that the manager said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "In the meeting, they stated that the manager explained the assumption behind the conclusion and invited the team to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Clearly, we should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "Obviously, he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "The report presents both supporting evidence and opposing evidence before reaching a conclusion.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "The team believes that the company claims to value privacy while collecting unnecessary personal data. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The proposal suggests that the department finished the prototype and documented every major design decision. That is why we should proceed.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "The analysis concludes that some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The recommendation creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "In the meeting, they stated that he must be responsible because his name appears on the document. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "In the meeting, they stated that the candidate has no previous experience, so they will certainly fail.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "According to the discussion, he did not reply to my message, therefore he does not respect me. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The report claims that the temperature dropped today, therefore winter has arrived.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The analysis concludes that the team finished the prototype and documented every major design decision.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "In the meeting, they stated that the report presents both supporting evidence and opposing evidence before reaching a conclusion. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "The proposal suggests that she works from home, so she probably does less work. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "The proposal suggests that the report presents both supporting evidence and opposing evidence before reaching a conclusion.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "They will meet the deadline because the team is working hard.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The product is expensive, so customers will not buy it.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "The proposal suggests that he must be responsible because his name appears on the document. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "She works from home, so she probably does less work.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "According to the discussion, sales increased last month, so the new advertising strategy definitely caused the growth. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The analysis concludes that the team will succeed because everyone supports the idea, despite several members explicitly raising concerns.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The report claims that they said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The report claims that the customer raised concerns about privacy, but the product offers useful features. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "They chose the cheaper option, so it must be the better option. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "Clearly, the survey had a low response rate, so the entire population clearly dislikes the application.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "The analysis concludes that you are either with the company or against it. This is presented as sufficient evidence.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The manager argues that the manager said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "The proposal suggests that you are either with the company or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "Clearly, we should hire him because he graduated from a good university. That is why we should proceed.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "The team will succeed because everyone supports the idea, despite several members explicitly raising concerns. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The team will succeed because everyone supports the idea, despite several members explicitly raising concerns.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The report claims that the manager explained the assumption behind the decision and invited the team to challenge it. That is why we should proceed.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "She disagreed with the proposal, therefore she does not support the team. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "According to the discussion, he said he was unavailable, but he attended the meeting for two hours.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "Clearly, the meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "In the meeting, they stated that we never change the schedule, although we changed it three times this month. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "Clearly, she disagreed with the proposal, therefore she does not support the team. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "Obviously, either we approve the proposal today or the company will fail, even though several teams have raised serious objections. That is why we should proceed.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "Either we use this technology or we will fall behind everyone else. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The analysis concludes that they will meet the deadline because the team is working hard. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The proposal suggests that either we approve the proposal today or the company will fail, even though several teams have raised serious objections. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "Obviously, the candidate has no previous experience, so they will certainly fail. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "Obviously, either we launch the product today or the entire project will fail.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The proposal creates security concerns, although the company still recommends adoption. For that reason, the team should agree.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "Either we approve the proposal today or the company will fail, even though several teams have raised serious objections.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "Clearly, they will meet the deadline because the team is working hard.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "Clearly, he did not reply to my message, therefore he does not respect me.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The report claims that she works from home, so she probably does less work. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "According to the discussion, either we launch the product today or the entire project will fail. Therefore, the decision is obvious.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The proposal suggests that either we approve the plan today or the company will fail, even though several teams have raised serious objections. This seems reasonable.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "The report mentions several objections, yet it concludes that the plan should continue. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The report states that the project is incomplete because two testing stages remain.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "Obviously, we should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "The team believes that the proposal creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "Clearly, they will meet the deadline because the team is working hard. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The candidate has no previous experience, so they will certainly fail. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "Clearly, he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "The proposal suggests that they chose the cheaper option, so it must be the better option. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "The team believes that he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "In the meeting, they stated that she disagreed with the proposal, therefore she does not support the team. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "Clearly, the candidate has no previous experience, so they will certainly fail. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "The feature should be removed because users complained about it once. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "She works from home, so she probably does less work. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "Critics argue that the system is unreliable, but we should deploy it anyway. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "The report claims that she deserves the promotion because she has been here for years.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The proposal suggests that he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "Obviously, the project will succeed because everyone wants it to succeed. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "Critics argue that the system is unreliable, but we should deploy it anyway.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "She said she had no concerns, then immediately listed several concerns. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The department rejected the proposal after addressing each major objection raised during the meeting. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "Clearly, we cannot approve this plan because it is too risky. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The analysis concludes that the customer raised concerns about privacy, but the product offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "The report claims that either we use this technology or we will fall behind everyone else. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The proposal suggests that the team will succeed because everyone supports the idea, despite several members explicitly raising concerns.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "Clearly, the temperature dropped today, therefore winter has arrived. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "Clearly, she disagreed with the proposal, therefore she does not support the team. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "Sales increased last month, so the new advertising strategy definitely caused the growth. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The proposal considers three possible options and explains the trade-offs between them. That is why we should proceed.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "She deserves the promotion because she has been here for years. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "He said he was unavailable, but he attended the meeting for two hours. For that reason, the team should agree.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The analysis concludes that he must be responsible because his name appears on the document. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "The report claims that the proposal considers three possible options and explains the trade-offs between them.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "According to the discussion, the report states that the project is incomplete because two testing stages remain.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "The team finished the prototype and documented every major design decision. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "The proposal suggests that we cannot approve this plan because it is too risky.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "Clearly, the project will succeed because everyone wants it to succeed. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "In the meeting, they stated that they said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "In the meeting, they stated that some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "Obviously, either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "Obviously, one employee was late, therefore the whole team is unreliable. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "According to the discussion, the manager explained the assumption behind the decision and invited the team to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "According to the discussion, the manager said the worker was unavailable yesterday, while the worker attended the meeting today. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "She deserves the promotion because she has been here for years. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "According to the discussion, the manager said the employee was unavailable yesterday, while the employee attended the meeting today. This seems reasonable.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "Clearly, the team rejected the proposal after addressing each major objection raised during the meeting. This seems reasonable.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "In the meeting, they stated that she works from home, so she probably does less work.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "The report claims that the report mentions several objections, yet it concludes that the plan should continue. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The customer raised concerns about privacy, but the product offers useful features. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "Obviously, one employee was late, therefore the whole team is unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "We should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "The analysis concludes that he said he was unavailable, but he attended the meeting for two hours. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The report claims that the feature should be removed because users complained about it once.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The team believes that the system is completely secure, although the audit identified several unresolved vulnerabilities. This is presented as sufficient evidence.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "The meeting is online, therefore everyone will attend. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "You are either with the company or against it. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The report claims that the company claims to value privacy while collecting unnecessary personal data.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The team believes that the system is completely secure, although the audit identified several unresolved vulnerabilities.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "She works from home, so she probably does less work. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "We should hire him because he graduated from a good university.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "The team believes that either we launch the application today or the entire project will fail. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The manager argues that the temperature dropped today, therefore winter has arrived.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The product is expensive, so customers will not buy it. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "Clearly, the feature should be removed because users complained about it once. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "Clearly, either we approve the proposal today or the company will fail, even though several teams have raised serious objections. This seems reasonable.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "The report claims that critics argue that the system is unreliable, but we should deploy it anyway. For that reason, the team should agree.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "You are either with the company or against it. This is presented as sufficient evidence.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The team finished the prototype and documented every major design decision.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "Clearly, one employee was late, therefore the whole team is unreliable. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "According to the discussion, we never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "The manager argues that the project will succeed because everyone wants it to succeed. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "The manager argues that we cannot approve this plan because it is too risky. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The report claims that she disagreed with the proposal, therefore she does not support the team. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "Some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "Either we launch the product today or the entire project will fail. This is presented as sufficient evidence.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The team rejected the approach after addressing each major objection raised during the meeting.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "He ignored one message, so he clearly does not respect anyone, and there is no other possible explanation. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "The analysis concludes that the feature should be removed because clients complained about it once.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The manager argues that the meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "In the meeting, they stated that sales increased last month, so the new advertising strategy definitely caused the growth. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "She deserves the promotion because she has been here for years.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "Either the employee is loyal or they are working against us. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "She said she had no concerns, then immediately listed several concerns. This is presented as sufficient evidence.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The team believes that the team finished the prototype and documented every major design choice. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "The report claims that the candidate has no previous experience, so they will certainly fail. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "The analysis concludes that she said she had no concerns, then immediately listed several concerns.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "They said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "Clearly, the manager explained the assumption behind the decision and invited the team to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "The team believes that the team rejected the proposal after addressing each major objection raised during the meeting.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "In the meeting, they stated that he said he was unavailable, but he attended the meeting for two hours. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The proposal suggests that we never change the schedule, although we changed it three times this month. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "The analysis concludes that the temperature dropped today, therefore winter has arrived. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "Either we accept the plan exactly as written or we have no plan at all. Therefore, the decision is obvious.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "The meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "The team believes that either we accept the plan exactly as written or we have no plan at all. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "The proposal suggests that either we accept the plan exactly as written or we have no plan at all. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "The report claims that he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "The analysis concludes that he must be responsible because his name appears on the document. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "In the meeting, they stated that they chose the cheaper option, so it must be the better option. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "The team believes that the report mentions several objections, yet it concludes that the plan should continue. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The proposal suggests that she deserves the promotion because she has been here for years. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The team believes that the meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "The survey had a low response rate, so the entire population clearly dislikes the product.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "Obviously, he did not reply to my message, therefore he does not respect me.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "We cannot approve this plan because it is too risky. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "Either we use this technology or we will fall behind everyone else. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "Obviously, they will meet the deadline because the team is working hard.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "In the meeting, they stated that the survey had a low response rate, so the entire population clearly dislikes the product. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "He said he was unavailable, but he attended the meeting for two hours. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The meeting is online, therefore everyone will attend. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "The temperature dropped today, therefore winter has arrived. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The team believes that sales increased last month, so the new advertising strategy definitely caused the growth. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The manager argues that either the employee is loyal or they are working against us. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The report claims that you are either with the company or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The meeting is online, therefore everyone will attend. That is why we should proceed.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "According to the discussion, the meeting is online, therefore everyone will attend. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "Clearly, critics argue that the system is unreliable, but we should deploy it anyway. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "The candidate has no previous experience, so they will certainly fail. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "The feature should be removed because users complained about it once.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "Obviously, sales increased last month, so the new advertising strategy definitely caused the growth.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "He did not reply to my message, therefore he does not respect me. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The proposal suggests that either we approve the proposal today or the company will fail, even though several teams have raised serious objections. This seems reasonable.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "The project will succeed because everyone wants it to succeed. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "In the meeting, they stated that sales increased last month, so the new advertising strategy definitely caused the growth.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The analysis concludes that we should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "Either the employee is loyal or they are working against us. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The report mentions several objections, yet it concludes that the plan should continue. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The team believes that either we launch the product today or the entire project will fail. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The analysis concludes that the report mentions several objections, yet it concludes that the plan should continue.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "In the meeting, they stated that the team finished the prototype and documented every major design determination. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "He said he was unavailable, but he attended the meeting for two hours.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "According to the discussion, he must be responsible because his name appears on the document.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "The analysis concludes that she disagreed with the proposal, therefore she does not support the team. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "Obviously, the team finished the prototype and documented every major design decision. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "Obviously, the team rejected the proposal after addressing each major objection raised during the meeting. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "The temperature dropped today, therefore winter has arrived.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The system is completely secure, although the audit identified several unresolved vulnerabilities. This seems reasonable.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "According to the discussion, he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "The manager argues that critics argue that the system is unreliable, but we should deploy it anyway. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "The proposal suggests that the candidate has no previous experience, so they will certainly fail.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "The team will succeed because everyone supports the idea, despite several members explicitly raising concerns. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The company claims to value privacy while collecting unnecessary personal data. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The manager argues that the project will succeed because everyone wants it to succeed. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "According to the discussion, we should hire him because he graduated from a good university.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "The manager argues that they said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "Obviously, either the employee is loyal or they are working against us. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The report claims that the proposal creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "In the meeting, they stated that the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "Obviously, they said the decision was final, yet they continued asking for new suggestions. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "He must be responsible because his name appears on the document. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "The analysis concludes that the system is completely secure, although the audit identified several unresolved vulnerabilities. This seems reasonable.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "Clearly, she works from home, so she probably does less work.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "The team rejected the proposal after addressing each major objection raised during the meeting.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "Either we approve the proposal today or the company will fail, even though several teams have raised serious objections. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "She disagreed with the proposal, therefore she does not support the team.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The proposal suggests that we should hire him because he graduated from a good university. For that reason, the staff should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "According to the discussion, we cannot approve this plan because it is too risky.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The manager argues that he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "He must be responsible because his name appears on the document.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "Obviously, the report mentions several objections, yet it concludes that the plan should continue. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The report claims that either we approve the proposal today or the company will fail, even though several teams have raised serious objections. That is why we should proceed.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "He did not reply to my message, therefore he does not respect me. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "In the meeting, they stated that sales increased last month, so the new advertising strategy definitely caused the growth. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "According to the discussion, the feature should be removed because users complained about it once. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The analysis concludes that the report mentions several objections, yet it concludes that the plan should continue. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "According to the discussion, she deserves the promotion because she has been here for years.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The team believes that either the employee is loyal or they are working against us.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The team will succeed because everyone supports the idea, despite several members explicitly raising concerns. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The team believes that the project will succeed because everyone wants it to succeed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "The approach creates security concerns, although the company still recommends adoption. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "The team believes that either we approve the proposal today or the company will fail, even though several teams have raised serious objections.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "She said she had no concerns, then immediately listed several concerns.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "She deserves the promotion because she has been here for years. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The analysis concludes that he said he was unavailable, but he attended the meeting for two hours. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The proposal suggests that either we launch the product today or the entire project will fail. Therefore, the decision is obvious.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "We should hire him because he graduated from a good university. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "The proposal suggests that he must be responsible because his name appears on the document. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "The team believes that the manager said the employee was unavailable yesterday, while the employee attended the meeting today. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "Obviously, either we launch the product today or the entire project will fail. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "According to the discussion, we should choose the expensive option because expensive products are always higher quality. That is why we should proceed.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "The proposal suggests that the report presents both supporting evidence and opposing evidence before reaching a conclusion. This seems reasonable.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "The team believes that the customer raised concerns about privacy, but the product offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "She said she had no concerns, then immediately listed several concerns. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The report claims that they said the decision was final, yet they continued asking for new suggestions. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The team believes that the report presents both supporting evidence and opposing evidence before reaching a conclusion.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "In the meeting, they stated that the lead explained the assumption behind the decision and invited the team to challenge it. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "The team believes that sales increased last month, so the new advertising strategy definitely caused the growth. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "According to the discussion, they will meet the deadline because the team is working hard. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "Obviously, the proposal considers three possible options and explains the trade-offs between them.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "Clearly, the customer raised concerns about privacy, but the product offers useful features. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "He did not reply to my message, therefore he does not respect me. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "Either the employee is loyal or they are working against us. This is presented as sufficient evidence.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The team rejected the proposal after addressing each major objection raised during the meeting. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "According to the discussion, either we approve the proposal today or the company will fail, even though several teams have raised serious objections. Therefore, the decision is obvious.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "Clearly, the team will succeed because everyone supports the idea, despite several members explicitly raising concerns.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "Sales increased last month, so the new advertising strategy definitely caused the growth.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The report claims that critics argue that the system is unreliable, but we should deploy it anyway.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "In the meeting, they stated that the manager explained the assumption behind the decision and invited the team to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "She deserves the promotion because she has been here for years. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "Clearly, we never change the schedule, although we changed it three times this month. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "In the meeting, they stated that we cannot approve this plan because it is too risky.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The service is expensive, so customers will not buy it. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "The report states that the project is incomplete because two testing stages remain. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "Clearly, the survey had a low response rate, so the entire population clearly dislikes the product.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "The manager said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "The report claims that the manager explained the assumption behind the decision and invited the group to challenge it. This seems reasonable.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "The manager argues that either we use this technology or we will fall behind everyone else. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "In the meeting, they stated that the project will succeed because everyone wants it to succeed. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "In the meeting, they stated that she works from home, so she probably does less work. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "In the meeting, they stated that the meeting is online, therefore everyone will attend. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "Clearly, the feature should be removed because users complained about it once. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The manager argues that the survey had a low response rate, so the entire population clearly dislikes the product.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "Either we use this technology or we will fall behind everyone else. Therefore, the decision is obvious.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The team believes that either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The feature should be removed because users complained about it once. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The report claims that we should choose the expensive option because expensive products are always higher quality.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "Critics argue that the system is unreliable, but we should deploy it anyway. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "Obviously, she works from home, so she probably does less work.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "The team rejected the proposal after addressing each major objection raised during the meeting. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "In the meeting, they stated that the product is expensive, so customers will not buy it.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "Critics argue that the system is unreliable, but we should deploy it anyway. For that reason, the team should agree.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "They said the decision was final, yet they continued asking for new suggestions. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The analysis concludes that the supervisor explained the assumption behind the decision and invited the team to challenge it. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Clearly, the proposal creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "The team believes that she deserves the promotion because she has been here for years. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "According to the discussion, either we approve the proposal today or the company will fail, even though several teams have raised serious objections.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "The manager explained the assumption behind the decision and invited the team to challenge it. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Either we accept the plan exactly as written or we have no plan at all. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "Obviously, he said he was unavailable, but he attended the meeting for two hours.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "You are either with the organization or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "According to the discussion, either we launch the product today or the entire project will fail.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "In the meeting, they stated that she deserves the promotion because she has been here for years. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "They said the choice was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The proposal suggests that he did not reply to my message, therefore he does not respect me. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "Clearly, either the employee is loyal or they are working against us.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The manager argues that she disagreed with the proposal, therefore she does not support the team.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The manager argues that either we approve the proposal today or the company will fail, even though several teams have raised serious objections.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "The manager argues that the manager said the staff member was unavailable yesterday, while the staff member attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "We should choose the expensive option because expensive products are always higher quality. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "In the meeting, they stated that she said she had no concerns, then immediately listed several concerns. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "Obviously, the report mentions several objections, yet it concludes that the plan should continue.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The report claims that the survey had a low response rate, so the entire population clearly dislikes the product.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "The analysis concludes that the product is expensive, so customers will not buy it. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "We cannot approve this plan because it is too risky.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The manager argues that he did not reply to my message, therefore he does not respect me. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The director said the employee was unavailable yesterday, while the employee attended the meeting today. This seems reasonable.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "Clearly, we should hire him because he graduated from a good university. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "Obviously, the team rejected the proposal after addressing each major objection raised during the meeting. That is why we should proceed.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "The proposal creates security concerns, although the company still recommends adoption. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "The implementation will succeed because everyone wants it to succeed. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "The manager argues that the system is completely secure, although the audit identified several unresolved vulnerabilities.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "Obviously, she said she had no concerns, then immediately listed several concerns.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The team believes that he did not reply to my message, therefore he does not respect me. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The manager argues that they chose the cheaper option, so it must be the better option. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "According to the discussion, you are either with the company or against it. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The manager argues that you are either with the company or against it. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "Either we launch the product today or the entire project will fail. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The manager argues that the feature should be removed because users complained about it once. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The team believes that the company claims to value privacy while collecting unnecessary personal data.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The analysis concludes that he did not reply to my message, therefore he does not respect me.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The company claims to value privacy while collecting unnecessary personal data. This is presented as sufficient evidence.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "Clearly, one team member was late, therefore the whole team is unreliable. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "The feature should be removed because users complained about it once. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The report claims that the report presents both supporting evidence and opposing evidence before reaching a conclusion.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "The analysis concludes that the survey had a low response rate, so the entire population clearly dislikes the product.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "The proposal suggests that the manager explained the assumption behind the decision and invited the team to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Some staff say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "Obviously, the feature should be removed because users complained about it once.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "Obviously, she disagreed with the proposal, therefore she does not support the team.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The proposal suggests that she said she had no concerns, then immediately listed several concerns.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The report claims that the customer raised concerns about privacy, but the product offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "The manager argues that the survey had a low response rate, so the entire population clearly dislikes the product. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "The proposal suggests that the candidate has no previous experience, so they will certainly fail. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "The analysis concludes that either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The analysis concludes that the proposal creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "Either we launch the product today or the entire project will fail.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "The analysis concludes that they said the decision was final, yet they continued asking for new suggestions. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The proposal suggests that the feature should be removed because users complained about it once. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "Obviously, we should choose the expensive option because expensive products are always higher quality. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "The proposal suggests that the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "According to the discussion, the proposal creates security concerns, although the company still recommends adoption. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "Clearly, the temperature dropped today, therefore winter has arrived. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "She works from home, so she probably does less work. That is why we should proceed.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "Obviously, the proposal considers three possible options and explains the trade-offs between them. That is why we should proceed.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "According to the discussion, they chose the cheaper option, so it must be the better option.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "In the meeting, they stated that he did not reply to my message, therefore he does not respect me.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The manager argues that he ignored one message, so he clearly does not respect anyone, and there is no other possible explanation. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "Either the employee is loyal or they are working against us. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The analysis claims that the temperature dropped today, therefore winter has arrived. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The system is completely secure, although the audit identified several unresolved vulnerabilities. That is why we should proceed.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "Clearly, she said she had no concerns, then immediately listed several concerns.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The proposal creates security concerns, although the company still recommends adoption. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "According to the discussion, the customer raised concerns about privacy, but the product offers useful features. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "The team believes that we should choose the expensive option because expensive products are always higher quality. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "In the meeting, they stated that the proposal creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "The proposal suggests that some staff members say the policy is expensive, but the policy is obviously necessary. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The proposal suggests that we never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "She works from home, so she probably does less work. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "The manager said the employee was unavailable yesterday, while the employee attended the meeting today. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "The analysis concludes that one employee was late, therefore the whole team is unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "The analyst concluded that sales increased after the campaign, while noting that other factors may have contributed. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "The customer raised concerns about privacy, but the system offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "Clearly, they chose the cheaper option, so it must be the better option. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "We never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "Clearly, sales increased last month, so the new advertising strategy definitely caused the growth. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The meeting is online, therefore everyone will attend. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "The report mentions several objections, yet it concludes that the plan should continue. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The company claims to value privacy while collecting unnecessary personal data.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "She disagreed with the proposal, therefore she does not support the team. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The analysis concludes that she deserves the promotion because she has been here for years. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "Clearly, some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The manager argues that the team rejected the proposal after addressing each major objection raised during the meeting. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "Clearly, critics argue that the system is unreliable, but we should deploy it anyway. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "The report claims that the meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "We should choose the expensive option because expensive products are always higher quality. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "In the meeting, they stated that the temperature dropped today, therefore winter has arrived. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The team believes that we cannot approve this plan because it is too risky. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The proposal suggests that she disagreed with the proposal, therefore she does not support the team.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The document claims that the initiative will succeed because everyone wants it to succeed. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "The team believes that critics argue that the system is unreliable, but we should deploy it anyway.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "The proposal suggests that they said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The proposal suggests that he said he was unavailable, but he attended the meeting for two hours.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The team believes that you are either with the company or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The analysis concludes that we should hire him because he graduated from a good university.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "He must be responsible because his name appears on the document. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "The report claims that either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The analysis concludes that we never change the schedule, although we changed it three times this month. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "The department believes that the manager explained the assumption behind the decision and invited the department to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "The report claims that the feature should be removed because people complained about it once. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "Clearly, the report presents both supporting evidence and opposing evidence before reaching a conclusion.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "Clearly, the temperature dropped today, therefore winter has arrived. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "Clearly, he said he was unavailable, but he attended the meeting for two hours. This is presented as sufficient evidence.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_034"}
+{"text": "The team believes that some employees say the policy is expensive, but the policy is obviously necessary. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "In the meeting, they stated that either the employee is loyal or they are working against us.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The proposal suggests that the temperature dropped today, therefore winter has arrived. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The report claims that they will meet the deadline because the team is working hard. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The candidate has no previous experience, so they will certainly fail. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "Obviously, the manager said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "According to the discussion, some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The analysis concludes that the manager said the employee was unavailable yesterday, while the employee attended the meeting today. That is why we should proceed.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "The team finished the prototype and documented every major design decision. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "The analysis concludes that the system is completely secure, although the audit identified several unresolved vulnerabilities.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "The team rejected the proposal after addressing each major objection raised during the meeting. That is why we should proceed.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "According to the discussion, sales increased last month, so the new advertising strategy definitely caused the growth.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The report claims that the manager said the employee was unavailable yesterday, while the employee attended the meeting today. That is why we should proceed.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "The manager argues that the feature should be removed because users complained about it once. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_005"}
+{"text": "The customer raised concerns about privacy, but the product offers useful features. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "The report claims that the project will succeed because everyone wants it to succeed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "The proposal considers three possible options and explains the trade-offs between them.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "The team believes that we never change the schedule, although we changed it three times this month. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "The system is completely secure, although the audit identified several unresolved vulnerabilities. This is presented as sufficient evidence.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "The team believes that she deserves the promotion because she has been here for years. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The proposal suggests that the meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "The manager argues that the manager explained the assumption behind the decision and invited the team to challenge it. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Either we accept the plan exactly as written or we have no plan at all. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "According to the discussion, she said she had no concerns, then immediately listed several concerns. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The team will succeed because everyone supports the idea, despite several members explicitly raising concerns. This seems reasonable.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "Obviously, either we accept the plan exactly as written or we have no plan at all. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_041"}
+{"text": "The team believes that some employees say the policy is expensive, but the policy is obviously necessary. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "In the meeting, they stated that the survey had a low response rate, so the entire population clearly dislikes the system. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "Obviously, we should hire him because he graduated from a good university. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "Either the employee is loyal or they are working against us.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "Obviously, the company claims to value privacy while collecting unnecessary personal data. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "According to the discussion, the system is completely secure, although the audit identified several unresolved vulnerabilities.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "The manager argues that he must be responsible because his name appears on the document. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "The manager argues that she disagreed with the proposal, therefore she does not support the staff.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The proposal suggests that we cannot approve this plan because it is too risky. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "Obviously, the meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "The analysis concludes that the team rejected the proposal after addressing each major objection raised during the meeting.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "The team finished the prototype and documented every major design decision. This seems reasonable.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "Clearly, the product is expensive, so customers will not buy it.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "The proposal suggests that she said she had no concerns, then immediately listed several concerns. This is presented as sufficient evidence.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The proposal suggests that the proposal creates security concerns, although the company still recommends adoption. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "The manager argues that we never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "In the meeting, they stated that they will meet the deadline because the team is working hard.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The candidate has no previous experience, so they will certainly fail.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "Obviously, they will meet the deadline because the team is working hard. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The supervisor said the staff member was unavailable yesterday, while the staff member attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "Clearly, the customer raised concerns about privacy, but the product offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "The manager explained the assumption behind the decision and invited the team to challenge it.", "labels": [], "family_id": "logician_seed_052"}
+{"text": "Clearly, the report mentions several objections, yet it concludes that the plan should continue. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "Clearly, some employees say the policy is expensive, but the policy is obviously necessary. Therefore, the decision is obvious.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The team believes that she works from home, so she probably does less work.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "The report claims that the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "The manager argues that you are either with the company or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The analysis concludes that the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "In the meeting, they stated that the customer raised concerns about privacy, but the product offers useful features. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "Critics argue that the system is unreliable, but we should deploy it anyway. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "Clearly, they chose the cheaper option, so it must be the better option.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "The analysis concludes that the report states that the project is incomplete because two testing stages remain.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "The analysis concludes that the customer raised concerns about privacy, but the product offers useful features. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "The report claims that the team finished the prototype and documented every major design decision. That is why we should proceed.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "The proposal suggests that either we use this technology or we will fall behind everyone else. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "The product is expensive, so customers will not buy it. Therefore, the conclusion is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "According to the discussion, he did not reply to my message, therefore he does not respect me. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "In the meeting, they stated that the report states that the project is incomplete because two testing stages remain. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "In the meeting, they stated that she deserves the promotion because she has been here for years. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "The report claims that we should choose the expensive option because expensive products are always higher quality. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "According to the discussion, the project will succeed because everyone wants it to succeed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "The manager argues that he did not reply to my message, therefore he does not respect me.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "The manager argues that we cannot approve this plan because it is too risky. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The proposal suggests that she deserves the promotion because she has been here for years.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_002"}
+{"text": "According to the discussion, the survey had a low response rate, so the entire population clearly dislikes the product. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "According to the discussion, the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "He did not reply to my message, therefore he does not respect me. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_018"}
+{"text": "Some employees say the policy is expensive, but the policy is obviously necessary. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The manager argues that the report mentions several objections, yet it concludes that the plan should continue.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The product is expensive, so customers will not buy it. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "The team believes that the analyst concluded that sales increased after the campaign, while noting that other factors may have contributed.", "labels": [], "family_id": "logician_seed_054"}
+{"text": "Critics argue that the system is unreliable, but we should deploy it anyway. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "Obviously, we should hire him because he graduated from a good university.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_023"}
+{"text": "The system is expensive, so customers will not buy it. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "In the meeting, they stated that the survey had a low response rate, so the entire population clearly dislikes the service. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "The candidate has no previous experience, so they will certainly fail. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "Obviously, the report states that the project is incomplete because two testing stages remain. This seems reasonable.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "The team believes that we should choose the expensive option because expensive products are always higher quality. This seems reasonable.", "labels": ["SKIPPED_PREMISE", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_047"}
+{"text": "The team believes that she works from home, so she probably does less work. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_024"}
+{"text": "The team believes that the application is expensive, so customers will not buy it. That is why we should proceed.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "The director said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "The survey had a low response rate, so the entire population clearly dislikes the application.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_015"}
+{"text": "Obviously, the product is expensive, so customers will not buy it.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "The company claims to value privacy while collecting unnecessary personal data. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The team believes that some employees say the policy is expensive, but the policy is obviously necessary.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "The analysis concludes that the meeting is online, therefore everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_029"}
+{"text": "The product is expensive, so customers will not buy it. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "In the meeting, they stated that the team finished the prototype and documented every major design decision. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "In the meeting, they stated that you are either with the company or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The analysis concludes that she disagreed with the proposal, therefore she does not support the team.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_020"}
+{"text": "The team believes that we cannot approve this plan because it is too risky.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_003"}
+{"text": "The proposal creates security concerns, although the company still recommends adoption.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "According to the discussion, one employee was late, therefore the whole team is unreliable. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "Obviously, we never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "In the meeting, they stated that either we launch the product today or the entire project will fail.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "In the meeting, they stated that we never change the schedule, although we changed it three times this month.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "The analysis concludes that the product is expensive, so customers will not buy it. This is presented as sufficient evidence.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "You are either with the company or against it. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The analysis concludes that the report states that the initiative is incomplete because two testing stages remain.", "labels": [], "family_id": "logician_seed_055"}
+{"text": "The report claims that the team finished the prototype and documented every major design decision.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "The team finished the prototype and documented every major design determination. This is presented as sufficient evidence.", "labels": [], "family_id": "logician_seed_050"}
+{"text": "The analysis concludes that the proposal considers three possible options and explains the trade-offs between them. This seems reasonable.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "In the meeting, they stated that he must be responsible because his name appears on the document.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "She said she had no concerns, then immediately listed several concerns. For that reason, the team should agree.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "He ignored one message, so he clearly does not respect anyone, and there is no other possible explanation.", "labels": ["UNSUPPORTED_CONCLUSION", "FALSE_DILEMMA"], "family_id": "logician_seed_048"}
+{"text": "The manager argues that they chose the cheaper option, so it must be the better option. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "Obviously, the candidate has no previous experience, so they will certainly fail. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_021"}
+{"text": "Obviously, some employees say the policy is expensive, but the policy is obviously necessary. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_008"}
+{"text": "Clearly, the product is expensive, so customers will not buy it. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_025"}
+{"text": "Obviously, the team will succeed because everyone supports the idea, despite several members explicitly raising concerns.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The proposal suggests that one employee was late, therefore the whole team is unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_016"}
+{"text": "The proposal suggests that either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The proposal suggests that we never change the schedule, although we changed it three times this month. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_031"}
+{"text": "The team believes that they said the decision was final, yet they continued asking for new suggestions.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The analysis concludes that either we approve the proposal today or the company will fail, even though several teams have raised serious objections. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_045"}
+{"text": "They said the decision was final, yet they continued asking for new suggestions. For that reason, the team should agree.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_036"}
+{"text": "The implementation will succeed because everyone wants it to succeed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_001"}
+{"text": "Obviously, the proposal creates security concerns, although the company still recommends adoption. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_014"}
+{"text": "They will meet the deadline because the department is working hard. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The analysis concludes that the team will succeed because everyone supports the idea, despite several members explicitly raising concerns. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The team rejected the proposal after addressing each major objection raised during the meeting. This seems reasonable.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "In the meeting, they stated that sales increased last month, so the new advertising strategy definitely caused the growth. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_017"}
+{"text": "The report mentions several objections, yet it concludes that the plan should continue. For that reason, the team should agree.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "In the meeting, they stated that the system is completely secure, although the audit identified several unresolved vulnerabilities.", "labels": ["CONTRADICTION", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_046"}
+{"text": "They chose the cheaper option, so it must be the better option.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "Either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "Either we use this technology or we will fall behind everyone else. This is presented as sufficient evidence.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The manager argues that either the employee is loyal or they are working against us.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "According to the discussion, either we use this technology or we will fall behind everyone else.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_043"}
+{"text": "The manager argues that the company claims to value privacy while collecting unnecessary personal data. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "The manager argues that they will meet the deadline because the team is working hard. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_006"}
+{"text": "The analysis concludes that he must be responsible because his name appears on the document. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_004"}
+{"text": "The analysis concludes that critics argue that the system is unreliable, but we should deploy it anyway.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_009"}
+{"text": "According to the discussion, the team rejected the proposal after addressing each major objection raised during the meeting.", "labels": [], "family_id": "logician_seed_056"}
+{"text": "The report claims that the manager said the employee was unavailable yesterday, while the employee attended the meeting today.", "labels": [], "family_id": "logician_seed_057"}
+{"text": "According to the discussion, she said she had no concerns, then immediately listed several concerns. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_032"}
+{"text": "The proposal suggests that the customer raised concerns about privacy, but the product offers useful features.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_010"}
+{"text": "In the meeting, they stated that they chose the cheaper option, so it must be the better option.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_028"}
+{"text": "The temperature dropped today, therefore winter has arrived. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "logician_seed_022"}
+{"text": "The proposal considers three possible options and explains the trade-offs between them. For that reason, the team should agree.", "labels": [], "family_id": "logician_seed_053"}
+{"text": "The proposal suggests that either the employee is loyal or they are working against us. Therefore, the conclusion is obvious.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_040"}
+{"text": "The report mentions several objections, yet it concludes that the plan should continue.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The report claims that the company claims to value privacy while collecting unnecessary personal data. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_033"}
+{"text": "You are either with the company or against it.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_042"}
+{"text": "The report claims that either we launch the product today or the entire project will fail. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_037"}
+{"text": "Clearly, the report presents both supporting evidence and opposing evidence before reaching a conclusion. Therefore, the decision is obvious.", "labels": [], "family_id": "logician_seed_051"}
+{"text": "The analysis concludes that the team will succeed because everyone supports the idea, despite several members explicitly raising concerns. This is presented as sufficient evidence.", "labels": ["SKIPPED_PREMISE", "UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_049"}
+{"text": "The manager argues that the report mentions several objections, yet it concludes that the plan should continue. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_012"}
+{"text": "The committee rejected the proposal because the chair preferred another option.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_001"}
+{"text": "The company should expand because demand is high.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_002"}
+{"text": "The system is safe because the developer says it is safe.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_003"}
+{"text": "We should accept the recommendation because the director supports it.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_004"}
+{"text": "The project deserves more funding because the team worked hard.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_005"}
+{"text": "The candidate should be selected because the interview felt positive.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_006"}
+{"text": "The policy will work because management believes it will work.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_007"}
+{"text": "The software is better because it has more features.", "labels": ["SKIPPED_PREMISE"], "family_id": "boundary_008"}
+{"text": "The finance team objected to the cost, but the proposal does not address the objection.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_009"}
+{"text": "Several users reported privacy concerns, but the response only discusses performance.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_010"}
+{"text": "The reviewer questioned the methodology, yet the report simply repeats its conclusion.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_011"}
+{"text": "Some employees opposed the change, but the announcement gives no response to their concerns.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_012"}
+{"text": "Critics raised reliability concerns, while the proposal only describes the product benefits.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_013"}
+{"text": "The customer asked about security risks, but the presentation never addresses them.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_014"}
+{"text": "The report mentions objections from researchers without explaining why those objections are incorrect.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_015"}
+{"text": "Several stakeholders challenged the timeline, but the final decision does not respond to those challenges.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "boundary_016"}
+{"text": "The restaurant was busy on Tuesday, so it must be the best restaurant in the city.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_017"}
+{"text": "One customer complained, therefore everyone hates the product.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_018"}
+{"text": "The employee missed one deadline, so the employee is completely unreliable.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_019"}
+{"text": "Website traffic increased after the redesign, therefore the redesign definitely caused the increase.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_020"}
+{"text": "The experiment produced one positive result, so the treatment always works.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_021"}
+{"text": "He disagreed with one decision, therefore he opposes every decision.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_022"}
+{"text": "The machine worked once, so it will never fail.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_023"}
+{"text": "The survey received positive responses, therefore the entire population supports the policy.", "labels": ["UNSUPPORTED_CONCLUSION"], "family_id": "boundary_024"}
+{"text": "The office is large, so employees must be productive there.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_025"}
+{"text": "She has a prestigious degree, so she must be the most capable applicant.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_026"}
+{"text": "The product costs more, so customers must consider it higher quality.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_027"}
+{"text": "He speaks confidently, so he must understand the topic.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_028"}
+{"text": "The meeting is scheduled online, so everyone will attend.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_029"}
+{"text": "The company has many employees, so its management must be effective.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_030"}
+{"text": "The document uses technical language, so its conclusions must be accurate.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_031"}
+{"text": "The manager has more experience, so the manager's decision must be correct.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "boundary_032"}
+{"text": "The project is finished, but the final module has not been implemented.", "labels": ["CONTRADICTION"], "family_id": "boundary_033"}
+{"text": "She said she had no concerns, but then listed several concerns.", "labels": ["CONTRADICTION"], "family_id": "boundary_034"}
+{"text": "The report says that no errors were found, but later identifies multiple errors.", "labels": ["CONTRADICTION"], "family_id": "boundary_035"}
+{"text": "He said he was absent from the meeting, although the attendance record lists him as present.", "labels": ["CONTRADICTION"], "family_id": "boundary_036"}
+{"text": "The company claims that the service is available everywhere, while the same document lists regions where it is unavailable.", "labels": ["CONTRADICTION"], "family_id": "boundary_037"}
+{"text": "They described the decision as final, but later said that the decision could still change.", "labels": ["CONTRADICTION"], "family_id": "boundary_038"}
+{"text": "The announcement says the feature was removed, while the next section says the feature remains active.", "labels": ["CONTRADICTION"], "family_id": "boundary_039"}
+{"text": "The manager said the deadline was unchanged, but the schedule shows a different deadline.", "labels": ["CONTRADICTION"], "family_id": "boundary_040"}
+{"text": "Either we approve this proposal today or the entire project will fail.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_041"}
+{"text": "You either agree with the decision or you are against the team.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_042"}
+{"text": "Either we use this software or we will have no solution.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_043"}
+{"text": "We can either cancel the project or accept every part of the current plan.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_044"}
+{"text": "Either the employee is loyal or the employee is working against us.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_045"}
+{"text": "Either we reduce the budget or we must close the company.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_046"}
+{"text": "You either support the manager completely or you do not support the organization.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_047"}
+{"text": "Either the product succeeds immediately or the investment was completely wasted.", "labels": ["FALSE_DILEMMA"], "family_id": "boundary_048"}
+{"text": "The committee reviewed the evidence and explained why the conclusion followed from it.", "labels": [], "family_id": "boundary_049"}
+{"text": "The report presents the main objection and directly answers it with supporting evidence.", "labels": [], "family_id": "boundary_050"}
+{"text": "The manager explained the assumption and asked the team whether it was justified.", "labels": [], "family_id": "boundary_051"}
+{"text": "The project is incomplete because the testing phase has not yet finished.", "labels": [], "family_id": "boundary_052"}
+{"text": "The proposal compares three alternatives and explains the trade-offs between them.", "labels": [], "family_id": "boundary_053"}
+{"text": "The analyst reports that sales increased after the campaign but notes that several factors may have contributed.", "labels": [], "family_id": "boundary_054"}
+{"text": "The document states that the feature was removed and consistently describes it as unavailable.", "labels": [], "family_id": "boundary_055"}
+{"text": "The team selected one of several possible options after comparing their costs and benefits.", "labels": [], "family_id": "boundary_056"}

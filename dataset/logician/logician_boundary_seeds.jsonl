@@ -1,0 +1,63 @@
+{"text":"The committee rejected the proposal because the chair preferred another option.","labels":["SKIPPED_PREMISE"]}
+{"text":"The company should expand because demand is high.","labels":["SKIPPED_PREMISE"]}
+{"text":"The system is safe because the developer says it is safe.","labels":["SKIPPED_PREMISE"]}
+{"text":"We should accept the recommendation because the director supports it.","labels":["SKIPPED_PREMISE"]}
+{"text":"The project deserves more funding because the team worked hard.","labels":["SKIPPED_PREMISE"]}
+{"text":"The candidate should be selected because the interview felt positive.","labels":["SKIPPED_PREMISE"]}
+{"text":"The policy will work because management believes it will work.","labels":["SKIPPED_PREMISE"]}
+{"text":"The software is better because it has more features.","labels":["SKIPPED_PREMISE"]}
+
+{"text":"The finance team objected to the cost, but the proposal does not address the objection.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+{"text":"Several users reported privacy concerns, but the response only discusses performance.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+{"text":"The reviewer questioned the methodology, yet the report simply repeats its conclusion.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+{"text":"Some employees opposed the change, but the announcement gives no response to their concerns.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+{"text":"Critics raised reliability concerns, while the proposal only describes the product benefits.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+{"text":"The customer asked about security risks, but the presentation never addresses them.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+{"text":"The report mentions objections from researchers without explaining why those objections are incorrect.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+{"text":"Several stakeholders challenged the timeline, but the final decision does not respond to those challenges.","labels":["UNANSWERED_COUNTERARGUMENT"]}
+
+{"text":"The restaurant was busy on Tuesday, so it must be the best restaurant in the city.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"One customer complained, therefore everyone hates the product.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The employee missed one deadline, so the employee is completely unreliable.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"Website traffic increased after the redesign, therefore the redesign definitely caused the increase.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The experiment produced one positive result, so the treatment always works.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"He disagreed with one decision, therefore he opposes every decision.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The machine worked once, so it will never fail.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The survey received positive responses, therefore the entire population supports the policy.","labels":["UNSUPPORTED_CONCLUSION"]}
+
+{"text":"The office is large, so employees must be productive there.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"She has a prestigious degree, so she must be the most capable applicant.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The product costs more, so customers must consider it higher quality.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"He speaks confidently, so he must understand the topic.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The meeting is scheduled online, so everyone will attend.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The company has many employees, so its management must be effective.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The document uses technical language, so its conclusions must be accurate.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The manager has more experience, so the manager's decision must be correct.","labels":["UNSTATED_ASSUMPTION"]}
+
+{"text":"The project is finished, but the final module has not been implemented.","labels":["CONTRADICTION"]}
+{"text":"She said she had no concerns, but then listed several concerns.","labels":["CONTRADICTION"]}
+{"text":"The report says that no errors were found, but later identifies multiple errors.","labels":["CONTRADICTION"]}
+{"text":"He said he was absent from the meeting, although the attendance record lists him as present.","labels":["CONTRADICTION"]}
+{"text":"The company claims that the service is available everywhere, while the same document lists regions where it is unavailable.","labels":["CONTRADICTION"]}
+{"text":"They described the decision as final, but later said that the decision could still change.","labels":["CONTRADICTION"]}
+{"text":"The announcement says the feature was removed, while the next section says the feature remains active.","labels":["CONTRADICTION"]}
+{"text":"The manager said the deadline was unchanged, but the schedule shows a different deadline.","labels":["CONTRADICTION"]}
+
+{"text":"Either we approve this proposal today or the entire project will fail.","labels":["FALSE_DILEMMA"]}
+{"text":"You either agree with the decision or you are against the team.","labels":["FALSE_DILEMMA"]}
+{"text":"Either we use this software or we will have no solution.","labels":["FALSE_DILEMMA"]}
+{"text":"We can either cancel the project or accept every part of the current plan.","labels":["FALSE_DILEMMA"]}
+{"text":"Either the employee is loyal or the employee is working against us.","labels":["FALSE_DILEMMA"]}
+{"text":"Either we reduce the budget or we must close the company.","labels":["FALSE_DILEMMA"]}
+{"text":"You either support the manager completely or you do not support the organization.","labels":["FALSE_DILEMMA"]}
+{"text":"Either the product succeeds immediately or the investment was completely wasted.","labels":["FALSE_DILEMMA"]}
+
+{"text":"The committee reviewed the evidence and explained why the conclusion followed from it.","labels":[]}
+{"text":"The report presents the main objection and directly answers it with supporting evidence.","labels":[]}
+{"text":"The manager explained the assumption and asked the team whether it was justified.","labels":[]}
+{"text":"The project is incomplete because the testing phase has not yet finished.","labels":[]}
+{"text":"The proposal compares three alternatives and explains the trade-offs between them.","labels":[]}
+{"text":"The analyst reports that sales increased after the campaign but notes that several factors may have contributed.","labels":[]}
+{"text":"The document states that the feature was removed and consistently describes it as unavailable.","labels":[]}
+{"text":"The team selected one of several possible options after comparing their costs and benefits.","labels":[]}
+

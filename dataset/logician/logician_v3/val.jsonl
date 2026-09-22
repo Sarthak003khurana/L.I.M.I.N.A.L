@@ -1,0 +1,90 @@
+{"text": "Clearly, we can either cut the budget or cancel the project completely. This seems reasonable.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The program is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "In the meeting, they stated that people have questioned the cost, but the benefits speak for themselves. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "Clearly, the company is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "Obviously, this solution is better because it is newer.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "Obviously, we can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The report claims that the product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "The report claims that the initiative is completely finished, but several major features are still missing. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "The business is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "The project is completely finished, but several major features are still missing. For that reason, the team should agree.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "In the meeting, they stated that the product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "People have questioned the cost, but the benefits speak for themselves. This is presented as sufficient evidence.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "The proposal suggests that people have questioned the cost, but the benefits speak for themselves. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "The manager argues that people have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "The proposal suggests that people have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "The service will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "Obviously, the product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. That is why we should proceed.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "The team believes that the company is large, so its services must be reliable. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "Clearly, the project is completely finished, but several major features are still missing. This is presented as sufficient evidence.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "The firm is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "People have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "In the meeting, they stated that the company is large, so its services must be reliable. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "The manager argues that we can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The report claims that the product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "People have questioned the cost, but the benefits speak for themselves. This seems reasonable.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "The product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "Clearly, the project is completely finished, but several major features are still missing. This seems reasonable.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "In the meeting, they stated that people have questioned the cost, but the benefits speak for themselves. For that reason, the team should agree.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "Obviously, the implementation is completely finished, but several major features are still missing. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "We can either cut the budget or cancel the project completely. Therefore, the decision is obvious.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The company is large, so its services must be reliable. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "Obviously, the company is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "Clearly, people have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "Clearly, the project is completely finished, but several major features are still missing. For that reason, the team should agree.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "The manager argues that the application will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "In the meeting, they stated that people have questioned the cost, but the benefits speak for themselves. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "In the meeting, they stated that the project is completely finished, but several major features are still missing. Therefore, the decision is obvious.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "In the meeting, they stated that we can either cut the budget or cancel the project completely. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "People have questioned the cost, but the benefits speak for themselves. That is why we should proceed.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "We can either cut the budget or cancel the project completely. That is why we should proceed.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The company is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "The service will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "In the meeting, they stated that we can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The team believes that people have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "Obviously, we can either cut the budget or cancel the project completely. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "This solution is better because it is newer. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "This solution is better because it is newer. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "According to the discussion, we can either cut the budget or cancel the implementation completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "In the meeting, they stated that this solution is better because it is newer. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The proposal suggests that the program is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "According to the discussion, the service will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. This seems reasonable.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "The report claims that the application will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "The report claims that people have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "Clearly, this solution is better because it is newer.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "This solution is better because it is newer. This seems reasonable.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "Clearly, the project is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "The team believes that the product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "The team believes that the project is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "In the meeting, they stated that the business is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "The project is completely finished, but several major features are still missing. That is why we should proceed.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "Clearly, the system will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "The company is large, so its services must be reliable. For that reason, the team should agree.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "Obviously, people have questioned the cost, but the benefits speak for themselves.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "The proposal suggests that we can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "We can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "Clearly, we can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The proposal suggests that this solution is better because it is newer.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The analysis concludes that this solution is better because it is newer. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. Therefore, the decision is obvious.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "Clearly, the product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. This is presented as sufficient evidence.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "According to the discussion, this solution is better because it is newer. For that reason, the team should agree.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The team believes that the project is completely finished, but several major features are still missing. This is presented as sufficient evidence.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "The report claims that we can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "According to the discussion, the company is large, so its services must be reliable. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "Obviously, this solution is better because it is newer. Therefore, the decision is obvious.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The company is large, so its services must be reliable. Therefore, the decision is obvious.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "The analysis concludes that the system will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market. For that reason, the team should agree.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "Obviously, this solution is better because it is newer. That is why we should proceed.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The analysis concludes that we can either cut the budget or cancel the project completely.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "The report claims that the company is large, so its services must be reliable. This seems reasonable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "The analysis concludes that the project is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "According to the discussion, this solution is better because it is newer.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The project is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}
+{"text": "According to the discussion, the company is large, so its services must be reliable.", "labels": ["UNSTATED_ASSUMPTION"], "family_id": "logician_seed_027"}
+{"text": "The proposal suggests that the product will definitely succeed because it is cheaper, and anyone who disagrees simply does not understand the market.", "labels": ["UNSUPPORTED_CONCLUSION", "UNSTATED_ASSUMPTION"], "family_id": "logician_seed_044"}
+{"text": "This solution is better because it is newer.", "labels": ["SKIPPED_PREMISE"], "family_id": "logician_seed_007"}
+{"text": "The manager argues that people have questioned the cost, but the benefits speak for themselves. For that reason, the team should agree.", "labels": ["UNANSWERED_COUNTERARGUMENT"], "family_id": "logician_seed_013"}
+{"text": "According to the discussion, we can either cut the budget or cancel the project completely. For that reason, the team should agree.", "labels": ["FALSE_DILEMMA"], "family_id": "logician_seed_039"}
+{"text": "Obviously, the project is completely finished, but several major features are still missing.", "labels": ["CONTRADICTION"], "family_id": "logician_seed_030"}

@@ -1,0 +1,62 @@
+{
+  "seed": 42,
+  "input_examples": 1674,
+  "duplicates_removed": 0,
+  "unique_families": 1572,
+  "splits": {
+    "train": 1339,
+    "validation": 167,
+    "test": 168
+  },
+  "labels": [
+    "NO_OMISSION",
+    "HEDGING",
+    "MISSING_ACTOR",
+    "PASSIVE_CONSTRUCTION",
+    "MISSING_COMMITMENT",
+    "VAGUE_REFERENCE",
+    "RESPONSIBILITY_AVOIDANCE"
+  ],
+  "label_distribution": {
+    "train": {
+      "NO_OMISSION": 278,
+      "HEDGING": 315,
+      "MISSING_ACTOR": 269,
+      "PASSIVE_CONSTRUCTION": 349,
+      "MISSING_COMMITMENT": 254,
+      "VAGUE_REFERENCE": 300,
+      "RESPONSIBILITY_AVOIDANCE": 111
+    },
+    "validation": {
+      "NO_OMISSION": 34,
+      "HEDGING": 40,
+      "MISSING_ACTOR": 37,
+      "PASSIVE_CONSTRUCTION": 46,
+      "MISSING_COMMITMENT": 29,
+      "VAGUE_REFERENCE": 41,
+      "RESPONSIBILITY_AVOIDANCE": 18
+    },
+    "test": {
+      "NO_OMISSION": 31,
+      "HEDGING": 39,
+      "MISSING_ACTOR": 27,
+      "PASSIVE_CONSTRUCTION": 32,
+      "MISSING_COMMITMENT": 28,
+      "VAGUE_REFERENCE": 34,
+      "RESPONSIBILITY_AVOIDANCE": 31
+    }
+  },
+  "multilabel_examples": {
+    "train": 281,
+    "validation": 40,
+    "test": 29
+  },
+  "leakage": {
+    "exact_train_validation": 0,
+    "exact_train_test": 0,
+    "exact_validation_test": 0,
+    "family_train_validation": 0,
+    "family_train_test": 0,
+    "family_validation_test": 0
+  }
+}

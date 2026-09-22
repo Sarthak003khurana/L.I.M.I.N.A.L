@@ -1,0 +1,15 @@
+{
+  "total_examples": 197,
+  "split_sizes": {
+    "train": 143,
+    "validation": 28,
+    "test": 26
+  },
+  "family_leakage": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "removed_from_validation_test": 4,
+  "seed": 42
+}

@@ -1,0 +1,26 @@
+{"text": "Of course, that sounds perfectly fine. Whatever you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The server was restarted after the update.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "you choose. It is up to you.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I received the successful result, but I do not really have much to say about it.", "labels": ["AFFECT_GAP"]}
+{"text": "I received the final approval, but I do not really have much to say about it.", "labels": ["AFFECT_GAP"]}
+{"text": "Sure, I will take care of it again. I usually end up doing it anyway.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I received the good news yesterday, but I am keeping my reaction to myself.", "labels": ["AFFECT_GAP"]}
+{"text": "No worries whatsoever. Whatever you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Sure, I am happy to do it. No problem.", "labels": ["FORCED_POLITENESS"]}
+{"text": "you decide. I am not bothered either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I will handle it, since apparently nobody else can.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I received the promotion, but I do not really have much to say about it.", "labels": ["AFFECT_GAP"]}
+{"text": "I would rather leave the emotional part alone.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Absolutely, whatever works for you. Whatever you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "I should be excited about this, but I am not.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "You can decide. I really do not mind.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I am proud about this, I guess.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The promotion happened, but I am keeping my reaction to myself.", "labels": ["AFFECT_GAP"]}
+{"text": "Sure, that is completely fine. That is completely okay.", "labels": ["FORCED_POLITENESS"]}
+{"text": "do what you think is best. I have nothing else to add.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I am very excited about it, but honestly I feel nothing.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I do not want to discuss the emotional side of this.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Sure, that is completely fine. Whatever you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "I would rather not talk about how I feel right now.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "The test will run for thirty minutes.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "No problem whatsoever, whatever works for you is perfect.", "labels": ["FORCED_POLITENESS"]}

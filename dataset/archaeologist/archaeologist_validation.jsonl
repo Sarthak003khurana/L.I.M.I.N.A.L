@@ -1,0 +1,11 @@
+{"text": "We can deal with that later.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Someone should take care of it eventually.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "It might be better to discuss this later.", "labels": ["HEDGING"]}
+{"text": "The team completed the project successfully.", "labels": ["NO_OMISSION"]}
+{"text": "The decision was apparently made without further discussion.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "HEDGING"]}
+{"text": "We should probably look into it sometime.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The payment was processed yesterday.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "We will meet with the client at three o'clock.", "labels": ["NO_OMISSION"]}
+{"text": "The decision might be changed later by someone.", "labels": ["HEDGING", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "John will contact the client tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "Sarah approved the proposal yesterday.", "labels": ["NO_OMISSION"]}

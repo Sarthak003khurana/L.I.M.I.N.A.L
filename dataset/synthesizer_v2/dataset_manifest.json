@@ -1,0 +1,65 @@
+{
+  "dataset_version": "M5_V2_TARGETED_CONTRASTIVE",
+  "random_seed": 42,
+  "num_classes": 8,
+  "features_per_example": 25,
+  "original_train": 512,
+  "original_validation": 64,
+  "new_examples": 166,
+  "new_train": 132,
+  "new_validation": 34,
+  "final_train": 644,
+  "final_validation": 98,
+  "final_test": 64,
+  "test_preserved": true,
+  "labels": {
+    "NO_SIGNIFICANT_OMISSION": 0,
+    "UNSTATED_PREFERENCE": 1,
+    "AVOIDING_COMMITMENT": 2,
+    "DISTANCING_FROM_RESPONSIBILITY": 3,
+    "EMOTIONAL_DISENGAGEMENT": 4,
+    "WITHHELD_CONTEXT": 5,
+    "UNSUPPORTED_REASONING": 6,
+    "AMBIGUOUS_INTENT": 7
+  },
+  "train_distribution": {
+    "NO_SIGNIFICANT_OMISSION": 101,
+    "UNSTATED_PREFERENCE": 64,
+    "AVOIDING_COMMITMENT": 112,
+    "DISTANCING_FROM_RESPONSIBILITY": 64,
+    "EMOTIONAL_DISENGAGEMENT": 64,
+    "WITHHELD_CONTEXT": 111,
+    "UNSUPPORTED_REASONING": 64,
+    "AMBIGUOUS_INTENT": 64
+  },
+  "validation_distribution": {
+    "NO_SIGNIFICANT_OMISSION": 18,
+    "UNSTATED_PREFERENCE": 8,
+    "AVOIDING_COMMITMENT": 20,
+    "DISTANCING_FROM_RESPONSIBILITY": 8,
+    "EMOTIONAL_DISENGAGEMENT": 8,
+    "WITHHELD_CONTEXT": 20,
+    "UNSUPPORTED_REASONING": 8,
+    "AMBIGUOUS_INTENT": 8
+  },
+  "test_distribution": {
+    "NO_SIGNIFICANT_OMISSION": 8,
+    "UNSTATED_PREFERENCE": 8,
+    "AVOIDING_COMMITMENT": 8,
+    "DISTANCING_FROM_RESPONSIBILITY": 8,
+    "EMOTIONAL_DISENGAGEMENT": 8,
+    "WITHHELD_CONTEXT": 8,
+    "UNSUPPORTED_REASONING": 8,
+    "AMBIGUOUS_INTENT": 8
+  },
+  "new_examples_distribution": {
+    "NO_SIGNIFICANT_OMISSION": 47,
+    "UNSTATED_PREFERENCE": 0,
+    "AVOIDING_COMMITMENT": 60,
+    "DISTANCING_FROM_RESPONSIBILITY": 0,
+    "EMOTIONAL_DISENGAGEMENT": 0,
+    "WITHHELD_CONTEXT": 59,
+    "UNSUPPORTED_REASONING": 0,
+    "AMBIGUOUS_INTENT": 0
+  }
+}

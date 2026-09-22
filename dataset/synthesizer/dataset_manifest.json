@@ -1,0 +1,29 @@
+{
+  "dataset_name": "LIMINAL M5 Synthesizer Contrastive Dataset",
+  "version": "v3_contrastive",
+  "seed": 42,
+  "total_examples": 320,
+  "train_examples": 192,
+  "validation_examples": 64,
+  "test_examples": 64,
+  "num_classes": 8,
+  "feature_dimension": 25,
+  "num_families": 80,
+  "families_per_class": 10,
+  "variants_per_family": 4,
+  "train_families_per_class": 6,
+  "validation_families_per_class": 2,
+  "test_families_per_class": 2,
+  "feature_source": "production M1-M4 pipeline",
+  "label_source": "controlled contrastive scenarios",
+  "labels": [
+    "NO_SIGNIFICANT_OMISSION",
+    "UNSTATED_PREFERENCE",
+    "AVOIDING_COMMITMENT",
+    "DISTANCING_FROM_RESPONSIBILITY",
+    "EMOTIONAL_DISENGAGEMENT",
+    "WITHHELD_CONTEXT",
+    "UNSUPPORTED_REASONING",
+    "AMBIGUOUS_INTENT"
+  ]
+}

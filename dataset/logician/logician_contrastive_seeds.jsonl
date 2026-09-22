@@ -1,0 +1,29 @@
+{"text":"The application crashed once, so it is completely unusable.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The application failed one test, therefore the entire system is useless.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"Sales increased after the redesign, so the redesign must be responsible for all of the growth.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The product is cheaper, so customers will definitely prefer it.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"One employee complained, so everyone must be dissatisfied.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The project missed one deadline, therefore the team is completely unreliable.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The server was unavailable once, so the service can never be trusted.","labels":["UNSUPPORTED_CONCLUSION"]}
+{"text":"The candidate answered one question correctly, so they must understand the entire subject.","labels":["UNSUPPORTED_CONCLUSION"]}
+
+{"text":"He speaks confidently, therefore he understands the subject.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"She is experienced, therefore she will automatically make the best decision.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The manager is confident, so his prediction must be accurate.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The employee is quiet, therefore she agrees with the proposal.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The report is detailed, so its conclusions must be correct.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"He has worked here for years, therefore he must support the policy.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"The speaker sounds certain, so the claim must be true.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"She has a senior position, therefore her recommendation is necessarily correct.","labels":["UNSTATED_ASSUMPTION"]}
+
+{"text":"The application crashed once, but that does not establish that it is completely unusable.","labels":[]}
+{"text":"The product is cheaper, but that alone does not establish that customers will prefer it.","labels":[]}
+{"text":"He speaks confidently, but confidence alone does not prove that he understands the subject.","labels":[]}
+{"text":"One employee complained, but this does not establish that everyone is dissatisfied.","labels":[]}
+{"text":"The report is detailed, but detail alone does not guarantee that its conclusions are correct.","labels":[]}
+{"text":"The project missed one deadline, but that does not prove that the team is completely unreliable.","labels":[]}
+
+{"text":"The application crashed once, so it is completely unusable because we have no evidence about its recovery behavior.","labels":["UNSUPPORTED_CONCLUSION","UNSTATED_ASSUMPTION"]}
+{"text":"The product is cheaper, so customers will definitely prefer it because price is assumed to be the only factor they consider.","labels":["UNSUPPORTED_CONCLUSION","UNSTATED_ASSUMPTION"]}
+{"text":"He speaks confidently, therefore he understands the subject, because confidence is being treated as evidence of knowledge.","labels":["UNSTATED_ASSUMPTION"]}
+{"text":"One employee complained, so everyone must be dissatisfied because the complaint is being treated as representative of the whole team.","labels":["UNSUPPORTED_CONCLUSION","UNSTATED_ASSUMPTION"]}

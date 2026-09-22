@@ -1,0 +1,28 @@
+{"text": "No problem, I will finish it like always.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I got the successful result, although I do not feel much about it.", "labels": ["AFFECT_GAP"]}
+{"text": "No problem, I will take care of it like always.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "whatever works for you. I am not bothered either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Of course, no problem at all. Whatever you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The package arrived this afternoon.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I am very proud, although I do not really feel that way.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "whatever works for you. I do not really mind.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Of course I can do it. I usually end up doing it anyway.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Sure, I would be more than happy to help. Of course.", "labels": ["FORCED_POLITENESS"]}
+{"text": "This is fantastic news, although I do not really care.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I do not want to get into that emotionally.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "I am not going to get into the emotional side of this.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Absolutely, whatever works for you. Of course.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Everyone was happy about the good news, but I did not really react.", "labels": ["AFFECT_GAP"]}
+{"text": "Of course, no problem at all. No problem.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Let's not get into my feelings about this.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "I will deal with it, since apparently nobody else can.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I received the good news, but I do not really have much to say about it.", "labels": ["AFFECT_GAP"]}
+{"text": "I should be grateful about this, but I am not.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Absolutely, whatever works for you. That is completely okay.", "labels": ["FORCED_POLITENESS"]}
+{"text": "It is up to you. I have nothing else to contribute.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Sure, I would be more than happy to help. No problem.", "labels": ["FORCED_POLITENESS"]}
+{"text": "I got the achievement, although I do not feel much about it.", "labels": ["AFFECT_GAP"]}
+{"text": "I am grateful about this, I guess.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Everyone was happy about the successful result, but I did not really react.", "labels": ["AFFECT_GAP"]}
+{"text": "The application is running on port 8000.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Absolutely, I am totally fine with that. Of course.", "labels": ["FORCED_POLITENESS"]}
