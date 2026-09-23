@@ -1,0 +1,38 @@
+export const PRESETS = [
+  {
+    id: "hedging",
+    title: "Passive-Aggressive / Hedged",
+    badge: "Responsibility Deflection",
+    text: "I'm fine with whatever you decide. The current plan should probably work.",
+    previewSubtext: "Leaves personal preference unstated; avoids taking ownership of the outcome.",
+    highlightPattern: "UNSTATED_PREFERENCE",
+    confidence: 68,
+  },
+  {
+    id: "avoidance",
+    title: "Corporate Evasion",
+    badge: "Missing Actor",
+    text: "Mistakes were made during the transition period, but procedures are currently being re-evaluated.",
+    previewSubtext: "Passive grammatical voice eliminates the responsible actor; no individual accountability.",
+    highlightPattern: "DISTANCING_FROM_RESPONSIBILITY",
+    confidence: 84,
+  },
+  {
+    id: "commitment",
+    title: "Non-Committal Delay",
+    badge: "Avoiding Commitment",
+    text: "We will look into that and follow up at an appropriate juncture if needed.",
+    previewSubtext: "Conditional language creates a plausible exit with zero concrete milestone or deadline.",
+    highlightPattern: "AVOIDING_COMMITMENT",
+    confidence: 79,
+  },
+  {
+    id: "logician",
+    title: "False Dilemma",
+    badge: "Unsupported Logic",
+    text: "Either we sign the vendor contract by Friday or the whole product launch collapses.",
+    previewSubtext: "Artificially constrains alternatives to force agreement; skipped unstated premise.",
+    highlightPattern: "UNSUPPORTED_REASONING",
+    confidence: 91,
+  },
+];

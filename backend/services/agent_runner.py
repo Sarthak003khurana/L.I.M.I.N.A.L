@@ -1,5 +1,7 @@
 import json
 import sys
+import hashlib
+import concurrent.futures
 from pathlib import Path
 import torch
 
@@ -447,6 +449,8 @@ class LIMINALAgentRunner:
             print(
                 f"GPT-6 Astra unavailable: {exc}"
             )
+
+        self._cache = {}
 
         print("\n" + "=" * 70)
 
@@ -1549,269 +1553,240 @@ class LIMINALAgentRunner:
     # COMPLETE ANALYSIS
     # ========================================================
 
+    # ========================================================
+    # CONCURRENT AGENT EXECUTORS
+    # ========================================================
+
+    def _execute_m1(self, text):
+        probs = self._get_archaeologist_probabilities(text)
+        findings = [
+            {"label": label, "probability": round(p, 4)}
+            for label, p in zip(ARCHAEOLOGIST_LABELS, probs)
+            if p >= 0.5
+        ]
+        return probs, {"agent": "archaeologist", "findings": findings}
+
+    def _execute_m2(self, text):
+        probs = self._get_psychologist_probabilities(text)
+        findings = [
+            {"label": label, "probability": round(p, 4)}
+            for label, p in zip(PSYCHOLOGIST_LABELS, probs)
+            if p >= 0.5
+        ]
+        return probs, {"agent": "psychologist", "findings": findings}
+
+    def _execute_m3(self, text):
+        probs = self._get_logician_probabilities(text)
+        findings = [
+            {"label": label, "probability": round(p, 4)}
+            for label, p in zip(LOGICIAN_LABELS, probs)
+            if p >= 0.5
+        ]
+        return probs, {"agent": "logician", "findings": findings}
+
+    def _execute_m4(self, text):
+        return self.run_historian(text)
+
+    # ========================================================
+    # COMPLETE ANALYSIS (PARALLELIZED + CACHED)
+    # ========================================================
+
     def analyze(
         self,
-        text
+        text,
+        include_azure=True,
     ):
-
         if not text or not text.strip():
-
-            raise ValueError(
-                "Input text cannot be empty."
-            )
+            raise ValueError("Input text cannot be empty.")
 
         text = text.strip()
+        cache_key = f"{hashlib.sha256(text.encode('utf-8')).hexdigest()}_{include_azure}"
+        if cache_key in self._cache:
+            print("[CACHE] Returning cached analysis")
+            return self._cache[cache_key]
 
         print("\n" + "=" * 70)
-
-        print(
-            "L.I.M.I.N.A.L. MULTI-AGENT ANALYSIS"
-        )
-
+        print("L.I.M.I.N.A.L. MULTI-AGENT PARALLEL ANALYSIS")
         print("=" * 70)
+        print(f"\nINPUT:\n{text}")
 
-        print(
-            f"\nINPUT:\n{text}"
+        # Run M1-M4 concurrently in thread pool
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+            f_m1 = executor.submit(self._execute_m1, text)
+            f_m2 = executor.submit(self._execute_m2, text)
+            f_m3 = executor.submit(self._execute_m3, text)
+            f_m4 = executor.submit(self._execute_m4, text)
+
+            archaeologist_probabilities, archaeologist = f_m1.result()
+            psychologist_probabilities, psychologist = f_m2.result()
+            logician_probabilities, logician = f_m3.result()
+            historian = f_m4.result()
+
+        print(f"M1-M4 parallel execution complete.")
+
+        # Build M5 input features (25-dim)
+        features = self._build_synthesizer_features(
+            archaeologist_probabilities,
+            psychologist_probabilities,
+            logician_probabilities,
+            historian,
         )
 
-        # ----------------------------------------------------
-        # M1
-        # ----------------------------------------------------
+        # M5 Synthesizer Fusion
+        synthesizer = self.run_synthesizer(features, text)
+        print(f"Synthesizer: {synthesizer['prediction']} ({synthesizer['confidence']:.4f})")
 
-        print(
-            "\n[1/5] Archaeologist..."
-        )
-
-        archaeologist_probabilities = (
-            self._get_archaeologist_probabilities(
-                text
-            )
-        )
-
-        archaeologist = (
-            self.run_archaeologist(text)
-        )
-
-        print(
-            f"Findings: "
-            f"{len(archaeologist['findings'])}"
-        )
-
-        # ----------------------------------------------------
-        # M2
-        # ----------------------------------------------------
-
-        print(
-            "\n[2/5] Psychologist..."
-        )
-
-        psychologist_probabilities = (
-            self._get_psychologist_probabilities(
-                text
-            )
-        )
-
-        psychologist = (
-            self.run_psychologist(text)
-        )
-
-        print(
-            f"Findings: "
-            f"{len(psychologist['findings'])}"
-        )
-
-        # ----------------------------------------------------
-        # M3
-        # ----------------------------------------------------
-
-        print(
-            "\n[3/5] Logician..."
-        )
-
-        logician_probabilities = (
-            self._get_logician_probabilities(
-                text
-            )
-        )
-
-        logician = (
-            self.run_logician(text)
-        )
-
-        print(
-            f"Findings: "
-            f"{len(logician['findings'])}"
-        )
-
-        # ----------------------------------------------------
-        # M4
-        # ----------------------------------------------------
-
-        print(
-            "\n[4/5] Historian..."
-        )
-
-        historian = (
-            self.run_historian(text)
-        )
-
-        # Historian may return either a list or a dictionary.
-        if isinstance(historian, dict):
-
-            evidence_count = len(
-                historian.get(
-                    "evidence",
-                    []
-                )
-            )
-
-        elif isinstance(historian, list):
-
-            evidence_count = len(
-                historian
-            )
-
-        else:
-
-            evidence_count = 0
-
-        print(
-            f"Evidence: {evidence_count}"
-        )
-
-        # ----------------------------------------------------
-        # Build M5 input
-        # ----------------------------------------------------
-
-        features = (
-            self._build_synthesizer_features(
-                archaeologist_probabilities,
-                psychologist_probabilities,
-                logician_probabilities,
-                historian
-            )
-        )
-
-        print(
-            f"\nM5 feature vector: "
-            f"{len(features)} dimensions"
-        )
-
-        # ----------------------------------------------------
-        # M5
-        # ----------------------------------------------------
-
-        print(
-            "\n[5/5] Synthesizer..."
-        )
-
-        synthesizer = (
-            self.run_synthesizer(
-                features,
-                text,
-            )
-        )
-
-        print(
-            f"Prediction: "
-            f"{synthesizer['prediction']}"
-        )
-
-        print(
-            f"Confidence: "
-            f"{synthesizer['confidence']:.4f}"
-        )
-
-        # ----------------------------------------------------
         # Dossier
-        # ----------------------------------------------------
-
         dossier = self._render_dossier(
             text,
             synthesizer,
             archaeologist,
             psychologist,
             logician,
-            historian
+            historian,
         )
 
-        # ----------------------------------------------------
-        # GPT-6 Astra explanation
-        # ----------------------------------------------------
-
+        # Azure GPT-6 Astra explanation
         azure_explanation = None
-
-        if self.azure_explainer is not None:
-
-            print(
-                "\n[AZURE] GPT-6 Astra explanation..."
-            )
-
+        if include_azure and self.azure_explainer is not None:
+            print("\n[AZURE] GPT-6 Astra explanation...")
             try:
-
-                azure_explanation = (
-                    self.azure_explainer.explain(
-                        dossier
-                    )
-                )
-
-                print(
-                    "[AZURE] GPT-6 Astra explanation complete."
-                )
-
+                azure_explanation = self.azure_explainer.explain(dossier)
+                print("[AZURE] GPT-6 Astra explanation complete.")
             except Exception as exc:
+                print(f"[AZURE] Explanation error: {exc}")
+        elif not include_azure:
+            azure_explanation = "Azure explanation skipped for ultra-fast local inference."
 
-                print(
-                    f"[AZURE] GPT-6 Astra explanation failed: {exc}"
-                )
-
-        dossier["azure_explanation"] = (
-            azure_explanation
-        )
-
-        # ----------------------------------------------------
-        # Final result
-        # ----------------------------------------------------
+        dossier["azure_explanation"] = azure_explanation
 
         result = {
-
             "input": text,
-
             "agents": {
-
-                "archaeologist":
-                    archaeologist,
-
-                "psychologist":
-                    psychologist,
-
-                "logician":
-                    logician,
-
-                "historian":
-                    historian,
-
-                "synthesizer":
-                    synthesizer
+                "archaeologist": archaeologist,
+                "psychologist": psychologist,
+                "logician": logician,
+                "historian": historian,
+                "synthesizer": synthesizer,
             },
-
-            "synthesizer_features":
-                features,
-
-            "azure":
-                {
-                    "enabled":
-                        self.azure_explainer is not None,
-
-                    "status":
-                        self.azure_status
-                },
-
-            "dossier":
-                dossier
+            "synthesizer_features": features,
+            "azure": {
+                "enabled": self.azure_explainer is not None and include_azure,
+                "status": self.azure_status if include_azure else "skipped",
+            },
+            "dossier": dossier,
         }
 
+        if len(self._cache) > 100:
+            self._cache.pop(next(iter(self._cache)))
+        self._cache[cache_key] = result
+
         return result
+
+    # ========================================================
+    # REAL-TIME STREAMING ANALYSIS GENERATOR
+    # ========================================================
+
+    def analyze_stream(
+        self,
+        text,
+        include_azure=True,
+    ):
+        if not text or not text.strip():
+            raise ValueError("Input text cannot be empty.")
+
+        text = text.strip()
+        yield {"event": "start", "input": text}
+
+        # Track completed tasks
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+            future_map = {
+                executor.submit(self._execute_m1, text): "archaeologist",
+                executor.submit(self._execute_m2, text): "psychologist",
+                executor.submit(self._execute_m3, text): "logician",
+                executor.submit(self._execute_m4, text): "historian",
+            }
+
+            archaeologist_probabilities = None
+            archaeologist = None
+            psychologist_probabilities = None
+            psychologist = None
+            logician_probabilities = None
+            logician = None
+            historian = None
+
+            for future in concurrent.futures.as_completed(future_map):
+                agent_name = future_map[future]
+                res = future.result()
+
+                if agent_name == "archaeologist":
+                    archaeologist_probabilities, archaeologist = res
+                    yield {"event": "agent_complete", "agent": "archaeologist", "data": archaeologist}
+                elif agent_name == "psychologist":
+                    psychologist_probabilities, psychologist = res
+                    yield {"event": "agent_complete", "agent": "psychologist", "data": psychologist}
+                elif agent_name == "logician":
+                    logician_probabilities, logician = res
+                    yield {"event": "agent_complete", "agent": "logician", "data": logician}
+                elif agent_name == "historian":
+                    historian = res
+                    yield {"event": "agent_complete", "agent": "historian", "data": historian}
+
+        # Build M5 features
+        features = self._build_synthesizer_features(
+            archaeologist_probabilities,
+            psychologist_probabilities,
+            logician_probabilities,
+            historian,
+        )
+
+        # Run M5
+        synthesizer = self.run_synthesizer(features, text)
+        yield {"event": "agent_complete", "agent": "synthesizer", "data": synthesizer}
+
+        # Render Dossier
+        dossier = self._render_dossier(
+            text,
+            synthesizer,
+            archaeologist,
+            psychologist,
+            logician,
+            historian,
+        )
+
+        azure_explanation = None
+        if include_azure and self.azure_explainer is not None:
+            yield {"event": "azure_start"}
+            try:
+                azure_explanation = self.azure_explainer.explain(dossier)
+                yield {"event": "azure_complete", "explanation": azure_explanation}
+            except Exception as exc:
+                azure_explanation = f"Azure unavailable: {exc}"
+                yield {"event": "azure_complete", "explanation": azure_explanation}
+        elif not include_azure:
+            azure_explanation = "Azure explanation skipped for ultra-fast local inference."
+            yield {"event": "azure_complete", "explanation": azure_explanation}
+
+        dossier["azure_explanation"] = azure_explanation
+
+        result = {
+            "input": text,
+            "agents": {
+                "archaeologist": archaeologist,
+                "psychologist": psychologist,
+                "logician": logician,
+                "historian": historian,
+                "synthesizer": synthesizer,
+            },
+            "synthesizer_features": features,
+            "azure": {
+                "enabled": self.azure_explainer is not None and include_azure,
+                "status": self.azure_status if include_azure else "skipped",
+            },
+            "dossier": dossier,
+        }
+
+        yield {"event": "done", "result": result}
 
 
 # ============================================================
