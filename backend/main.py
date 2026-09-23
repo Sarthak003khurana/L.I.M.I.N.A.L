@@ -314,15 +314,24 @@ async def remediate(request: RemediateRequest):
                 f'{{"direct": "...", "diplomatic": "...", "rationale": "...", "counter_inquiries": [{{"label": "...", "question": "..."}}, {{"label": "...", "question": "..."}}, {{"label": "...", "question": "..."}}]}}'
             )
 
-            resp = client.chat.completions.create(
-                model=deployment,
-                messages=[
-                    {"role": "system", "content": "You are a communication forensics consultant. Output only valid JSON."},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.3,
-                max_tokens=500
-            )
+            try:
+                resp = client.chat.completions.create(
+                    model=deployment,
+                    messages=[
+                        {"role": "system", "content": "You are a communication forensics consultant. Output only valid JSON."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    max_completion_tokens=600
+                )
+            except Exception:
+                resp = client.chat.completions.create(
+                    model=deployment,
+                    messages=[
+                        {"role": "system", "content": "You are a communication forensics consultant. Output only valid JSON."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    max_tokens=600
+                )
 
             raw = resp.choices[0].message.content.strip()
             if raw.startswith("```json"):

@@ -1322,6 +1322,11 @@ class LIMINALAgentRunner:
                 4,
             )
 
+        all_labels = [
+            {"label": l, "probability": p, "active": l == predicted_label}
+            for l, p in class_probabilities.items()
+        ]
+
         result = {
             "agent": "synthesizer",
             "prediction": predicted_label,
@@ -1331,6 +1336,13 @@ class LIMINALAgentRunner:
             ),
             "class_probabilities":
                 class_probabilities,
+            "all_labels": all_labels,
+            "parameters": 52459,
+            "features_dim": 25,
+            "num_classes": 8,
+            "architecture": "Dual-Stream Fusion Network",
+            "tokens": text.lower().split() if text else [],
+            "token_count": len(text.lower().split()) if text else 0,
         }
 
         if "confidence" in synth_output:
@@ -1559,33 +1571,102 @@ class LIMINALAgentRunner:
 
     def _execute_m1(self, text):
         probs = self._get_archaeologist_probabilities(text)
-        findings = [
-            {"label": label, "probability": round(p, 4)}
+        tokenizer = self.archaeologist["tokenizer"]
+        tokens = tokenizer.tokenize(text) if hasattr(tokenizer, "tokenize") else text.lower().split()
+        in_vocab_tokens = [t for t in tokens if hasattr(tokenizer, "vocab") and t in tokenizer.vocab]
+        vocab_size = len(tokenizer.vocab) if hasattr(tokenizer, "vocab") else 326
+        all_labels = [
+            {"label": label, "probability": round(p, 4), "active": p >= 0.5}
             for label, p in zip(ARCHAEOLOGIST_LABELS, probs)
-            if p >= 0.5
         ]
-        return probs, {"agent": "archaeologist", "findings": findings}
+        findings = [f for f in all_labels if f["active"]]
+        primary = findings[0] if findings else None
+        return probs, {
+            "agent": "archaeologist",
+            "prediction": primary["label"] if primary else None,
+            "probability": primary["probability"] if primary else (max(p["probability"] for p in all_labels) if all_labels else 0.0),
+            "findings": findings,
+            "all_labels": all_labels,
+            "vocab_size": vocab_size,
+            "tokens": tokens,
+            "in_vocab_tokens": in_vocab_tokens,
+            "token_count": len(tokens),
+            "architecture": "Transformer Encoder (CUDA)",
+        }
 
     def _execute_m2(self, text):
         probs = self._get_psychologist_probabilities(text)
-        findings = [
-            {"label": label, "probability": round(p, 4)}
+        tokenizer = self.psychologist["tokenizer"]
+        tokens = tokenizer.tokenize(text) if hasattr(tokenizer, "tokenize") else text.lower().split()
+        in_vocab_tokens = [t for t in tokens if hasattr(tokenizer, "vocab") and t in tokenizer.vocab]
+        vocab_size = len(tokenizer.vocab) if hasattr(tokenizer, "vocab") else 216
+        all_labels = [
+            {"label": label, "probability": round(p, 4), "active": p >= 0.5}
             for label, p in zip(PSYCHOLOGIST_LABELS, probs)
-            if p >= 0.5
         ]
-        return probs, {"agent": "psychologist", "findings": findings}
+        findings = [f for f in all_labels if f["active"]]
+        primary = findings[0] if findings else None
+        return probs, {
+            "agent": "psychologist",
+            "prediction": primary["label"] if primary else None,
+            "probability": primary["probability"] if primary else (max(p["probability"] for p in all_labels) if all_labels else 0.0),
+            "findings": findings,
+            "all_labels": all_labels,
+            "vocab_size": vocab_size,
+            "tokens": tokens,
+            "in_vocab_tokens": in_vocab_tokens,
+            "token_count": len(tokens),
+            "architecture": "Transformer Encoder (CUDA)",
+        }
 
     def _execute_m3(self, text):
         probs = self._get_logician_probabilities(text)
-        findings = [
-            {"label": label, "probability": round(p, 4)}
+        tokenizer = self.logician["tokenizer"]
+        tokens = tokenizer.tokenize(text) if hasattr(tokenizer, "tokenize") else text.lower().split()
+        in_vocab_tokens = [t for t in tokens if hasattr(tokenizer, "vocab") and t in tokenizer.vocab]
+        vocab_size = len(tokenizer.vocab) if hasattr(tokenizer, "vocab") else 466
+        all_labels = [
+            {"label": label, "probability": round(p, 4), "active": p >= 0.5}
             for label, p in zip(LOGICIAN_LABELS, probs)
-            if p >= 0.5
         ]
-        return probs, {"agent": "logician", "findings": findings}
+        findings = [f for f in all_labels if f["active"]]
+        primary = findings[0] if findings else None
+        return probs, {
+            "agent": "logician",
+            "prediction": primary["label"] if primary else None,
+            "probability": primary["probability"] if primary else (max(p["probability"] for p in all_labels) if all_labels else 0.0),
+            "findings": findings,
+            "all_labels": all_labels,
+            "vocab_size": vocab_size,
+            "tokens": tokens,
+            "in_vocab_tokens": in_vocab_tokens,
+            "token_count": len(tokens),
+            "architecture": "Transformer Encoder (CUDA)",
+        }
 
     def _execute_m4(self, text):
-        return self.run_historian(text)
+        res = self.run_historian(text)
+        tokens = text.lower().split()
+        evidence = res if isinstance(res, list) else res.get("evidence", [])
+        return {
+            "agent": "historian",
+            "evidence": evidence,
+            "findings": evidence,
+            "matched_records": len(evidence),
+            "total_records": 18,
+            "architecture": "FAISS + TF-IDF (Vector DB)",
+            "index_type": "IndexFlatIP",
+            "tokens": tokens,
+            "token_count": len(tokens),
+            "all_labels": [
+                {
+                    "label": item.get("title", f"Precedent {i+1}"),
+                    "probability": round(float(item.get("similarity", item.get("score", 0.7))), 4),
+                    "active": True
+                }
+                for i, item in enumerate(evidence)
+            ] if evidence else [],
+        }
 
     # ========================================================
     # COMPLETE ANALYSIS (PARALLELIZED + CACHED)

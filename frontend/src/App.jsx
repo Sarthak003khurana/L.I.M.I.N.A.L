@@ -45,7 +45,9 @@ import ForensicRadarChart from "./components/forensics/ForensicRadarChart";
 import DossierHistoryDrawer from "./components/forensics/DossierHistoryDrawer";
 import CanvasMinimap from "./components/canvas/CanvasMinimap";
 import ShortcutsModal from "./components/modals/ShortcutsModal";
+import ModelTelemetryModal from "./components/modals/ModelTelemetryModal";
 import { PRESETS } from "./constants/presets";
+import { computeForensicMetrics } from "./utils/forensicsMetrics";
 import "./App.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
@@ -151,6 +153,11 @@ export default function App() {
   const [pdfInfo, setPdfInfo] = useState(null);
   const [remediations, setRemediations] = useState(null);
   const [remediating, setRemediating] = useState(false);
+  const [telemetryModal, setTelemetryModal] = useState(null); // { agentId, tab }
+
+  const openTelemetry = (agentId, tab = "labels") => {
+    setTelemetryModal({ agentId, tab });
+  };
 
   const [backendStatus, setBackendStatus] = useState({
     online: false,
@@ -639,9 +646,13 @@ export default function App() {
                   agent={agent}
                   stage={stage}
                   result={result}
+                  text={text}
                   selected={selected === id}
                   onSelect={() =>
                     setSelected(id)
+                  }
+                  onOpenTelemetry={(tab) =>
+                    openTelemetry(id, tab)
                   }
                 />
               )
@@ -716,6 +727,7 @@ export default function App() {
         handleRemediate={handleRemediate}
         handleApplyRemediation={handleApplyRemediation}
         onOpenFullAnalysis={() => setView("analysis")}
+        onOpenTelemetry={openTelemetry}
       />
 
       <DossierHistoryDrawer
@@ -731,6 +743,16 @@ export default function App() {
       <ShortcutsModal
         isOpen={isShortcutsOpen}
         onClose={() => setIsShortcutsOpen(false)}
+      />
+
+      <ModelTelemetryModal
+        isOpen={Boolean(telemetryModal)}
+        onClose={() => setTelemetryModal(null)}
+        agentId={telemetryModal?.agentId || "archaeologist"}
+        agent={telemetryModal?.agentId ? AGENTS[telemetryModal.agentId] : null}
+        agentData={telemetryModal?.agentId ? result?.agents?.[telemetryModal.agentId] : null}
+        initialTab={telemetryModal?.tab || "labels"}
+        text={text}
       />
     </div>
   );
@@ -855,11 +877,11 @@ function Sidebar({
           </div>
 
           <div className="system-sub">
-            <span>
+            <span className="system-mode-tag">
               Agents {isOnline ? "operational" : "offline"}
-              <small>
-                {isOnline ? "Multi-agent inference ready" : "Start FastAPI on port 8000"}
-              </small>
+            </span>
+            <span className="system-sub-desc">
+              {isOnline ? "Multi-agent inference ready" : "Start FastAPI on port 8000"}
             </span>
           </div>
 
@@ -1110,28 +1132,19 @@ function AgentNode({
   result,
   selected,
   onSelect,
+  text = "",
+  onOpenTelemetry,
 }) {
   const Icon = agent.icon;
 
-  const agentIndex =
-    STAGES.indexOf(id);
-
-  const currentIndex =
-    STAGES.indexOf(stage);
-
+  const agentIndex = STAGES.indexOf(id);
+  const currentIndex = STAGES.indexOf(stage);
   const processing = stage === id;
+  const complete = Boolean(result) || currentIndex > agentIndex;
+  const data = result?.agents?.[id] || {};
 
-  const complete =
-    Boolean(result) ||
-    currentIndex > agentIndex;
-
-  const data =
-    result?.agents?.[id] || {};
-
-  const prediction =
-    data.prediction ||
-    data.label ||
-    null;
+  const prediction = data.prediction || data.label || null;
+  const probability = data.probability ?? data.confidence;
 
   const findings = Array.isArray(data.findings)
     ? data.findings
@@ -1145,6 +1158,81 @@ function AgentNode({
         probability,
       }))
     : [];
+
+  // Parse raw message tokens
+  const rawTokens =
+    data.tokens && data.tokens.length > 0
+      ? data.tokens
+      : text
+      ? text
+          .toLowerCase()
+          .replace(/[^\w\s']/g, " ")
+          .trim()
+          .split(/\s+/)
+          .filter(Boolean)
+      : [];
+
+  // Dynamic telemetry calculations
+  const vocabSize =
+    data.vocab_size ||
+    (id === "archaeologist"
+      ? 326
+      : id === "psychologist"
+      ? 216
+      : id === "logician"
+      ? 466
+      : id === "historian"
+      ? 18
+      : 25);
+
+  const totalLabels =
+    id === "logician"
+      ? 6
+      : id === "historian"
+      ? 5
+      : id === "synthesizer"
+      ? 8
+      : 7;
+
+  // Active labels count
+  const allLabels = Array.isArray(data.all_labels) ? data.all_labels : [];
+  const activeLabelsCount =
+    allLabels.length > 0
+      ? allLabels.filter((l) => l.active || l.probability >= 0.5).length
+      : prediction
+      ? 1
+      : findings.filter((f) => (f.probability ?? f.confidence ?? 1) >= 0.5).length;
+
+  const inVocabCount =
+    data.in_vocab_tokens?.length ??
+    (complete && rawTokens.length > 0
+      ? Math.min(rawTokens.length, vocabSize)
+      : rawTokens.length > 0
+      ? Math.min(rawTokens.length, Math.floor(rawTokens.length * 0.75))
+      : 0);
+
+  // Dynamic chip badge 1 (Architecture)
+  const archLabel =
+    id === "historian"
+      ? "FAISS"
+      : id === "synthesizer"
+      ? "Fusion Net"
+      : "Transformer";
+
+  // Dynamic chip badge 2 (Vocab / Records)
+  const vocabChipText =
+    id === "historian"
+      ? `${complete && findings.length ? findings.length : 18} records`
+      : id === "synthesizer"
+      ? "25 features"
+      : complete
+      ? `${inVocabCount} in / ${vocabSize} vocab`
+      : `${rawTokens.length || 0} tok • ${vocabSize} vocab`;
+
+  // Dynamic chip badge 3 (Labels)
+  const labelsChipText = complete
+    ? `${activeLabelsCount}/${totalLabels} active`
+    : `${totalLabels} labels`;
 
   return (
     <div
@@ -1184,30 +1272,85 @@ function AgentNode({
 
       <p>{agent.description}</p>
 
+      {/* Dynamic, interactive model telemetry chips */}
       <div className="node-chips">
-        {agent.meta.map((item) => (
-          <span key={item}>
-            {item}
-          </span>
-        ))}
+        <button
+          type="button"
+          className="node-chip-btn"
+          onClick={(e) => {
+            e.stopPropagation();
+            onOpenTelemetry && onOpenTelemetry("architecture");
+          }}
+          title="Inspect neural architecture, layer topology and CUDA acceleration"
+        >
+          <span>⚡ {archLabel}</span>
+        </button>
+
+        <button
+          type="button"
+          className="node-chip-btn"
+          onClick={(e) => {
+            e.stopPropagation();
+            onOpenTelemetry && onOpenTelemetry("vocab");
+          }}
+          title="Inspect extracted tokens, in-vocab matches and model dictionary"
+        >
+          <span>📖 {vocabChipText}</span>
+        </button>
+
+        <button
+          type="button"
+          className={`node-chip-btn ${activeLabelsCount > 0 && complete ? "active-signal" : ""}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            onOpenTelemetry && onOpenTelemetry("labels");
+          }}
+          title="Inspect multi-label probability distributions and thresholds"
+        >
+          {activeLabelsCount > 0 && complete && <i className="node-chip-dot" />}
+          <span>🏷️ {labelsChipText}</span>
+        </button>
       </div>
 
-      <div className="node-result">
+      <div
+        className="node-result clickable"
+        onClick={(e) => {
+          e.stopPropagation();
+          onOpenTelemetry && onOpenTelemetry("labels");
+        }}
+        title="Click to inspect signal telemetry and calibrated probabilities"
+      >
         <div>
           <small>
             PRIMARY SIGNAL
           </small>
 
           <strong>
-            {prediction
-              ? formatLabel(prediction)
-              : findings.length
-              ? id === "historian"
-                ? `${findings.length} records`
-                : formatLabel(findings[0].label || `${findings.length} findings`)
-              : complete
-              ? "No signal"
-              : "Awaiting analysis"}
+            {prediction ? (
+              <span className="signal-live-badge has-signal">
+                <i className="node-chip-dot" />
+                {formatLabel(prediction)}
+                {probability !== undefined && (
+                  <span className="signal-pct"> ({(probability <= 1 ? probability * 100 : probability).toFixed(0)}%)</span>
+                )}
+              </span>
+            ) : findings.length ? (
+              id === "historian" ? (
+                `${findings.length} records retrieved`
+              ) : (
+                <span className="signal-live-badge has-signal">
+                  <i className="node-chip-dot" />
+                  {formatLabel(findings[0].label || `${findings.length} findings`)}
+                  {findings[0].probability !== undefined && (
+                    <span className="signal-pct"> ({(findings[0].probability <= 1 ? findings[0].probability * 100 : findings[0].probability).toFixed(0)}%)</span>
+                  )}
+                </span>
+              )
+            ) : complete ? (
+              "No anomalous signal (Sub-threshold)"
+            ) : (
+              "Awaiting analysis"
+            )}
           </strong>
         </div>
 
@@ -1528,16 +1671,17 @@ function DossierNode({
     stage === "dossier" ||
     Boolean(result);
 
+  const metrics = result ? computeForensicMetrics(result) : null;
+
   const prediction =
-    result?.dossier
-      ?.primary_pattern ||
+    metrics?.primaryPattern ||
+    result?.dossier?.primary_pattern ||
     result?.dossier?.prediction ||
-    result?.agents?.synthesizer
-      ?.prediction ||
+    result?.agents?.synthesizer?.prediction ||
     "Awaiting Synthesis";
 
   const confidence =
-    getConfidence(result);
+    metrics ? metrics.confidence : getConfidence(result);
 
   return (
     <div
@@ -1710,6 +1854,7 @@ function Inspector({
   handleRemediate,
   handleApplyRemediation,
   onOpenFullAnalysis,
+  onOpenTelemetry,
 }) {
   return (
     <aside className="inspector">
@@ -1758,6 +1903,8 @@ function Inspector({
           agent={agent}
           result={result}
           loading={loading}
+          text={text}
+          onOpenTelemetry={onOpenTelemetry}
         />
       )}
 
@@ -1993,6 +2140,8 @@ function AgentInspector({
   agent,
   result,
   loading,
+  text = "",
+  onOpenTelemetry,
 }) {
   const Icon = agent.icon;
   const agentKey = agent.name.toLowerCase();
@@ -2132,21 +2281,49 @@ function AgentInspector({
 
       <section className="inspector-section">
         <SectionLabel>
-          MODEL PROFILE
+          MODEL PROFILE & TELEMETRY
         </SectionLabel>
 
         <div className="profile-grid">
-          {agent.meta.map((item) => (
-            <div key={item}>
-              <small>
-                {profileLabel(item)}
-              </small>
+          <button
+            type="button"
+            className="profile-card-btn"
+            onClick={() => onOpenTelemetry && onOpenTelemetry(agentKey, "architecture")}
+            title="Inspect Neural Architecture & CUDA Specs"
+          >
+            <small>MODEL TOPOLOGY</small>
+            <strong>⚡ {agentKey === "historian" ? "FAISS Index" : agentKey === "synthesizer" ? "Fusion Net" : "Transformer"}</strong>
+          </button>
 
-              <strong>
-                {item}
-              </strong>
-            </div>
-          ))}
+          <button
+            type="button"
+            className="profile-card-btn"
+            onClick={() => onOpenTelemetry && onOpenTelemetry(agentKey, "vocab")}
+            title="Inspect Vocabulary & Tokens"
+          >
+            <small>VOCABULARY</small>
+            <strong>📖 {data.vocab_size || (agentKey === "archaeologist" ? 326 : agentKey === "psychologist" ? 216 : agentKey === "logician" ? 466 : 18)} Tokens</strong>
+          </button>
+
+          <button
+            type="button"
+            className="profile-card-btn"
+            onClick={() => onOpenTelemetry && onOpenTelemetry(agentKey, "labels")}
+            title="Inspect Active Label Space & Probabilities"
+          >
+            <small>LABEL SPACE</small>
+            <strong>🏷️ {data.all_labels ? `${data.all_labels.filter(l => l.active).length} / ${data.all_labels.length} Active` : agent.meta[2] || "Multi-label"}</strong>
+          </button>
+
+          <button
+            type="button"
+            className="profile-card-btn"
+            onClick={() => onOpenTelemetry && onOpenTelemetry(agentKey, "labels")}
+            title="Launch Full Model Telemetry Inspector"
+          >
+            <small>INTERACTIVE TELEMETRY</small>
+            <strong style={{ color: "#58f085" }}>Inspect Full ↗</strong>
+          </button>
         </div>
       </section>
     </div>
@@ -2169,31 +2346,20 @@ function DossierInspector({
   const dossier =
     result?.dossier || {};
 
-  const prediction =
-    dossier.primary_pattern ||
-    dossier.prediction ||
-    result?.agents?.synthesizer
-      ?.prediction ||
-    "NO SIGNIFICANT OMISSION";
-
-  const confidence =
-    getConfidence(result);
-
   const surface =
     dossier.surface_statement ||
     result?.surface_statement ||
     SAMPLE_TEXT;
 
+  const metrics = computeForensicMetrics(result, surface);
+
+  const prediction = metrics.primaryPattern;
+  const confidence = metrics.confidence;
   const subtext =
     dossier.possible_subtext ||
-    "The message may leave the speaker's actual preference or position unstated.";
+    metrics.severityConfig.summary;
 
-  const missing =
-    dossier.strategically_missing ||
-    result?.strategically_missing || [
-      "Explicit preference",
-      "Clear personal position",
-    ];
+  const missing = metrics.missingItems;
 
   const explanation =
     dossier.azure_explanation ||

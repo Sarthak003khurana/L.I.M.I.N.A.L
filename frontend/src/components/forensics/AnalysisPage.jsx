@@ -30,17 +30,8 @@ import {
 } from "lucide-react";
 import ForensicHighlighter from "./ForensicHighlighter";
 import ForensicRadarChart from "./ForensicRadarChart";
+import { computeForensicMetrics, formatLabel } from "../../utils/forensicsMetrics";
 import "./AnalysisPage.css";
-
-// Helper utilities
-function formatLabel(value) {
-  if (!value) return "Unknown";
-  return String(value)
-    .replace(/_/g, " ")
-    .replace(/-/g, " ")
-    .toLowerCase()
-    .replace(/\b\w/g, (char) => char.toUpperCase());
-}
 
 function normalizeArray(value) {
   if (Array.isArray(value)) return value;
@@ -133,36 +124,24 @@ export default function AnalysisPage({
   const [copiedQuestionIdx, setCopiedQuestionIdx] = useState(null);
   const [selectedRewrite, setSelectedRewrite] = useState("direct"); // "direct" | "diplomatic"
 
+  const metrics = computeForensicMetrics(result, text);
   const dossier = result?.dossier || {};
   const agents = result?.agents || {};
-  const primaryPattern =
-    dossier?.primary_pattern ||
-    dossier?.prediction ||
-    agents?.synthesizer?.prediction ||
-    "UNSTATED_PREFERENCE";
-
-  const rawConfidence =
-    dossier?.confidence ??
-    result?.confidence ??
-    agents?.synthesizer?.confidence ??
-    88.5;
-  const confidence = Number(rawConfidence) <= 1 ? Number(rawConfidence) * 100 : Number(rawConfidence);
+  const primaryPattern = metrics.primaryPattern;
+  const confidence = metrics.confidence;
+  const severity = metrics.severityConfig;
 
   const surfaceStatement =
     dossier?.surface_statement || result?.input || text || "No text analyzed";
   const possibleSubtext =
     dossier?.possible_subtext ||
     "The speaker's wording allows multiple interpretations, leaving their personal preference or commitment unstated.";
-  const missingItems = normalizeArray(
-    dossier?.strategically_missing || result?.strategically_missing || []
-  );
+  const missingItems = metrics.missingItems;
   const azureExplanation =
     dossier?.azure_explanation ||
     result?.azure_explanation ||
     result?.explanation ||
     "Multi-agent forensic neural pipeline completed with calibrated inference across linguistic, interpersonal, and propositional dimensions.";
-
-  const severity = SEVERITY_CONFIG[primaryPattern] || SEVERITY_CONFIG.UNSTATED_PREFERENCE;
 
   // Synthesizer class probabilities
   const classProbabilities =
@@ -460,20 +439,18 @@ Diplomatic: "${remediations?.diplomatic || ""}"
           <div className="dossier-metric-ribbon">
             <div className="ribbon-metric-cell">
               <small>MISSING SIGNALS</small>
-              <strong>{missingItems.length} Identified</strong>
+              <strong>{metrics.missingSignalsCount} Identified</strong>
               <span>Epistemic / Actor Gaps</span>
             </div>
             <div className="ribbon-metric-cell">
               <small>AGENT COHERENCE</small>
-              <strong>
-                {Object.keys(agents).length >= 4 ? "Unanimous (5/5)" : "Consensus"}
-              </strong>
+              <strong>{metrics.agentConsensus}</strong>
               <span>Cross-Model Alignment</span>
             </div>
             <div className="ribbon-metric-cell">
               <small>EVASION INDEX</small>
               <strong style={{ color: severity.color }}>
-                {severity.level}
+                {metrics.evasionIndex}
               </strong>
               <span>{severity.summary}</span>
             </div>
@@ -510,7 +487,7 @@ Diplomatic: "${remediations?.diplomatic || ""}"
               </div>
 
               <div className="decoder-text-box surface-highlighted">
-                <ForensicHighlighter text={surfaceStatement} result={result} />
+                <ForensicHighlighter text={surfaceStatement} result={result} metrics={metrics} />
               </div>
 
               <div className="syntax-legend">

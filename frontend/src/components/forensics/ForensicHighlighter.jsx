@@ -41,13 +41,21 @@ const LINGUISTIC_RULES = [
   },
 ];
 
-export default function ForensicHighlighter({ text = "", result = null }) {
+export default function ForensicHighlighter({ text = "", result = null, metrics = null }) {
   const [activeTooltip, setActiveTooltip] = useState(null);
 
   if (!text) return <span className="empty-text">No payload to highlight</span>;
 
+  const isNoOmission =
+    metrics?.primaryPattern === "NO_SIGNIFICANT_OMISSION" ||
+    result?.dossier?.primary_pattern === "NO_SIGNIFICANT_OMISSION";
+
   // Split text into matches and non-matches
   const findSpans = () => {
+    if (isNoOmission) {
+      return [{ id: "plain-full", text, isMatch: false }];
+    }
+
     let spans = [];
     let matches = [];
 
@@ -107,16 +115,21 @@ export default function ForensicHighlighter({ text = "", result = null }) {
   };
 
   const spans = findSpans();
-  const matchCount = spans.filter((s) => s.isMatch).length;
+  const matchedSpanCount = spans.filter((s) => s.isMatch).length;
+  const signalCount = metrics
+    ? metrics.linguisticSignalsCount
+    : matchedSpanCount;
 
   return (
     <div className="forensic-highlighter-container">
       <div className="highlighter-meta-bar">
         <span className="highlighter-badge">
           <ScanSearch size={12} />
-          {matchCount} LINGUISTIC SIGNALS IDENTIFIED
+          {signalCount} {signalCount === 1 ? "LINGUISTIC SIGNAL" : "LINGUISTIC SIGNALS"} IDENTIFIED
         </span>
-        <span className="highlighter-hint">Hover highlighted spans to inspect</span>
+        <span className="highlighter-hint">
+          {signalCount > 0 ? "Hover highlighted spans to inspect" : "No anomalous linguistic signals detected"}
+        </span>
       </div>
 
       <div className="highlighter-body">

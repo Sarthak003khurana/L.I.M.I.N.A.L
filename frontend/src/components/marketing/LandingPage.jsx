@@ -281,6 +281,16 @@ export default function LandingPage({ onLaunchStudio, backendStatus }) {
             <span>VECTOR DB:</span>
             <strong className="highlight">FAISS INDEXED</strong>
           </div>
+          <div className="m-ticker-item">
+            <Sparkles size={14} />
+            <span>EXPLAINABILITY:</span>
+            <strong>AZURE GPT-6 ASTRA CONNECTED</strong>
+          </div>
+          <div className="m-ticker-item">
+            <Activity size={14} />
+            <span>FEATURE VECTOR:</span>
+            <strong className="highlight">25 CROSS-AGENT DIMENSIONS</strong>
+          </div>
         </div>
       </div>
 
