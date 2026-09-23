@@ -549,7 +549,7 @@ The Synthesizer should preserve that uncertainty.
 | Technology                     | Purpose                       |
 | ------------------------------ | ----------------------------- |
 | Azure OpenAI                   | LLM inference                 |
-| GPT-4o                         | Agent reasoning and synthesis |
+| GPT-6 Astra                    | Agent reasoning and synthesis |
 | text-embedding-3-large         | Semantic embeddings           |
 | Azure AI Document Intelligence | OCR / document extraction     |
 | Azure Content Safety           | Input/output guardrails       |
