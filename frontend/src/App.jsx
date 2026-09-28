@@ -1,28 +1,25 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import {
   Activity,
-  ArrowLeft,
   ArrowUpRight,
   Brain,
   Check,
   ChevronRight,
   ClipboardList,
-  Compass,
   Copy,
   Database,
   Download,
   ExternalLink,
-  Eye,
-  EyeOff,
   FileText,
   FileUp,
   GitBranch,
   Globe,
   History,
-  Info,
   Keyboard,
   Layers3,
   LoaderCircle,
+  Lock,
+  LogOut,
   Network,
   Play,
   RotateCcw,
@@ -32,6 +29,7 @@ import {
   ShieldCheck,
   Sparkles,
   Upload,
+  User,
   Workflow,
   X,
   ZoomIn,
@@ -39,6 +37,7 @@ import {
 } from "lucide-react";
 
 import LandingPage from "./components/marketing/LandingPage";
+import LoginPage from "./components/auth/LoginPage";
 import AnalysisPage from "./components/forensics/AnalysisPage";
 import ForensicHighlighter from "./components/forensics/ForensicHighlighter";
 import ForensicRadarChart from "./components/forensics/ForensicRadarChart";
@@ -46,6 +45,8 @@ import DossierHistoryDrawer from "./components/forensics/DossierHistoryDrawer";
 import CanvasMinimap from "./components/canvas/CanvasMinimap";
 import ShortcutsModal from "./components/modals/ShortcutsModal";
 import ModelTelemetryModal from "./components/modals/ModelTelemetryModal";
+import InputWorkspace from "./components/workspace/InputWorkspace";
+import { logOutFirebase } from "./firebase/config";
 import { PRESETS } from "./constants/presets";
 import { computeForensicMetrics } from "./utils/forensicsMetrics";
 import "./App.css";
@@ -69,11 +70,11 @@ const AGENTS = {
   archaeologist: {
     number: "01",
     name: "Archaeologist",
-    subtitle: "Linguistic Forensics",
+    subtitle: "Archaeologist Agent",
     icon: ScanSearch,
     color: "green",
     description:
-      "Detects hedging, omissions, passive constructions and responsibility gaps.",
+      "Linguistic Forensics: Detects hedging, omissions, passive constructions and responsibility gaps.",
     meta: ["Transformer", "326 vocab", "7 labels"],
     x: 365,
     y: 390,
@@ -82,11 +83,11 @@ const AGENTS = {
   psychologist: {
     number: "02",
     name: "Psychologist",
-    subtitle: "Affect & Interpersonal",
+    subtitle: "Psychologist Agent",
     icon: Brain,
     color: "violet",
     description:
-      "Looks for affect gaps, disengagement and interpersonal communication signals.",
+      "Affect & Interpersonal: Looks for affect gaps, disengagement and interpersonal communication signals.",
     meta: ["Transformer", "216 vocab", "7 labels"],
     x: 705,
     y: 55,
@@ -95,11 +96,11 @@ const AGENTS = {
   logician: {
     number: "03",
     name: "Logician",
-    subtitle: "Reasoning Analysis",
+    subtitle: "Logician Agent",
     icon: GitBranch,
     color: "blue",
     description:
-      "Checks premises, assumptions, contradictions and unsupported conclusions.",
+      "Reasoning Analysis: Checks premises, assumptions, contradictions and unsupported conclusions.",
     meta: ["Transformer", "466 vocab", "6 labels"],
     x: 705,
     y: 390,
@@ -108,11 +109,11 @@ const AGENTS = {
   historian: {
     number: "04",
     name: "Historian",
-    subtitle: "Evidence Retrieval",
+    subtitle: "Historian Agent",
     icon: Database,
     color: "amber",
     description:
-      "Retrieves relevant linguistic and reasoning evidence from the knowledge base.",
+      "Evidence Retrieval: Retrieves relevant linguistic and reasoning evidence from the knowledge base.",
     meta: ["FAISS", "TF-IDF", "18 records"],
     x: 705,
     y: 725,
@@ -121,11 +122,11 @@ const AGENTS = {
   synthesizer: {
     number: "05",
     name: "Synthesizer",
-    subtitle: "Cross-Agent Fusion",
+    subtitle: "Synthesizer Agent",
     icon: Network,
     color: "green",
     description:
-      "Combines upstream analyses into a calibrated subtext prediction.",
+      "Cross-Agent Fusion: Combines upstream analyses into a calibrated subtext prediction.",
     meta: ["52,459 params", "25 features", "8 labels"],
     x: 1050,
     y: 390,
@@ -133,19 +134,120 @@ const AGENTS = {
 };
 
 export default function App() {
-  const [text, setText] = useState(SAMPLE_TEXT);
+  const getInitialView = () => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const v = params.get("view");
+      if (v === "studio" || v === "login" || v === "analysis") {
+        return v;
+      }
+    } catch {
+      /* ignore view parse error */
+    }
+    return "landing";
+  };
+
+  const getInitialText = () => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const urlText = params.get("text");
+      if (urlText) {
+        return decodeURIComponent(urlText);
+      }
+      const pending = sessionStorage.getItem("liminal_pending_text");
+      if (pending) {
+        sessionStorage.removeItem("liminal_pending_text");
+        return pending;
+      }
+    } catch {
+      /* ignore text parse error */
+    }
+    return SAMPLE_TEXT;
+  };
+
+  const [text, setText] = useState(getInitialText);
   const [result, setResult] = useState(null);
 
   const [stage, setStage] = useState("dossier");
   const [selected, setSelected] = useState("dossier");
+  const [view, setViewState] = useState(getInitialView);
+  const [studioMode, setStudioMode] = useState("input"); // "input" | "pipeline"
+  const [isDragging, setIsDragging] = useState(false);
 
-  const [view, setView] = useState("landing"); // "landing" | "studio"
+  const [currentUser, setCurrentUser] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem("liminal_user") || "null");
+    } catch {
+      return null;
+    }
+  });
+
+  const handleInspect = () => {
+    if (!text.trim()) return;
+    setStudioMode("pipeline");
+    setTimeout(() => {
+      analyze();
+    }, 120);
+  };
+
+  const handleLogout = async () => {
+    try {
+      await logOutFirebase();
+    } catch (e) {
+      console.warn("Firebase logout warning:", e);
+    }
+    try {
+      localStorage.removeItem("liminal_authenticated");
+      localStorage.removeItem("liminal_user");
+      sessionStorage.clear();
+    } catch {
+      /* ignore storage clear error */
+    }
+    setCurrentUser(null);
+    setView("login");
+  };
+
+  const setView = (newView, replace = false) => {
+    setViewState(newView);
+    try {
+      const url = new URL(window.location.href);
+      if (newView === "landing") {
+        url.searchParams.delete("view");
+      } else {
+        url.searchParams.set("view", newView);
+      }
+      if (replace) {
+        window.history.replaceState(null, "", url.toString());
+      } else {
+        window.history.pushState(null, "", url.toString());
+      }
+    } catch {
+      /* ignore navigation error */
+    }
+  };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const v = params.get("view") || "landing";
+        setViewState(v);
+      } catch {
+        /* ignore popstate parse error */
+      }
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
   const [includeAzure, setIncludeAzure] = useState(true);
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
   // Upgraded Forensics & Workflow States
+  const [isInspectorOpen, setIsInspectorOpen] = useState(false); // Collapsed by default for a clean, spacious canvas
+  const [isInputModalOpen, setIsInputModalOpen] = useState(false); // Floating hover box for text input
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
   const [inputViewMode, setInputViewMode] = useState("edit"); // "edit" | "forensics"
@@ -166,7 +268,7 @@ export default function App() {
     azure_explainer: "checking",
   });
 
-  const checkHealth = async () => {
+  const checkHealth = useCallback(async () => {
     try {
       const res = await fetch(`${API_URL}/health`);
       if (res.ok) {
@@ -183,13 +285,18 @@ export default function App() {
     } catch {
       setBackendStatus((s) => ({ ...s, online: false, loading: false }));
     }
-  };
+  }, []);
 
   useEffect(() => {
-    checkHealth();
+    const timer = setTimeout(() => {
+      checkHealth();
+    }, 0);
     const interval = setInterval(checkHealth, 15000);
-    return () => clearInterval(interval);
-  }, []);
+    return () => {
+      clearTimeout(timer);
+      clearInterval(interval);
+    };
+  }, [checkHealth]);
 
   const [zoom, setZoom] = useState(0.76);
 
@@ -244,6 +351,126 @@ export default function App() {
       console.error("Failed to save case to history:", err);
     }
   };
+
+  const analyze = useCallback(
+    async (overrideText) => {
+      const textToAnalyze =
+        typeof overrideText === "string" ? overrideText : text;
+      const cleanText = textToAnalyze.trim();
+
+      if (!cleanText) {
+        setError("Enter a communication sample first.");
+        return;
+      }
+
+      setError("");
+      setResult(null);
+      setLoading(true);
+      setElapsed(0);
+      setStage("input");
+
+      const started = performance.now();
+
+      const timer = setInterval(() => {
+        setElapsed((performance.now() - started) / 1000);
+      }, 100);
+
+      try {
+        // Use real-time Server-Sent Events stream
+        const response = await fetch(`${API_URL}/analyze/stream`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            text: cleanText,
+            include_azure: includeAzure,
+          }),
+        });
+
+        if (!response.ok) {
+          let detail = `Backend returned status ${response.status}`;
+          try {
+            const errPayload = await response.json();
+            if (errPayload?.detail) {
+              detail =
+                typeof errPayload.detail === "string"
+                  ? errPayload.detail
+                  : JSON.stringify(errPayload.detail);
+            }
+          } catch {
+            /* ignore error parse failure */
+          }
+          throw new Error(detail);
+        }
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+
+        while (true) {
+          const { value, done } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n\n");
+          buffer = lines.pop();
+
+          for (const line of lines) {
+            const trimmed = line.trim();
+            if (!trimmed.startsWith("data: ")) continue;
+            try {
+              const eventData = JSON.parse(trimmed.slice(6));
+              if (eventData.event === "agent_complete") {
+                setStage(eventData.agent);
+                if (eventData.data) {
+                  setResult((prev) => ({
+                    ...(prev || {}),
+                    agents: {
+                      ...(prev?.agents || {}),
+                      [eventData.agent]: eventData.data,
+                    },
+                  }));
+                }
+              } else if (eventData.event === "azure_start") {
+                setStage("synthesizer");
+              } else if (eventData.event === "done") {
+                setResult(eventData.result);
+                setStage("dossier");
+                setSelected("dossier");
+                saveCaseToHistory(cleanText, eventData.result);
+                // Smooth transition to dedicated full-page forensic analysis
+                setView("analysis");
+              }
+            } catch (e) {
+              console.error("SSE line parse error:", e);
+            }
+          }
+        }
+
+        checkHealth();
+      } catch (err) {
+        console.error(err);
+
+        setError(
+          err.message?.includes("Backend returned") ||
+            err.message?.includes("failed") ||
+            err.message?.includes("models")
+            ? err.message
+            : "Backend connection failed. Make sure FastAPI is running on http://localhost:8000."
+        );
+
+        setStage("input");
+      } finally {
+        clearInterval(timer);
+
+        setElapsed((performance.now() - started) / 1000);
+
+        setLoading(false);
+      }
+    },
+    [text, includeAzure, checkHealth]
+  );
 
   // Subtext Remediation Engine
   const handleRemediate = async () => {
@@ -354,13 +581,15 @@ export default function App() {
         setSelected("synthesizer");
       } else if (e.key === "6" || e.key === "d" || e.key === "D") {
         setSelected("dossier");
+      } else if (e.key === "i" || e.key === "I") {
+        setIsInspectorOpen((prev) => !prev);
       } else if (e.key === "r" || e.key === "R") {
         resetCanvas();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [text, includeAzure, result]);
+  }, [analyze, result]);
 
   const pointerDown = (event) => {
     if (event.button !== 0) return;
@@ -374,6 +603,7 @@ export default function App() {
     }
 
     dragging.current = true;
+    setIsDragging(true);
 
     dragStart.current = {
       x: event.clientX,
@@ -404,6 +634,7 @@ export default function App() {
 
   const pointerUp = () => {
     dragging.current = false;
+    setIsDragging(false);
   };
 
   const wheel = (event) => {
@@ -421,121 +652,6 @@ export default function App() {
     });
   };
 
-  const analyze = async () => {
-    const cleanText = text.trim();
-
-    if (!cleanText) {
-      setError("Enter a communication sample first.");
-      return;
-    }
-
-    setError("");
-    setResult(null);
-    setLoading(true);
-    setElapsed(0);
-    setStage("input");
-
-    const started = performance.now();
-
-    const timer = setInterval(() => {
-      setElapsed(
-        (performance.now() - started) / 1000
-      );
-    }, 100);
-
-    try {
-      // Use real-time Server-Sent Events stream
-      const response = await fetch(
-        `${API_URL}/analyze/stream`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            text: cleanText,
-            include_azure: includeAzure,
-          }),
-        }
-      );
-
-      if (!response.ok) {
-        let detail = `Backend returned status ${response.status}`;
-        try {
-          const errPayload = await response.json();
-          if (errPayload?.detail) {
-            detail = typeof errPayload.detail === "string" ? errPayload.detail : JSON.stringify(errPayload.detail);
-          }
-        } catch (_) {}
-        throw new Error(detail);
-      }
-
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let buffer = "";
-
-      while (true) {
-        const { value, done } = await reader.read();
-        if (done) break;
-
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split("\n\n");
-        buffer = lines.pop();
-
-        for (const line of lines) {
-          const trimmed = line.trim();
-          if (!trimmed.startsWith("data: ")) continue;
-          try {
-            const eventData = JSON.parse(trimmed.slice(6));
-            if (eventData.event === "agent_complete") {
-              setStage(eventData.agent);
-              if (eventData.data) {
-                setResult((prev) => ({
-                  ...(prev || {}),
-                  agents: {
-                    ...(prev?.agents || {}),
-                    [eventData.agent]: eventData.data,
-                  },
-                }));
-              }
-            } else if (eventData.event === "azure_start") {
-              setStage("synthesizer");
-            } else if (eventData.event === "done") {
-              setResult(eventData.result);
-              setStage("dossier");
-              setSelected("dossier");
-              saveCaseToHistory(cleanText, eventData.result);
-              // Smooth transition to dedicated full-page forensic analysis
-              setView("analysis");
-            }
-          } catch (e) {
-            console.error("SSE line parse error:", e);
-          }
-        }
-      }
-
-      checkHealth();
-    } catch (err) {
-      console.error(err);
-
-      setError(
-        err.message?.includes("Backend returned") || err.message?.includes("failed") || err.message?.includes("models")
-          ? err.message
-          : "Backend connection failed. Make sure FastAPI is running on http://localhost:8000."
-      );
-
-      setStage("input");
-    } finally {
-      clearInterval(timer);
-
-      setElapsed(
-        (performance.now() - started) / 1000
-      );
-
-      setLoading(false);
-    }
-  };
-
   const selectedAgent =
     selected in AGENTS
       ? AGENTS[selected]
@@ -544,9 +660,57 @@ export default function App() {
   if (view === "landing") {
     return (
       <LandingPage
+        onNavigateLogin={() => {
+          const query = new URLSearchParams();
+          query.set("view", "login");
+          const targetUrl = `${window.location.origin}${window.location.pathname}?${query.toString()}`;
+          window.open(targetUrl, "_blank");
+        }}
         onLaunchStudio={(initialText) => {
-          if (initialText) setText(initialText);
+          if (initialText) {
+            try {
+              sessionStorage.setItem("liminal_pending_text", initialText);
+            } catch {
+              /* ignore storage error */
+            }
+          }
+          const query = new URLSearchParams();
+          query.set("view", isAuth ? "studio" : "login");
+          if (initialText) query.set("text", initialText);
+          const targetUrl = `${window.location.origin}${window.location.pathname}?${query.toString()}`;
+          window.open(targetUrl, "_blank");
+        }}
+        backendStatus={backendStatus}
+        currentUser={currentUser}
+        onLogout={handleLogout}
+      />
+    );
+  }
+
+  const isAuth =
+    typeof window !== "undefined" &&
+    localStorage.getItem("liminal_authenticated") === "true";
+
+  if (view === "login" || (!isAuth && view === "studio")) {
+    return (
+      <LoginPage
+        onLogin={(loggedUser) => {
+          if (loggedUser) {
+            setCurrentUser(loggedUser);
+          } else {
+            try {
+              setCurrentUser(
+                JSON.parse(localStorage.getItem("liminal_user") || "null")
+              );
+            } catch {
+              /* ignore parse error */
+            }
+          }
+          setStudioMode("input");
           setView("studio");
+        }}
+        onBackToLanding={() => {
+          setView("landing");
         }}
         backendStatus={backendStatus}
       />
@@ -586,34 +750,52 @@ export default function App() {
         setView={setView}
         result={result}
         onOpenHistory={() => setIsHistoryOpen(true)}
+        currentUser={currentUser}
+        onLogout={handleLogout}
+        studioMode={studioMode}
+        setStudioMode={setStudioMode}
       />
 
       <main className="main-shell">
         <Topbar
-          zoom={zoom}
-          setZoom={setZoom}
           resetCanvas={resetCanvas}
           loading={loading}
           backendStatus={backendStatus}
-          view={view}
-          setView={setView}
-          result={result}
-          setSelected={setSelected}
           onOpenShortcuts={() => setIsShortcutsOpen(true)}
-          onOpenHistory={() => setIsHistoryOpen(true)}
+          isInspectorOpen={isInspectorOpen}
+          setIsInspectorOpen={setIsInspectorOpen}
+          studioMode={studioMode}
         />
 
-        <section
-          className={`canvas ${
-            dragging.current ? "dragging" : ""
-          }`}
-          onPointerDown={pointerDown}
-          onPointerMove={pointerMove}
-          onPointerUp={pointerUp}
-          onPointerCancel={pointerUp}
-          onPointerLeave={pointerUp}
-          onWheel={wheel}
-        >
+        {studioMode === "input" ? (
+          <InputWorkspace
+            text={text}
+            setText={setText}
+            loading={loading}
+            onInspect={handleInspect}
+            pdfLoading={pdfLoading}
+            pdfInfo={pdfInfo}
+            handlePdfUpload={handlePdfUpload}
+            onClearPdf={onClearPdf}
+            backendStatus={backendStatus}
+            includeAzure={includeAzure}
+            setIncludeAzure={setIncludeAzure}
+            result={result}
+            onViewPipeline={() => setStudioMode("pipeline")}
+          />
+        ) : (
+          <>
+            <section
+              className={`canvas ${
+                isDragging ? "dragging" : ""
+              }`}
+              onPointerDown={pointerDown}
+              onPointerMove={pointerMove}
+              onPointerUp={pointerUp}
+              onPointerCancel={pointerUp}
+              onPointerLeave={pointerUp}
+              onWheel={wheel}
+            >
           <div className="canvas-grid" />
 
           <CanvasHeader />
@@ -636,6 +818,8 @@ export default function App() {
               selected={selected === "input"}
               onSelect={() => setSelected("input")}
               analyze={analyze}
+              onOpenInputModal={() => setStudioMode("input")}
+              onEditInput={() => setStudioMode("input")}
             />
 
             {Object.entries(AGENTS).map(
@@ -647,6 +831,7 @@ export default function App() {
                   stage={stage}
                   result={result}
                   text={text}
+                  loading={loading}
                   selected={selected === id}
                   onSelect={() =>
                     setSelected(id)
@@ -693,7 +878,7 @@ export default function App() {
 
           <div className="canvas-hint">
             <span>✥</span>
-            Drag canvas to navigate • Press [?] for shortcuts
+            Drag canvas to navigate • Press [?] for shortcuts • [I] for Inspector
           </div>
         </section>
 
@@ -703,31 +888,62 @@ export default function App() {
           result={result}
           elapsed={elapsed}
         />
+        </>
+        )}
       </main>
 
-      <Inspector
-        selected={selected}
+      {studioMode === "pipeline" && isInspectorOpen && (
+        <Inspector
+          selected={selected}
+          text={text}
+          setText={setText}
+          result={result}
+          loading={loading}
+          error={error}
+          analyze={analyze}
+          agent={selectedAgent}
+          includeAzure={includeAzure}
+          setIncludeAzure={setIncludeAzure}
+          inputViewMode={inputViewMode}
+          setInputViewMode={setInputViewMode}
+          pdfLoading={pdfLoading}
+          pdfInfo={pdfInfo}
+          handlePdfUpload={handlePdfUpload}
+          onClearPdf={onClearPdf}
+          remediations={remediations}
+          remediating={remediating}
+          handleRemediate={handleRemediate}
+          handleApplyRemediation={handleApplyRemediation}
+          onOpenFullAnalysis={() => setView("analysis")}
+          onOpenTelemetry={openTelemetry}
+          onClose={() => setIsInspectorOpen(false)}
+        />
+      )}
+
+      {studioMode === "pipeline" && !isInspectorOpen && (
+        <button
+          type="button"
+          className="floating-inspector-open-tab no-print"
+          onClick={() => setIsInspectorOpen(true)}
+          title="Open Node Inspector (Press [I])"
+        >
+          <Layers3 size={15} />
+          <span>Inspect Node</span>
+          <ChevronRight size={13} style={{ transform: "rotate(180deg)" }} />
+        </button>
+      )}
+
+      <FloatingInputModal
+        isOpen={isInputModalOpen}
+        onClose={() => setIsInputModalOpen(false)}
         text={text}
         setText={setText}
-        result={result}
         loading={loading}
-        error={error}
         analyze={analyze}
-        agent={selectedAgent}
-        includeAzure={includeAzure}
-        setIncludeAzure={setIncludeAzure}
-        inputViewMode={inputViewMode}
-        setInputViewMode={setInputViewMode}
         pdfLoading={pdfLoading}
         pdfInfo={pdfInfo}
         handlePdfUpload={handlePdfUpload}
         onClearPdf={onClearPdf}
-        remediations={remediations}
-        remediating={remediating}
-        handleRemediate={handleRemediate}
-        handleApplyRemediation={handleApplyRemediation}
-        onOpenFullAnalysis={() => setView("analysis")}
-        onOpenTelemetry={openTelemetry}
       />
 
       <DossierHistoryDrawer
@@ -768,6 +984,10 @@ function Sidebar({
   setView,
   result,
   onOpenHistory,
+  currentUser,
+  onLogout,
+  studioMode,
+  setStudioMode,
 }) {
   const isOnline = backendStatus?.online;
   const isLoading = backendStatus?.loading;
@@ -775,10 +995,10 @@ function Sidebar({
     {
       title: "PLATFORM",
       items: [
-        ["Product Overview", Globe, "landing"],
-        ["Analysis Flow", Workflow, "dossier"],
-        ["Full Analysis Dossier", FileText, "analysis"],
-        ["Agent Monitor", Activity, "synthesizer"],
+        ["1. Input & Document Ingestion", FileUp, "input_screen"],
+        ["2. 5-Model Neural Flow", Workflow, "pipeline_flow"],
+        ["3. Full Analysis Dossier", FileText, "analysis"],
+        ["Product Landing", Globe, "landing"],
         ["Case Archive", History, "history"],
       ],
     },
@@ -826,9 +1046,10 @@ function Sidebar({
             {group.items.map(
               ([name, Icon, node]) => {
                 const active =
-                  name === "Analysis Flow" ||
+                  (node === "input_screen" && studioMode === "input") ||
+                  (node === "pipeline_flow" && studioMode === "pipeline" && view === "studio") ||
                   (node === "analysis" && view === "analysis") ||
-                  selected === node;
+                  (studioMode === "pipeline" && selected === node);
 
                 return (
                   <button
@@ -837,7 +1058,11 @@ function Sidebar({
                       active ? "active" : ""
                     }`}
                     onClick={() => {
-                      if (name === "Case Archive" || name === "Dossiers") {
+                      if (node === "input_screen") {
+                        setStudioMode && setStudioMode("input");
+                      } else if (node === "pipeline_flow") {
+                        setStudioMode && setStudioMode("pipeline");
+                      } else if (name === "Case Archive" || name === "Dossiers") {
                         onOpenHistory && onOpenHistory();
                       } else if (node === "landing") {
                         setView("landing");
@@ -848,17 +1073,22 @@ function Sidebar({
                           setSelected("dossier");
                         }
                       } else {
+                        setStudioMode && setStudioMode("pipeline");
                         setSelected(node);
                       }
                     }}
                   >
-                    <Icon size={16} />
+                    <Icon size={14} />
 
                     <span>{name}</span>
 
+                    {node === "analysis" && result && (
+                      <span className="sidebar-ready-badge">Ready</span>
+                    )}
+
                     {active && (
                       <ChevronRight
-                        size={14}
+                        size={12}
                       />
                     )}
                   </button>
@@ -902,6 +1132,36 @@ function Sidebar({
           />
         </div>
 
+        {/* User Account Card & Logout */}
+        <div className="sidebar-account-card">
+          <div className="sidebar-account-header">
+            <div className="sidebar-account-avatar">
+              {currentUser?.photoURL ? (
+                <img src={currentUser.photoURL} alt="Avatar" />
+              ) : (
+                <User size={13} />
+              )}
+            </div>
+            <div className="sidebar-account-info">
+              <strong className="sidebar-account-name">
+                {currentUser?.displayName || "Analyst Session"}
+              </strong>
+              <small className="sidebar-account-email">
+                {currentUser?.email || "Local Workstation"}
+              </small>
+            </div>
+          </div>
+          <button
+            type="button"
+            className="sidebar-account-logout-btn"
+            onClick={onLogout}
+            title="Log out and switch account"
+          >
+            <LogOut size={12} />
+            <span>Switch Account</span>
+          </button>
+        </div>
+
         <div className="responsible">
           <ShieldCheck size={13} />
           Responsible AI
@@ -930,17 +1190,13 @@ function SystemRow({
 /* ================= TOPBAR ================= */
 
 function Topbar({
-  zoom,
-  setZoom,
   resetCanvas,
   loading,
   backendStatus,
-  view,
-  setView,
-  result,
-  setSelected,
   onOpenShortcuts,
-  onOpenHistory,
+  isInspectorOpen,
+  setIsInspectorOpen,
+  studioMode,
 }) {
   const isOnline = backendStatus?.online;
   return (
@@ -954,44 +1210,10 @@ function Topbar({
 
         <ChevronRight size={11} />
 
-        <strong>ANALYSIS FLOW</strong>
+        <strong>{studioMode === "input" ? "STAGE 01: INGESTION" : "5-MODEL NEURAL PIPELINE"}</strong>
       </div>
 
       <div className="topbar-actions">
-        <button
-          className="overview-switch-btn"
-          onClick={() => setView && setView("landing")}
-          title="Return to Product Landing Page"
-        >
-          <Globe size={13} />
-          Overview
-        </button>
-
-        <button
-          className={`overview-switch-btn ${result ? "has-result" : ""}`}
-          onClick={() => {
-            if (result) {
-              setView("analysis");
-            } else {
-              setSelected && setSelected("dossier");
-            }
-          }}
-          title="Open Dedicated Full-Screen Forensic Analysis Dossier (Press [A])"
-        >
-          <FileText size={13} />
-          <span>Full Analysis</span>
-          {result && <span className="topbar-result-badge">Ready</span>}
-        </button>
-
-        <button
-          className="overview-switch-btn"
-          onClick={onOpenHistory}
-          title="Open Saved Case History (H)"
-        >
-          <History size={13} />
-          Cases
-        </button>
-
         <button
           className="overview-switch-btn"
           onClick={onOpenShortcuts}
@@ -999,6 +1221,15 @@ function Topbar({
         >
           <Keyboard size={13} />
           Hotkeys
+        </button>
+
+        <button
+          className={`overview-switch-btn inspector-toggle-btn ${isInspectorOpen ? "active" : ""}`}
+          onClick={() => setIsInspectorOpen && setIsInspectorOpen((open) => !open)}
+          title="Toggle Node Inspector Sidebar (Press [I])"
+        >
+          <Layers3 size={13} />
+          <span>{isInspectorOpen ? "Hide Inspector" : "Show Inspector"}</span>
         </button>
 
         <div className="engine-status">
@@ -1041,15 +1272,142 @@ function CanvasHeader() {
   );
 }
 
-/* ================= INPUT ================= */
+/* ================= FLOATING INPUT MODAL ================= */
+
+function FloatingInputModal({
+  isOpen,
+  onClose,
+  text,
+  setText,
+  loading,
+  analyze,
+  pdfLoading,
+  pdfInfo,
+  handlePdfUpload,
+  onClearPdf,
+}) {
+  if (!isOpen) return null;
+
+  return (
+    <div className="floating-input-backdrop" onClick={onClose}>
+      <div className="floating-input-modal" onClick={(e) => e.stopPropagation()}>
+        <div className="floating-input-header">
+          <div className="floating-input-title-group">
+            <Send size={18} className="text-green" />
+            <div>
+              <h3>Communication Input & Scenarios</h3>
+              <small>Type, paste, or select a message to analyze for hidden subtext</small>
+            </div>
+          </div>
+          <button
+            type="button"
+            className="floating-input-close-btn"
+            onClick={onClose}
+            title="Close (Esc)"
+          >
+            <X size={18} />
+          </button>
+        </div>
+
+        <div className="floating-input-body">
+          {/* Quick Scenario Pills */}
+          <div className="floating-input-presets">
+            <span className="preset-bar-title">Quick Test Scenarios:</span>
+            <div className="preset-chips-wrap">
+              {PRESETS.map((p) => (
+                <button
+                  key={p.id}
+                  type="button"
+                  className="preset-chip-pill"
+                  onClick={() => setText(p.text)}
+                  title={p.description || p.title}
+                >
+                  {p.title}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="floating-textarea-container">
+            <textarea
+              className="floating-input-textarea"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              placeholder="Paste or type an email, meeting statement, memo, or message here..."
+              rows={6}
+              autoFocus
+            />
+            <div className="floating-textarea-footer">
+              <span className="char-count">{text.length} characters</span>
+              <span className="tip-note">Tip: Hedging terms ("probably", "should") and passive phrases trigger rich forensic signals.</span>
+            </div>
+          </div>
+
+          {/* Document / PDF Upload Row */}
+          <div className="floating-input-upload-row">
+            <label className="floating-pdf-btn">
+              <Upload size={14} />
+              <span>{pdfLoading ? "Extracting text..." : "Upload Executive PDF"}</span>
+              <input
+                type="file"
+                accept=".pdf"
+                style={{ display: "none" }}
+                onChange={handlePdfUpload}
+                disabled={pdfLoading}
+              />
+            </label>
+            {pdfInfo && (
+              <div className="pdf-info-chip">
+                <span>{pdfInfo.name} ({pdfInfo.pages} pages)</span>
+                <button type="button" onClick={onClearPdf} title="Remove PDF">
+                  <X size={12} />
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className="floating-input-footer">
+          <button type="button" className="floating-btn-cancel" onClick={onClose}>
+            Cancel
+          </button>
+          <button
+            type="button"
+            className="floating-btn-analyze"
+            disabled={loading || !text.trim()}
+            onClick={() => {
+              onClose();
+              analyze();
+            }}
+          >
+            {loading ? (
+              <>
+                <LoaderCircle size={15} className="spin" />
+                <span>Running Pipeline...</span>
+              </>
+            ) : (
+              <>
+                <Play size={14} fill="currentColor" />
+                <span>Run Forensic Analysis</span>
+              </>
+            )}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ================= INPUT NODE ================= */
 
 function InputNode({
   text,
-  setText,
   loading,
   selected,
   onSelect,
   analyze,
+  onOpenInputModal,
+  onEditInput,
 }) {
   return (
     <div
@@ -1066,7 +1424,13 @@ function InputNode({
       onClick={(e) => {
         e.stopPropagation();
         onSelect();
+        if (onEditInput) {
+          onEditInput();
+        } else if (onOpenInputModal) {
+          onOpenInputModal();
+        }
       }}
+      title="Click to edit message in full ingestion screen"
     >
       <NodeTop
         number="00"
@@ -1077,24 +1441,38 @@ function InputNode({
         }
       />
 
-      <h3>Communication sample</h3>
+      <div className="input-card-content">
+        <h3>Input Communication</h3>
+        <span className="agent-friendly-role">Step 1: Raw payload to analyze</span>
 
-      <textarea
-        value={text}
-        onChange={(e) =>
-          setText(e.target.value)
-        }
-        onPointerDown={(e) =>
-          e.stopPropagation()
-        }
-      />
+        <div
+          className="input-text-preview-box"
+          onClick={(e) => {
+            e.stopPropagation();
+            if (onEditInput) {
+              onEditInput();
+            } else if (onOpenInputModal) {
+              onOpenInputModal();
+            }
+          }}
+          title="Click to open full ingestion screen"
+        >
+          <p className="preview-quote">
+            "{text.length > 95 ? text.slice(0, 95) + "..." : text}"
+          </p>
+          <div className="preview-meta-row">
+            <span>{text.length} chars</span>
+            <span className="edit-action-pill">
+              ✏️ Click to Edit Input & PDF
+            </span>
+          </div>
+        </div>
+      </div>
 
       <div className="input-footer">
-        <span>
-          {text.length} characters
-        </span>
-
         <button
+          type="button"
+          className="node-action-btn primary"
           disabled={loading}
           onPointerDown={(e) =>
             e.stopPropagation()
@@ -1116,7 +1494,7 @@ function InputNode({
             />
           )}
 
-          {loading ? "Running" : "Analyze"}
+          {loading ? "Analyzing..." : "Run Analysis"}
         </button>
       </div>
     </div>
@@ -1134,14 +1512,17 @@ function AgentNode({
   onSelect,
   text = "",
   onOpenTelemetry,
+  loading = false,
 }) {
   const Icon = agent.icon;
 
   const agentIndex = STAGES.indexOf(id);
   const currentIndex = STAGES.indexOf(stage);
-  const processing = stage === id;
+  const isActivelyAnalyzing = loading && (stage === id || (stage === "input" && id === "archaeologist"));
   const complete = Boolean(result) || currentIndex > agentIndex;
   const data = result?.agents?.[id] || {};
+
+  const showOperationAnim = isActivelyAnalyzing;
 
   const prediction = data.prediction || data.label || null;
   const probability = data.probability ?? data.confidence;
@@ -1234,11 +1615,23 @@ function AgentNode({
     ? `${activeLabelsCount}/${totalLabels} active`
     : `${totalLabels} labels`;
 
+  // Friendly plain-English agent role tags
+  const friendlyRole =
+    id === "archaeologist"
+      ? "Structural Omissions & Hedging"
+      : id === "psychologist"
+      ? "Tone & Hidden Reluctance"
+      : id === "logician"
+      ? "Premises & Logical Fallacies"
+      : id === "historian"
+      ? "Pragmatics & Linguistics Grounding"
+      : "Multi-Model Fusion & Calibration";
+
   return (
     <div
       className={`workflow-node agent-node ${agent.color} ${
         selected ? "selected" : ""
-      } ${processing ? "processing" : ""} ${
+      } ${isActivelyAnalyzing ? "analyzing-active processing" : ""} ${
         complete ? "complete" : ""
       }`}
       style={{
@@ -1260,7 +1653,7 @@ function AgentNode({
         icon={Icon}
         title={agent.name.toUpperCase()}
         status={
-          processing
+          showOperationAnim
             ? "ANALYZING"
             : complete
             ? "COMPLETE"
@@ -1269,6 +1662,26 @@ function AgentNode({
       />
 
       <h3>{agent.subtitle}</h3>
+      <span className="agent-friendly-role">{friendlyRole}</span>
+
+      {/* Live "Analysis in Progress" Animation Banner - shown once then disappears */}
+      {showOperationAnim && (
+        <div className="node-live-analyzing-banner">
+          <div className="radar-pulse-dot" />
+          <LoaderCircle size={12} className="spin text-cyan" />
+          <span className="live-analyzing-text">
+            {id === "archaeologist"
+              ? "Scanning structural hedges & passive voice..."
+              : id === "psychologist"
+              ? "Analyzing tone & affect..."
+              : id === "logician"
+              ? "Validating premises & logic..."
+              : id === "historian"
+              ? "Retrieving Gricean evidence..."
+              : "Synthesizing multi-agent tensor..."}
+          </span>
+        </div>
+      )}
 
       <p>{agent.description}</p>
 
@@ -1357,7 +1770,7 @@ function AgentNode({
         <ArrowUpRight size={15} />
       </div>
 
-      {processing && (
+      {showOperationAnim && (
         <div className="processing-line">
           <i />
         </div>
@@ -1716,7 +2129,7 @@ function DossierNode({
       />
 
       <h3>
-        Grounded interpretation
+        Subtext Dossier
       </h3>
 
       <div className="dossier-pattern">
@@ -1855,6 +2268,7 @@ function Inspector({
   handleApplyRemediation,
   onOpenFullAnalysis,
   onOpenTelemetry,
+  onClose,
 }) {
   return (
     <aside className="inspector">
@@ -1874,9 +2288,16 @@ function Inspector({
           </h2>
         </div>
 
-        <button>
-          <Info size={16} />
-        </button>
+        <div className="inspector-header-actions">
+          <button
+            type="button"
+            className="inspector-close-btn"
+            onClick={onClose}
+            title="Close Inspector Sidebar (Press [I])"
+          >
+            <X size={16} />
+          </button>
+        </div>
       </header>
 
       {selected === "input" && (
@@ -2140,7 +2561,6 @@ function AgentInspector({
   agent,
   result,
   loading,
-  text = "",
   onOpenTelemetry,
 }) {
   const Icon = agent.icon;
@@ -2334,8 +2754,6 @@ function AgentInspector({
 
 function DossierInspector({
   result,
-  loading,
-  text,
   remediations,
   remediating,
   handleRemediate,
@@ -2351,7 +2769,7 @@ function DossierInspector({
     result?.surface_statement ||
     SAMPLE_TEXT;
 
-  const metrics = computeForensicMetrics(result, surface);
+  const metrics = computeForensicMetrics(result);
 
   const prediction = metrics.primaryPattern;
   const confidence = metrics.confidence;
@@ -2858,35 +3276,4 @@ function formatLabel(value) {
     .replace(/\b\w/g, (char) =>
       char.toUpperCase()
     );
-}
-
-function profileLabel(value) {
-  const text =
-    String(value).toLowerCase();
-
-  if (text.includes("transformer"))
-    return "ARCHITECTURE";
-
-  if (text.includes("vocab"))
-    return "VOCABULARY";
-
-  if (text.includes("labels"))
-    return "LABEL SPACE";
-
-  if (text.includes("params"))
-    return "PARAMETERS";
-
-  if (text.includes("features"))
-    return "INPUT";
-
-  if (text.includes("faiss"))
-    return "INDEX";
-
-  if (text.includes("tf-idf"))
-    return "RETRIEVAL";
-
-  if (text.includes("records"))
-    return "KNOWLEDGE";
-
-  return "PROPERTY";
 }

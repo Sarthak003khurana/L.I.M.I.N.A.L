@@ -1,0 +1,80 @@
+mutation SeedAllData @transaction {
+  user_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440001",
+      email: "alice@example.com",
+      displayName: "Alice",
+      planType: "pro",
+      createdAt: "2023-01-01T00:00:00Z"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440002",
+      email: "bob@example.com",
+      displayName: "Bob",
+      planType: "free",
+      createdAt: "2023-01-02T00:00:00Z"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440003",
+      email: "charlie@example.com",
+      displayName: "Charlie",
+      planType: "enterprise",
+      createdAt: "2023-01-03T00:00:00Z"
+    }
+  ])
+  draft_insertMany(data: [
+    {
+      id: "660e8400-e29b-41d4-a716-446655440001",
+      userIdId: "550e8400-e29b-41d4-a716-446655440001",
+      originalText: "Hello world",
+      createdAt: "2023-02-01T10:00:00Z",
+      status: "draft"
+    },
+    {
+      id: "660e8400-e29b-41d4-a716-446655440002",
+      userIdId: "550e8400-e29b-41d4-a716-446655440002",
+      originalText: "Draft content here",
+      createdAt: "2023-02-02T11:00:00Z",
+      status: "pending"
+    }
+  ])
+  agent_insertMany(data: [
+    {
+      id: "770e8400-e29b-41d4-a716-446655440001",
+      name: "GrammarBot",
+      specialty: "Editing",
+      version: "1.0"
+    },
+    {
+      id: "770e8400-e29b-41d4-a716-446655440002",
+      name: "ToneChecker",
+      specialty: "Style",
+      version: "1.2"
+    }
+  ])
+  analysisReport_insertMany(data: [
+    {
+      id: "880e8400-e29b-41d4-a716-446655440001",
+      draftId: "660e8400-e29b-41d4-a716-446655440001",
+      timestamp: "2023-03-01T12:00:00Z"
+    }
+  ])
+  suggestion_insertMany(data: [
+    {
+      id: "990e8400-e29b-41d4-a716-446655440001",
+      reportId: "880e8400-e29b-41d4-a716-446655440001",
+      agentId: "770e8400-e29b-41d4-a716-446655440001",
+      description: "Fix capitalization",
+      impactCategory: "clarity",
+      severityScore: 2
+    }
+  ])
+  userFeedback_insertMany(data: [
+    {
+      id: "aa0e8400-e29b-41d4-a716-446655440001",
+      suggestionId: "990e8400-e29b-41d4-a716-446655440001",
+      isHelpful: true,
+      comment: "Great catch!"
+    }
+  ])
+}

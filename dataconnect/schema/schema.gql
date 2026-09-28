@@ -1,0 +1,42 @@
+type User @table {
+  email: String!
+  createdAt: Timestamp!
+  displayName: String
+  planType: String
+}
+
+type Draft @table {
+  originalText: String!
+  userId: User!
+  createdAt: Timestamp!
+  enhancedText: String
+  status: String
+}
+
+type Agent @table {
+  name: String!
+  specialty: String!
+  version: String
+  instructions: String
+}
+
+type AnalysisReport @table {
+  draft: Draft!
+  timestamp: Timestamp!
+}
+
+type Suggestion @table {
+  report: AnalysisReport!
+  agent: Agent!
+  description: String!
+  impactCategory: String!
+  severityScore: Int
+  originalSegment: String
+  suggestedReplacement: String
+}
+
+type UserFeedback @table {
+  suggestion: Suggestion!
+  isHelpful: Boolean!
+  comment: String
+}

@@ -1,0 +1,157 @@
+mutation CreateUser($data: User_Data!) @auth(level: USER) {
+  user_insert(data: $data)
+}
+
+mutation UpsertUser($data: User_Data!) @auth(level: USER) {
+  user_upsert(data: $data)
+}
+
+query GetUser @auth(level: USER) {
+  user(key: {id_expr: "auth.uid"}) {
+    email
+    displayName
+    planType
+  }
+}
+
+query ListUsers @auth(level: PUBLIC, insecureReason: "Public list of users for directory") {
+  users {
+    displayName
+    planType
+  }
+}
+
+mutation UpdateUser($data: User_Data!) @auth(level: USER) {
+  user_update(key: {id_expr: "auth.uid"}, data: $data)
+}
+
+mutation DeleteUser @auth(level: USER) {
+  user_delete(key: {id_expr: "auth.uid"})
+}
+
+mutation CreateDraft($data: Draft_Data!) @auth(level: USER) {
+  draft_insert(data: $data)
+}
+
+mutation UpsertDraft($data: Draft_Data!) @auth(level: USER) {
+  draft_upsert(data: $data)
+}
+
+query GetDraft($id: UUID!) @auth(level: USER) {
+  draft(id: $id) {
+    originalText
+    enhancedText
+    status
+  }
+}
+
+query ListMyDrafts @auth(level: USER) {
+  drafts(where: {userId: {id: {eq_expr: "auth.uid"}}}) {
+    originalText
+    status
+  }
+}
+
+mutation UpdateDraft($id: UUID!, $data: Draft_Data!) @auth(level: USER) {
+  draft_update(id: $id, data: $data)
+}
+
+mutation DeleteDraft($id: UUID!) @auth(level: USER) {
+  draft_delete(id: $id)
+}
+
+mutation CreateAgent($data: Agent_Data!) @auth(level: PUBLIC, insecureReason: "Agents are shared public resources") {
+  agent_insert(data: $data)
+}
+
+mutation UpsertAgent($data: Agent_Data!) @auth(level: PUBLIC, insecureReason: "Agents are shared public resources") {
+  agent_upsert(data: $data)
+}
+
+query GetAgent($id: UUID!) @auth(level: PUBLIC, insecureReason: "Publicly accessible agent details") {
+  agent(id: $id) {
+    name
+    specialty
+    version
+  }
+}
+
+query ListAgents @auth(level: PUBLIC, insecureReason: "Public list of agents") {
+  agents {
+    name
+    specialty
+  }
+}
+
+mutation UpdateAgent($id: UUID!, $data: Agent_Data!) @auth(level: PUBLIC, insecureReason: "Agents are shared public resources") {
+  agent_update(id: $id, data: $data)
+}
+
+mutation DeleteAgent($id: UUID!) @auth(level: PUBLIC, insecureReason: "Agents are shared public resources") {
+  agent_delete(id: $id)
+}
+
+mutation CreateAnalysisReport($data: AnalysisReport_Data!) @auth(level: USER) {
+  analysisReport_insert(data: $data)
+}
+
+query GetAnalysisReport($id: UUID!) @auth(level: USER) {
+  analysisReport(id: $id) {
+    timestamp
+    draft {
+      originalText
+    }
+  }
+}
+
+query ListAnalysisReports @auth(level: USER) {
+  analysisReports {
+    timestamp
+  }
+}
+
+mutation DeleteAnalysisReport($id: UUID!) @auth(level: USER) {
+  analysisReport_delete(id: $id)
+}
+
+mutation CreateSuggestion($data: Suggestion_Data!) @auth(level: USER) {
+  suggestion_insert(data: $data)
+}
+
+query GetSuggestion($id: UUID!) @auth(level: USER) {
+  suggestion(id: $id) {
+    description
+    impactCategory
+    severityScore
+  }
+}
+
+query ListSuggestions @auth(level: USER) {
+  suggestions {
+    description
+    impactCategory
+  }
+}
+
+mutation UpdateSuggestion($id: UUID!, $data: Suggestion_Data!) @auth(level: USER) {
+  suggestion_update(id: $id, data: $data)
+}
+
+mutation DeleteSuggestion($id: UUID!) @auth(level: USER) {
+  suggestion_delete(id: $id)
+}
+
+mutation CreateUserFeedback($data: UserFeedback_Data!) @auth(level: USER) {
+  userFeedback_insert(data: $data)
+}
+
+query GetUserFeedback($id: UUID!) @auth(level: USER) {
+  userFeedback(id: $id) {
+    isHelpful
+    comment
+  }
+}
+
+mutation DeleteUserFeedback($id: UUID!) @auth(level: USER) {
+  userFeedback_delete(id: $id)
+}

@@ -1,26 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg: #070a08;
-  --panel: #0b0f0c;
-  --panel2: #101510;
+  --bg: #000000;
+  --panel: #0a0a0f;
+  --panel2: #111116;
 
-  --border: #202a21;
-  --border2: #2b382c;
+  --border: rgba(255, 255, 255, 0.08);
+  --border2: rgba(255, 255, 255, 0.16);
 
-  --text: #edf2ed;
-  --muted: #7b867c;
-  --muted2: #4d574e;
+  --text: #f5f5f7;
+  --muted: #8e8e9c;
+  --muted2: #525260;
 
-  --green: #baff63;
-  --green2: #91d54c;
-  --green-soft: rgba(186,255,99,.09);
+  --green: #ffffff;
+  --green2: #d4d4d8;
+  --green-soft: rgba(255, 255, 255, 0.08);
 
-  --blue: #76a9ff;
-  --purple: #b28cff;
-  --orange: #ffb45e;
+  --blue: #60a5fa;
+  --purple: #c084fc;
+  --orange: #fbbf24;
 
-  --red: #ff7474;
+  --red: #f87171;
+  --online: #10b981;
 }
 
 * {
@@ -80,10 +81,10 @@ button {
   background:
     radial-gradient(
       circle at 50% 20%,
-      rgba(186,255,99,.025),
+      rgba(255, 255, 255, 0.02),
       transparent 35%
     ),
-    #080b09;
+    #08080c;
 
   display: flex;
   flex-direction: column;
@@ -101,7 +102,7 @@ button {
   width: 39px;
   height: 39px;
 
-  border: 1px solid #3b4a3c;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
 
   transform: rotate(45deg);
@@ -110,7 +111,7 @@ button {
   place-items: center;
 
   box-shadow:
-    0 0 25px rgba(186,255,99,.05);
+    0 0 25px rgba(255, 255, 255, 0.05);
 }
 
 .brand-mark-core {
@@ -119,10 +120,10 @@ button {
 
   border-radius: 4px;
 
-  background: var(--green);
+  background: #ffffff;
 
   box-shadow:
-    0 0 20px rgba(186,255,99,.5);
+    0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 .brand-name {
@@ -692,33 +693,33 @@ button {
 }
 
 .workflow-node:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 
-  border-color: #3e4c40;
+  border-color: rgba(255, 255, 255, 0.25);
 
   box-shadow:
-    0 24px 70px rgba(0,0,0,.35);
+    0 24px 70px rgba(0,0,0,.6);
 }
 
 .workflow-node.selected {
-  border-color: #53684e;
+  border-color: rgba(255, 255, 255, 0.45);
 
   box-shadow:
-    0 0 0 1px rgba(186,255,99,.07),
-    0 20px 70px rgba(0,0,0,.4);
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 20px 70px rgba(0,0,0,.6);
 }
 
 .workflow-node.processing {
-  border-color: rgba(186,255,99,.7);
+  border-color: rgba(255, 255, 255, 0.6);
 
   box-shadow:
-    0 0 0 1px rgba(186,255,99,.08),
-    0 0 45px rgba(186,255,99,.12),
-    0 25px 80px rgba(0,0,0,.4);
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 35px rgba(255, 255, 255, 0.15),
+    0 25px 80px rgba(0,0,0,.6);
 }
 
 .workflow-node.complete {
-  border-color: #344535;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .workflow-node.waiting {
@@ -741,25 +742,25 @@ button {
   display: grid;
   place-items: center;
 
-  border: 1px solid #303b31;
-  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 
-  color: #899589;
+  color: #a0a0b0;
 
-  background: #0d130e;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .processing .node-icon {
-  color: var(--green);
+  color: #ffffff;
 
-  border-color: #4b6142;
+  border-color: rgba(255, 255, 255, 0.35);
 
   box-shadow:
-    0 0 18px rgba(186,255,99,.08);
+    0 0 18px rgba(255, 255, 255, 0.12);
 }
 
 .complete .node-icon {
-  color: var(--green);
+  color: #ffffff;
 }
 
 .node-state {
@@ -1263,7 +1264,7 @@ button {
 }
 
 .agent-large-icon,
-.input-icon,
+.input-hero-header .input-icon,
 .dossier-icon {
   width: 45px;
   height: 45px;

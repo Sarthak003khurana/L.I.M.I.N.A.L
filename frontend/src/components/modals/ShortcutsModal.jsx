@@ -1,5 +1,4 @@
-import React from "react";
-import { X, Command, Keyboard } from "lucide-react";
+import { X, Keyboard } from "lucide-react";
 
 export default function ShortcutsModal({ isOpen, onClose }) {
   if (!isOpen) return null;

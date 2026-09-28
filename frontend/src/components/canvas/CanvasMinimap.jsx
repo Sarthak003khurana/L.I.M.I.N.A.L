@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Compass, Eye, EyeOff } from "lucide-react";
+import { useState } from "react";
+import { Compass, EyeOff } from "lucide-react";
 
 export default function CanvasMinimap({ pan = { x: 0, y: 0 }, setPan, zoom = 0.72 }) {
   const [minimized, setMinimized] = useState(false);

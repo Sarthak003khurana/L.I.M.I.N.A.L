@@ -17,3 +17,10 @@ checkpoints/
 
 # Generated evaluation output
 pipeline_evaluation_results.json
+
+# Node & dependencies
+node_modules/
+dist/
+dist-ssr/
+*.log
+.firebase/

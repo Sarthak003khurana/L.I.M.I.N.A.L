@@ -107,7 +107,7 @@ export function formatLabel(value) {
  * Derives all summary statistics, severity badges, evasion index, and top contributors
  * strictly from the SAME M5 synthesizer / dossier output object.
  */
-export function computeForensicMetrics(result, text = "") {
+export function computeForensicMetrics(result) {
   if (!result) {
     return {
       hasResult: false,
@@ -149,7 +149,7 @@ export function computeForensicMetrics(result, text = "") {
   // Formula: Weighted synthesis across active signals
   // 0.40 * M1_evasion + 0.25 * M2_affect_gap + 0.20 * M3_logic_gap + 0.15 * M4_similarity
   const features25d = result?.synthesizer_features || [];
-  let evasionScore = 0;
+  let evasionScore;
 
   if (Array.isArray(features25d) && features25d.length === 25) {
     const m1Max = Math.max(
@@ -200,7 +200,7 @@ export function computeForensicMetrics(result, text = "") {
   }
 
   // 4. Map to 5-Level Evasion Index
-  let evasionIndex = "NONE";
+  let evasionIndex;
   if (primaryPattern === "NO_SIGNIFICANT_OMISSION") {
     evasionIndex = "NONE";
   } else if (evasionScore >= 0.80 || primaryPattern === "AVOIDING_COMMITMENT") {

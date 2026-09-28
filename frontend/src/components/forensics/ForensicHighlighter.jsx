@@ -1,42 +1,42 @@
-import React, { useState } from "react";
-import { ScanSearch, HeartPulse, GitBranch, AlertCircle, Info } from "lucide-react";
+import { useState } from "react";
+import { ScanSearch, GitBranch, AlertCircle } from "lucide-react";
 
-// Curated linguistic rules matching M1-M3 agent label spaces
+// Curated linguistic rules matching M1-M3 agent label spaces in plain English
 const LINGUISTIC_RULES = [
   {
     regex: /\b(fine|okay|alright|whatever|doesn't matter|no preference)\b/gi,
     type: "evasion",
-    label: "Unstated Preference / Passive Acquiescence",
-    agent: "M1 Archaeologist & M2 Psychologist",
+    label: "Holding Back Real Preference",
+    agent: "Tone & Intent",
     color: "#adff4f",
-    description: "Apparent compliance that conceals genuine personal stance or reservations.",
+    description: "Appears to agree on the surface, but hides what the speaker actually thinks or prefers.",
     icon: ScanSearch,
   },
   {
     regex: /\b(probably|should|might|maybe|seems|potentially|perhaps|supposedly)\b/gi,
     type: "hedging",
-    label: "Epistemic Hedging",
-    agent: "M1 Archaeologist",
+    label: "Hesitant / Non-Committal Word",
+    agent: "Commitment Filter",
     color: "#00f0ff",
-    description: "Softening commitment to avoid epistemic accountability if outcome deviates.",
+    description: "Softens statement to dodge blame or ownership if the outcome fails.",
     icon: ScanSearch,
   },
   {
     regex: /\b(current plan|the plan|someone|it was decided|will be done|is expected|was assumed)\b/gi,
     type: "passive",
-    label: "Agent Omission / Responsibility Gap",
-    agent: "M3 Logician & M1 Archaeologist",
+    label: "No Person Named Responsible",
+    agent: "Ownership Gap",
     color: "#f59e0b",
-    description: "Omission of the designated executive actor or decision-maker.",
+    description: "No specific person is named as the owner or decision-maker.",
     icon: GitBranch,
   },
   {
     regex: /\b(circle back|table this|eventually|at some point|down the line|when numbers are audited)\b/gi,
     type: "delay",
-    label: "Temporal Deferral / Evasion",
-    agent: "M1 Archaeologist",
+    label: "Delaying / Kicking Down the Road",
+    agent: "Follow-up Gap",
     color: "#ec4899",
-    description: "Strategic postponement designed to diffuse immediate stakeholder scrutiny.",
+    description: "Postpones the issue without committing to a concrete deadline or clear action.",
     icon: AlertCircle,
   },
 ];
@@ -125,10 +125,10 @@ export default function ForensicHighlighter({ text = "", result = null, metrics 
       <div className="highlighter-meta-bar">
         <span className="highlighter-badge">
           <ScanSearch size={12} />
-          {signalCount} {signalCount === 1 ? "LINGUISTIC SIGNAL" : "LINGUISTIC SIGNALS"} IDENTIFIED
+          {signalCount} {signalCount === 1 ? "FLAGGED PHRASE" : "FLAGGED PHRASES"} DETECTED
         </span>
         <span className="highlighter-hint">
-          {signalCount > 0 ? "Hover highlighted spans to inspect" : "No anomalous linguistic signals detected"}
+          {signalCount > 0 ? "Hover or tap highlighted words to see what they reveal" : "No hidden hesitation or passive evasion detected"}
         </span>
       </div>
 

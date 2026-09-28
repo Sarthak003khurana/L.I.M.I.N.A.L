@@ -1,29 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { X, Search, Trash2, RotateCcw, Download, Clock, ShieldCheck, FileText } from "lucide-react";
+import { useState } from "react";
+import { X, Search, Trash2, Download, Clock, ShieldCheck, FileText } from "lucide-react";
 
 export default function DossierHistoryDrawer({ isOpen, onClose, onSelectCase }) {
-  const [history, setHistory] = useState([]);
-  const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    if (isOpen) {
-      loadHistory();
-    }
-  }, [isOpen]);
-
-  const loadHistory = () => {
+  const getStoredHistory = () => {
     try {
       const raw = localStorage.getItem("liminal_cases");
-      if (raw) {
-        setHistory(JSON.parse(raw));
-      } else {
-        setHistory([]);
-      }
+      return raw ? JSON.parse(raw) : [];
     } catch (e) {
       console.error("Failed to load cases from localStorage:", e);
-      setHistory([]);
+      return [];
     }
   };
+
+  const [history, setHistory] = useState(getStoredHistory);
+  const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
+  const [search, setSearch] = useState("");
+
+  if (isOpen !== prevIsOpen) {
+    setPrevIsOpen(isOpen);
+    if (isOpen) {
+      setHistory(getStoredHistory());
+    }
+  }
 
   const deleteCase = (id, e) => {
     e.stopPropagation();

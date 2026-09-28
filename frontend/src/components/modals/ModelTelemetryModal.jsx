@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
-  Brain,
   Check,
   Cpu,
-  Database,
-  GitBranch,
   Info,
-  Layers3,
-  Network,
-  ScanSearch,
   Search,
   Sparkles,
   Tag,
   X,
-  Zap,
 } from "lucide-react";
 import "./ModelTelemetryModal.css";
 

@@ -2,8 +2,8 @@ import os
 import json
 
 from dotenv import load_dotenv
-from azure.ai.projects import AIProjectClient
-from azure.identity import DefaultAzureCredential
+from openai import OpenAI
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 
 
 load_dotenv()
@@ -27,21 +27,34 @@ class AzureExplainer:
     ]
 
     def __init__(self):
-        self.project_endpoint = os.getenv("FOUNDRY_PROJECT_ENDPOINT")
-        self.deployment = os.getenv("AZURE_OPENAI_DEPLOYMENT")
+        # Clean any empty-string Entra environment variables to avoid ValueError
+        for var in ["AZURE_CLIENT_ID", "AZURE_CLIENT_SECRET", "AZURE_TENANT_ID"]:
+            if os.environ.get(var) == "":
+                os.environ.pop(var, None)
 
-        if not self.project_endpoint:
-            raise ValueError("FOUNDRY_PROJECT_ENDPOINT is missing")
-
-        if not self.deployment:
-            raise ValueError("AZURE_OPENAI_DEPLOYMENT is missing")
-
-        self.project_client = AIProjectClient(
-            endpoint=self.project_endpoint,
-            credential=DefaultAzureCredential(),
+        self.endpoint = (
+            os.getenv("AZURE_OPENAI_ENDPOINT")
+            or "https://khuranasarthak003-6032-resource.services.ai.azure.com/openai/v1"
         )
+        self.deployment = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-6-astra")
+        self.api_key = os.getenv("AZURE_OPENAI_API_KEY")
 
-        self.client = self.project_client.get_openai_client()
+        if self.api_key and len(self.api_key.strip()) > 10:
+            # Use direct API Key authentication from Azure Foundry
+            self.client = OpenAI(
+                base_url=self.endpoint,
+                api_key=self.api_key.strip(),
+            )
+        else:
+            # Fall back to DefaultAzureCredential with Azure AI bearer token
+            token_provider = get_bearer_token_provider(
+                DefaultAzureCredential(),
+                "https://ai.azure.com/.default",
+            )
+            self.client = OpenAI(
+                base_url=self.endpoint,
+                api_key=token_provider,
+            )
 
     # ============================================================
     # TEXT NORMALIZATION
@@ -493,6 +506,8 @@ Remember:
         )
 
         output_text = getattr(response, "output_text", "")
+        if not output_text and hasattr(response, "output") and response.output:
+            output_text = str(response.output[0])
 
         # Validate the five required sections first.
         validated_text = self._validate_sections(output_text)

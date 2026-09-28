@@ -3,10 +3,10 @@ import {
   Activity,
   ArrowRight,
   ArrowUpRight,
+  Bot,
   Brain,
   Check,
   ChevronRight,
-  ClipboardList,
   Cpu,
   Database,
   ExternalLink,
@@ -15,23 +15,34 @@ import {
   Layers3,
   LoaderCircle,
   Lock,
+  LogOut,
+  MessageSquare,
   Network,
   Play,
   Scale,
   ScanSearch,
   ShieldCheck,
   Sparkles,
-  Terminal,
+  Table,
+  User,
+  UserCheck,
   Workflow,
 } from "lucide-react";
 import { PRESETS } from "../../constants/presets";
 import "./LandingPage.css";
 
-export default function LandingPage({ onLaunchStudio, backendStatus }) {
+export default function LandingPage({
+  onLaunchStudio,
+  onNavigateLogin,
+  backendStatus,
+  currentUser,
+  onLogout,
+}) {
   const [selectedPreset, setSelectedPreset] = useState(PRESETS[0]);
   const [demoText, setDemoText] = useState(PRESETS[0].text);
   const [scanning, setScanning] = useState(false);
   const [scanComplete, setScanComplete] = useState(false);
+  const [activeFlowNode, setActiveFlowNode] = useState("center");
 
   const isOnline = backendStatus?.online;
 
@@ -72,10 +83,11 @@ export default function LandingPage({ onLaunchStudio, backendStatus }) {
           </div>
 
           <div className="m-nav-links">
-            <a href="#agents" className="m-nav-link">5 Agents</a>
-            <a href="#comparison" className="m-nav-link">Presence vs Absence</a>
-            <a href="#usecases" className="m-nav-link">Use Cases</a>
-            <a href="#architecture" className="m-nav-link">Architecture</a>
+            <a href="#" className="m-nav-link" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Home</a>
+            <a href="#agents" className="m-nav-link">AI Agents</a>
+            <a href="#comparison" className="m-nav-link">About</a>
+            <a href="#usecases" className="m-nav-link">Blog</a>
+            <a href="#pricing" className="m-nav-link">Pricing</a>
           </div>
 
           <div className="m-nav-actions">
@@ -84,13 +96,92 @@ export default function LandingPage({ onLaunchStudio, backendStatus }) {
               <span>{isOnline ? "SYSTEM ONLINE" : "SYSTEM OFFLINE"}</span>
             </div>
 
-            <button
-              className="m-btn-primary"
-              onClick={() => onLaunchStudio(demoText)}
-            >
-              <span>Launch Studio</span>
-              <ArrowRight size={14} />
-            </button>
+            {currentUser ? (
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "7px 12px",
+                    borderRadius: "8px",
+                    background: "rgba(255, 255, 255, 0.05)",
+                    border: "1px solid rgba(255, 255, 255, 0.12)",
+                    fontSize: "12px",
+                    color: "#f5f5f7",
+                  }}
+                  title={`Logged in as ${currentUser.email || currentUser.displayName}`}
+                >
+                  <User size={13} />
+                  <span>
+                    {currentUser.displayName ||
+                      (currentUser.email ? currentUser.email.split("@")[0] : "Analyst")}
+                  </span>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={onLogout}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "7px 13px",
+                    borderRadius: "8px",
+                    background: "rgba(239, 68, 68, 0.1)",
+                    border: "1px solid rgba(239, 68, 68, 0.28)",
+                    color: "#fca5a5",
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    cursor: "pointer",
+                  }}
+                  title="Log out and switch account"
+                >
+                  <LogOut size={12} />
+                  <span>Log Out</span>
+                </button>
+
+                <button
+                  className="m-btn-primary"
+                  onClick={() => onLaunchStudio(demoText)}
+                >
+                  <span>Open Console</span>
+                  <ArrowRight size={14} />
+                </button>
+              </div>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  className="m-btn-signin"
+                  onClick={onNavigateLogin || (() => onLaunchStudio(demoText))}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "8px 16px",
+                    borderRadius: "8px",
+                    background: "rgba(255, 255, 255, 0.05)",
+                    border: "1px solid rgba(255, 255, 255, 0.15)",
+                    color: "#f5f5f7",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    cursor: "pointer",
+                  }}
+                >
+                  <Lock size={13} />
+                  <span>Sign In</span>
+                </button>
+
+                <button
+                  className="m-btn-primary"
+                  onClick={() => onLaunchStudio(demoText)}
+                >
+                  <span>Get Started</span>
+                  <ArrowRight size={14} />
+                </button>
+              </>
+            )}
           </div>
         </div>
       </nav>
@@ -101,33 +192,206 @@ export default function LandingPage({ onLaunchStudio, backendStatus }) {
       <section className="m-hero">
         <div className="m-container">
           <div className="m-hero-badge">
-            <Sparkles size={13} />
-            <span>AI-103 MULTI-AGENT LINGUISTIC FORENSICS</span>
+            <Sparkles size={12} />
+            <span>Intelligence 2.0 first Preview</span>
           </div>
 
           <h1>
-            Detect what isn't said.
+            Intelligent Agents<br />
+            <span>Real Results</span>
           </h1>
 
           <p className="m-hero-sub">
-            Traditional NLP measures what words were written. L.I.M.I.N.A.L. orchestrates
-            5 neural agents to uncover strategic omissions, evasive commitments, and unstated
-            intent across high-stakes communications.
+            Deploy AI agents that think, learn, and act to uncover strategic omissions,
+            evasive commitments, and unstated intent across critical communications.
           </p>
 
           <div className="m-hero-ctas">
             <button
-              className="m-btn-primary"
+              className="m-btn-primary hero-cta-btn"
               onClick={() => onLaunchStudio(demoText)}
             >
-              <Workflow size={15} />
-              <span>Open Analysis Studio</span>
+              <span>Deploy Your Agent</span>
+              <ArrowRight size={14} />
             </button>
 
-            <a href="#agents" className="m-btn-secondary">
+            <a href="#agents" className="m-btn-secondary hero-sec-btn">
               <span>Explore 5 Agents</span>
               <ChevronRight size={14} />
             </a>
+          </div>
+
+          {/* ------------------------------------------------------------
+              HERO AGENT ARCHITECTURE FLOW (Aivora Reference Design)
+          ------------------------------------------------------------ */}
+          <div className="m-hero-flow-wrapper">
+            <div className="m-flow-card-glow" />
+            <div className="m-hero-flow-diagram">
+              {/* Fine tile grid background */}
+              <div className="m-flow-grid-bg" />
+
+              {/* Main Workflow Row: Gmail Trigger -> AI Agent -> Right Branches */}
+              <div className="m-flow-top-row">
+                {/* Left: Gmail Trigger */}
+                <div
+                  className={`m-flow-node m-flow-trigger ${activeFlowNode === "trigger" ? "active" : ""}`}
+                  onClick={() => setActiveFlowNode("trigger")}
+                >
+                  <div className="m-flow-node-icon gmail-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                      <path d="M2 6.5l10 7.5 10-7.5V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6.5z" fill="rgba(255,255,255,0.06)" />
+                      <path d="M22 6.5l-10 7.5L2 6.5 4 5h16l2 1.5z" fill="#ea4335" />
+                      <path d="M2 6.5V19c0 1.1.9 2 2 2h3V9.5L2 6.5z" fill="#c5221f" />
+                      <path d="M22 6.5V19c0 1.1-.9 2-2 2h-3V9.5l5-3z" fill="#4285f4" />
+                      <path d="M7 21h10V11l-5-3.75L7 11v10z" fill="#fbbc04" />
+                      <path d="M7 11l5-3.75L17 11V9.5L12 5.75 7 9.5V11z" fill="#34a853" />
+                    </svg>
+                  </div>
+                  <div className="m-flow-node-text">
+                    <div className="m-flow-node-title">Gmail Trigger</div>
+                    <div className="m-flow-node-sub">When an email is received</div>
+                  </div>
+                  <div className="m-flow-port port-right" />
+                </div>
+
+                {/* Animated connecting wire to Center */}
+                <div className="m-flow-wire-horizontal">
+                  <div className="wire-line">
+                    <span className="pulse-packet packet-to-right" />
+                  </div>
+                </div>
+
+                {/* Center: AI Agent / Tools Agent */}
+                <div
+                  className={`m-flow-node m-flow-center-agent ${activeFlowNode === "center" ? "active" : ""}`}
+                  onClick={() => setActiveFlowNode("center")}
+                >
+                  <div className="m-flow-center-header">
+                    <div className="m-flow-agent-badge">
+                      <Sparkles size={11} />
+                      <span>Tools Agent</span>
+                    </div>
+                    <span className="m-flow-live-tag">
+                      <i className="live-dot" /> Active
+                    </span>
+                  </div>
+                  <div className="m-flow-agent-main">
+                    <div className="m-flow-agent-avatar">
+                      <Bot size={22} />
+                    </div>
+                    <div className="m-flow-center-info">
+                      <div className="m-flow-agent-name">AI Agent</div>
+                      <div className="m-flow-agent-desc">
+                        Orchestrating agent workflows & analyzing omissions
+                      </div>
+                    </div>
+                  </div>
+                  <div className="m-flow-port port-left" />
+                  <div className="m-flow-port port-right" />
+                  <div className="m-flow-port port-bottom" />
+                </div>
+
+                {/* Animated connecting wires branching to Right */}
+                <div className="m-flow-wire-fork">
+                  <div className="fork-branch branch-top">
+                    <span className="fork-condition-chip">Is Managers?</span>
+                    <span className="pulse-packet packet-to-top-right" />
+                  </div>
+                  <div className="fork-branch branch-bottom">
+                    <span className="pulse-packet packet-to-bottom-right" />
+                  </div>
+                </div>
+
+                {/* Right: Output Actions */}
+                <div className="m-flow-outputs-stack">
+                  <div
+                    className={`m-flow-node m-flow-output ${activeFlowNode === "slack" ? "active" : ""}`}
+                    onClick={() => setActiveFlowNode("slack")}
+                  >
+                    <div className="m-flow-port port-left" />
+                    <div className="m-flow-node-icon slack-icon">
+                      <MessageSquare size={16} />
+                    </div>
+                    <div className="m-flow-node-text">
+                      <div className="m-flow-node-title">Add to channel</div>
+                      <div className="m-flow-node-sub">#leadership-briefing</div>
+                    </div>
+                  </div>
+
+                  <div
+                    className={`m-flow-node m-flow-output ${activeFlowNode === "profile" ? "active" : ""}`}
+                    onClick={() => setActiveFlowNode("profile")}
+                  >
+                    <div className="m-flow-port port-left" />
+                    <div className="m-flow-node-icon user-icon">
+                      <UserCheck size={16} />
+                    </div>
+                    <div className="m-flow-node-text">
+                      <div className="m-flow-node-title">Update Profile</div>
+                      <div className="m-flow-node-sub">Flag omission risk level</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Row: Models & Connected Tools */}
+              <div className="m-flow-bottom-section">
+                <div className="m-flow-wire-down">
+                  <div className="vertical-stem" />
+                  <div className="horizontal-bus" />
+                </div>
+
+                <div className="m-flow-tools-row">
+                  <div
+                    className={`m-flow-tool-card ${activeFlowNode === "openai" ? "active" : ""}`}
+                    onClick={() => setActiveFlowNode("openai")}
+                  >
+                    <div className="m-flow-port port-top" />
+                    <div className="m-flow-tool-icon openai-badge">
+                      <Cpu size={16} />
+                    </div>
+                    <div className="m-flow-tool-title">Open AI Chat Model</div>
+                    <div className="m-flow-tool-sub">GPT-4.5 Astra Reasoning</div>
+                  </div>
+
+                  <div
+                    className={`m-flow-tool-card ${activeFlowNode === "memory" ? "active" : ""}`}
+                    onClick={() => setActiveFlowNode("memory")}
+                  >
+                    <div className="m-flow-port port-top" />
+                    <div className="m-flow-tool-icon memory-badge">
+                      <Brain size={16} />
+                    </div>
+                    <div className="m-flow-tool-title">Memory</div>
+                    <div className="m-flow-tool-sub">FAISS Semantic Index</div>
+                  </div>
+
+                  <div
+                    className={`m-flow-tool-card ${activeFlowNode === "docs" ? "active" : ""}`}
+                    onClick={() => setActiveFlowNode("docs")}
+                  >
+                    <div className="m-flow-port port-top" />
+                    <div className="m-flow-tool-icon docs-badge">
+                      <FileText size={16} />
+                    </div>
+                    <div className="m-flow-tool-title">Google Docs</div>
+                    <div className="m-flow-tool-sub">Auto-generate Dossier</div>
+                  </div>
+
+                  <div
+                    className={`m-flow-tool-card ${activeFlowNode === "sheets" ? "active" : ""}`}
+                    onClick={() => setActiveFlowNode("sheets")}
+                  >
+                    <div className="m-flow-port port-top" />
+                    <div className="m-flow-tool-icon sheets-badge">
+                      <Table size={16} />
+                    </div>
+                    <div className="m-flow-tool-title">Google Sheets</div>
+                    <div className="m-flow-tool-sub">Audit Evidence Table</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Interactive Demo Card */}
@@ -549,6 +813,93 @@ export default function LandingPage({ onLaunchStudio, backendStatus }) {
               <span className="m-usecase-badge">
                 <Check size={12} /> Calibrated Grounding
               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------
+          PRICING SECTION (Aivora Style)
+      ------------------------------------------------------------ */}
+      <section className="m-section" id="pricing">
+        <div className="m-container">
+          <div className="m-section-header">
+            <div className="m-section-badge">
+              <span>PRICING PLANS</span>
+            </div>
+            <h2>Simple, transparent pricing</h2>
+            <p>
+              Choose the forensic intelligence plan that matches your investigation volume.
+              All plans include local multi-agent inference.
+            </p>
+          </div>
+
+          <div className="m-pricing-grid">
+            {/* Starter Plan */}
+            <div className="m-pricing-card">
+              <div className="m-pricing-tier">Starter / Community</div>
+              <div className="m-pricing-price">
+                <span className="amount">$0</span>
+                <span className="period">/ forever</span>
+              </div>
+              <p className="m-pricing-desc">
+                Ideal for individual researchers, academics, and exploratory linguistic omission analysis.
+              </p>
+              <ul className="m-pricing-features">
+                <li><Check size={14} /> 5-Agent Local Forensic Pipeline</li>
+                <li><Check size={14} /> CUDA Acceleration (RTX 3050+)</li>
+                <li><Check size={14} /> Pre-loaded High-Stakes Scenarios</li>
+                <li><Check size={14} /> Basic JSON & Markdown Export</li>
+                <li><Check size={14} /> Community GitHub Support</li>
+              </ul>
+              <button className="m-pricing-btn" onClick={() => onLaunchStudio(demoText)}>
+                Launch Free Studio
+              </button>
+            </div>
+
+            {/* Pro Plan - Featured */}
+            <div className="m-pricing-card featured">
+              <div className="m-pricing-popular-badge">MOST POPULAR</div>
+              <div className="m-pricing-tier">Pro Forensics</div>
+              <div className="m-pricing-price">
+                <span className="amount">$49</span>
+                <span className="period">/ month</span>
+              </div>
+              <p className="m-pricing-desc">
+                Comprehensive omission forensics for corporate teams, lawyers, and investigative journalists.
+              </p>
+              <ul className="m-pricing-features">
+                <li><Check size={14} /> Everything in Starter</li>
+                <li><Check size={14} /> Unlimited Live Statement Analysis</li>
+                <li><Check size={14} /> Azure AI Foundry GPT-4.5 Verification</li>
+                <li><Check size={14} /> Deep FAISS Vector Evidence Search</li>
+                <li><Check size={14} /> PDF & Forensic Dossier Generation</li>
+                <li><Check size={14} /> Remediation & Inquiry Generator</li>
+              </ul>
+              <button className="m-pricing-btn primary" onClick={() => onLaunchStudio(demoText)}>
+                Get Started with Pro
+              </button>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div className="m-pricing-card">
+              <div className="m-pricing-tier">Enterprise Intelligence</div>
+              <div className="m-pricing-price">
+                <span className="amount">Custom</span>
+              </div>
+              <p className="m-pricing-desc">
+                Air-gapped deployment, custom fine-tuned weights, and compliance auditing for enterprise orgs.
+              </p>
+              <ul className="m-pricing-features">
+                <li><Check size={14} /> Air-gapped on-premise deployment</li>
+                <li><Check size={14} /> Custom Fine-Tuned Domain Models</li>
+                <li><Check size={14} /> SOC2 Type II & HIPAA Compliance</li>
+                <li><Check size={14} /> Multi-seat Collaborative Workspace</li>
+                <li><Check size={14} /> 24/7 Dedicated Forensic Engineer</li>
+              </ul>
+              <button className="m-pricing-btn" onClick={() => onLaunchStudio(demoText)}>
+                Contact Enterprise
+              </button>
             </div>
           </div>
         </div>

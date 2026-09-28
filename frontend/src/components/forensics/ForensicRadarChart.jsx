@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ForensicRadarChart({ result = null, size = 260 }) {
   const [hoveredAxis, setHoveredAxis] = useState(null);
