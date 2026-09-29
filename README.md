@@ -82,38 +82,38 @@ L.I.M.I.N.A.L. executes a hybrid neuro-symbolic pipeline combining scratch-train
 
 ```mermaid
 flowchart TD
-    User([User Ingestion: Raw Text / PDF / OCR]) --> Gateway[FastAPI Orchestrator :8000]
+    User(["User Ingestion: Raw Text / PDF / OCR"]) --> Gateway["FastAPI Orchestrator :8000"]
     
-    subgraph Parallel Stage 1: Independent Neural Forensics
-        Gateway --> M1[M1 Archaeologist<br/>4-Layer Transformer<br/>Vocab: 4,491 | d_model: 256]
-        Gateway --> M2[M2 Psychologist<br/>4-Layer Transformer<br/>Affect & Incongruence Engine]
-        Gateway --> M3[M3 Logician<br/>3-Layer Transformer<br/>6 Attention Heads | d_model: 192]
+    subgraph Stage1 ["Parallel Stage 1: Independent Neural Forensics"]
+        Gateway --> M1["M1 Archaeologist<br/>4-Layer Transformer<br/>Vocab: 4,491 | d_model: 256"]
+        Gateway --> M2["M2 Psychologist<br/>4-Layer Transformer<br/>Affect & Incongruence Engine"]
+        Gateway --> M3["M3 Logician<br/>3-Layer Transformer<br/>6 Attention Heads | d_model: 192"]
     end
 
-    M1 --> HistTrigger{Query Generation}
+    M1 --> HistTrigger{"Query Generation"}
     M2 --> HistTrigger
     M3 --> HistTrigger
 
-    subgraph Stage 2: Knowledge Grounding & Pragmatic Retrieval
-        HistTrigger --> M4[M4 Historian<br/>Dense FAISS Vector Store<br/>Linguistics & Pragmatics Knowledge Base]
+    subgraph Stage2 ["Stage 2: Knowledge Grounding & Pragmatic Retrieval"]
+        HistTrigger --> M4["M4 Historian<br/>Dense FAISS Vector Store<br/>Linguistics & Pragmatics Knowledge Base"]
     end
 
-    subgraph Stage 3: Neural Fusion & Calibration
-        M1 --> M5[M5 Synthesizer<br/>Multi-Head Cross-Agent Tensor Fusion]
+    subgraph Stage3 ["Stage 3: Neural Fusion & Calibration"]
+        M1 --> M5["M5 Synthesizer<br/>Multi-Head Cross-Agent Tensor Fusion"]
         M2 --> M5
         M3 --> M5
         M4 --> M5
-        M5 --> DossierGen[Subtext Dossier Tensor]
+        M5 --> DossierGen["Subtext Dossier Tensor"]
     end
 
-    subgraph Stage 4: Qualitative Synthesis & Remediation
-        DossierGen --> AzureLayer[Azure GPT-6 Astra / OpenAI Layer<br/>Epistemic Calibration & Reasoning]
-        DossierGen --> RemedEngine[Transparent Rewrite Engine<br/>Assertive & Diplomatic Variants]
+    subgraph Stage4 ["Stage 4: Qualitative Synthesis & Remediation"]
+        DossierGen --> AzureLayer["Azure GPT-6 Astra / OpenAI Layer<br/>Epistemic Calibration & Reasoning"]
+        DossierGen --> RemedEngine["Transparent Rewrite Engine<br/>Assertive & Diplomatic Variants"]
     end
 
-    AzureLayer --> EventStream[SSE Event Stream / Response Schema]
+    AzureLayer --> EventStream["SSE Event Stream / Response Schema"]
     RemedEngine --> EventStream
-    EventStream --> Frontend[React 19 Cyberpunk Intelligence UI]
+    EventStream --> Frontend["React 19 Cyberpunk Intelligence UI"]
 ```
 
 ---
