@@ -251,3 +251,89 @@
   border-color: rgba(255, 255, 255, 0.3);
   color: #ffffff;
 }
+
+/* ============================================================
+   MOBILE RESPONSIVENESS
+============================================================ */
+
+@media (max-width: 768px) {
+  .terminal-demo-card {
+    margin: 20px auto 0;
+    border-radius: 12px;
+  }
+
+  .terminal-header {
+    padding: 10px 14px;
+  }
+
+  .terminal-title {
+    display: none;
+  }
+
+  .terminal-body {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .terminal-presets {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .terminal-presets::-webkit-scrollbar {
+    display: none;
+  }
+
+  .preset-btn {
+    flex-shrink: 0;
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .terminal-input-wrap {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .terminal-textarea {
+    font-size: 13px;
+    min-height: 60px;
+  }
+
+  .terminal-run-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .terminal-logs-window {
+    min-height: 150px;
+    max-height: 200px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .terminal-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .terminal-footer-info {
+    justify-content: center;
+    font-size: 11px;
+  }
+
+  .terminal-launch-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+

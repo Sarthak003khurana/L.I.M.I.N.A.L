@@ -246,3 +246,97 @@
   background: #ffffff;
   border-radius: 1px;
 }
+
+/* ============================================================
+   MOBILE RESPONSIVENESS
+============================================================ */
+
+@media (max-width: 768px) {
+  .xray-container {
+    margin: 20px auto 0;
+    border-radius: 12px;
+  }
+
+  .xray-hud-header {
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+
+  .xray-hud-hint {
+    font-size: 9px;
+  }
+
+  .xray-display-wrapper {
+    min-height: 360px;
+  }
+
+  .xray-layer {
+    padding: 16px 14px;
+  }
+
+  .xray-quote {
+    font-size: 15px;
+    line-height: 1.45;
+    margin: 10px 0;
+  }
+
+  .xray-findings-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .finding-pill {
+    padding: 6px 10px;
+    gap: 2px;
+  }
+
+  .finding-pill strong {
+    font-size: 9px;
+  }
+
+  .finding-pill span {
+    font-size: 11px;
+  }
+
+  .standard-verdict {
+    margin-top: 10px;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .standard-verdict-row {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .standard-label {
+    width: 90px;
+    font-size: 11px;
+  }
+
+  .xray-slider-handle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .xray-display-wrapper {
+    min-height: 400px;
+  }
+
+  .xray-hud-hint {
+    display: none;
+  }
+
+  .xray-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .xray-quote {
+    font-size: 14px;
+  }
+}
+

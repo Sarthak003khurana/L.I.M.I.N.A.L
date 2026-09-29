@@ -20,6 +20,7 @@ import {
   LoaderCircle,
   Lock,
   LogOut,
+  Menu,
   Network,
   Play,
   RotateCcw,
@@ -250,6 +251,7 @@ export default function App() {
   const [isInputModalOpen, setIsInputModalOpen] = useState(false); // Floating hover box for text input
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [inputViewMode, setInputViewMode] = useState("edit"); // "edit" | "forensics"
   const [pdfLoading, setPdfLoading] = useState(false);
   const [pdfInfo, setPdfInfo] = useState(null);
@@ -742,18 +744,38 @@ export default function App() {
 
   return (
     <div className="app-shell">
+      {isMobileMenuOpen && (
+        <div
+          className="sidebar-backdrop"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
       <Sidebar
         selected={selected}
-        setSelected={setSelected}
+        setSelected={(node) => {
+          setSelected(node);
+          setIsMobileMenuOpen(false);
+        }}
         backendStatus={backendStatus}
         view={view}
-        setView={setView}
+        setView={(v) => {
+          setView(v);
+          setIsMobileMenuOpen(false);
+        }}
         result={result}
-        onOpenHistory={() => setIsHistoryOpen(true)}
+        onOpenHistory={() => {
+          setIsHistoryOpen(true);
+          setIsMobileMenuOpen(false);
+        }}
         currentUser={currentUser}
         onLogout={handleLogout}
         studioMode={studioMode}
-        setStudioMode={setStudioMode}
+        setStudioMode={(m) => {
+          setStudioMode(m);
+          setIsMobileMenuOpen(false);
+        }}
+        isMobileOpen={isMobileMenuOpen}
+        onCloseMobile={() => setIsMobileMenuOpen(false)}
       />
 
       <main className="main-shell">
@@ -765,6 +787,7 @@ export default function App() {
           isInspectorOpen={isInspectorOpen}
           setIsInspectorOpen={setIsInspectorOpen}
           studioMode={studioMode}
+          onToggleMobileMenu={() => setIsMobileMenuOpen((o) => !o)}
         />
 
         {studioMode === "input" ? (
@@ -988,6 +1011,8 @@ function Sidebar({
   onLogout,
   studioMode,
   setStudioMode,
+  isMobileOpen,
+  onCloseMobile,
 }) {
   const isOnline = backendStatus?.online;
   const isLoading = backendStatus?.loading;
@@ -1020,19 +1045,32 @@ function Sidebar({
   ];
 
   return (
-    <aside className="sidebar">
-      <div className="brand" onClick={() => setView("landing")} style={{ cursor: "pointer" }} title="Back to Overview">
-        <div className="brand-mark">
-          <i />
+    <aside className={`sidebar ${isMobileOpen ? "mobile-open" : ""}`}>
+      <div className="sidebar-header-row">
+        <div className="brand" onClick={() => setView("landing")} style={{ cursor: "pointer" }} title="Back to Overview">
+          <div className="brand-mark">
+            <i />
+          </div>
+
+          <div>
+            <strong>L.I.M.I.N.A.L.</strong>
+
+            <small>
+              INTELLIGENCE ENGINE
+            </small>
+          </div>
         </div>
 
-        <div>
-          <strong>L.I.M.I.N.A.L.</strong>
-
-          <small>
-            INTELLIGENCE ENGINE
-          </small>
-        </div>
+        {isMobileOpen && (
+          <button
+            type="button"
+            className="sidebar-mobile-close-btn"
+            onClick={onCloseMobile}
+            aria-label="Close navigation"
+          >
+            <X size={18} />
+          </button>
+        )}
       </div>
 
       <div className="sidebar-scroll">
@@ -1197,20 +1235,37 @@ function Topbar({
   isInspectorOpen,
   setIsInspectorOpen,
   studioMode,
+  onToggleMobileMenu,
 }) {
   const isOnline = backendStatus?.online;
   return (
     <header className="topbar">
-      <div className="breadcrumbs">
-        <span>WORKSPACES</span>
+      <div className="topbar-left">
+        <button
+          type="button"
+          className="mobile-menu-btn"
+          onClick={onToggleMobileMenu}
+          aria-label="Open navigation menu"
+        >
+          <Menu size={17} />
+        </button>
 
-        <ChevronRight size={11} />
+        <div className="breadcrumbs">
+          <span>WORKSPACES</span>
 
-        <span>L.I.M.I.N.A.L.</span>
+          <ChevronRight size={11} />
 
-        <ChevronRight size={11} />
+          <span>L.I.M.I.N.A.L.</span>
 
-        <strong>{studioMode === "input" ? "STAGE 01: INGESTION" : "5-MODEL NEURAL PIPELINE"}</strong>
+          <ChevronRight size={11} />
+
+          <strong>{studioMode === "input" ? "STAGE 01: INGESTION" : "5-MODEL NEURAL PIPELINE"}</strong>
+        </div>
+
+        <div className="topbar-mobile-title">
+          <strong>L.I.M.I.N.A.L.</strong>
+          <span className="topbar-mobile-badge">{studioMode === "input" ? "INGESTION" : "PIPELINE"}</span>
+        </div>
       </div>
 
       <div className="topbar-actions">

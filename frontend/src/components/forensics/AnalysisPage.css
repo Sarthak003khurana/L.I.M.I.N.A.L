@@ -1936,3 +1936,92 @@
   }
 }
 
+@media (max-width: 768px) {
+  .analysis-navbar {
+    padding: 0 12px;
+    height: 50px;
+  }
+
+  .nav-left {
+    gap: 8px;
+  }
+
+  .nav-breadcrumbs,
+  .nav-divider,
+  .nav-center-pills {
+    display: none !important;
+  }
+
+  .nav-back-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .nav-back-btn .nav-kbd {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .nav-tool-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .analysis-scroll-body {
+    padding: 14px 12px 36px;
+  }
+
+  .hero-main-content {
+    gap: 16px;
+  }
+
+  .dossier-metric-ribbon {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .metric-card {
+    padding: 12px;
+  }
+
+  .analysis-section {
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+  }
+
+  .sec-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .evidence-matrix {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .remediation-card {
+    padding: 12px;
+  }
+
+  .rem-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .rem-actions {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .rem-action-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+

@@ -1463,13 +1463,134 @@
   .m-nav-links {
     display: none;
   }
-  .m-hero h1 {
-    font-size: 38px;
-  }
   .m-flow-tools-row {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .m-container {
+    padding: 0 16px;
+  }
+
+  .m-nav-container {
+    padding: 12px 16px;
+  }
+
+  .m-nav-actions {
+    gap: 10px;
+  }
+
+  .m-nav-actions .m-btn-primary {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  .m-hero {
+    padding: 45px 0 30px;
+  }
+
+  .m-hero h1 {
+    font-size: clamp(28px, 8vw, 42px);
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .m-hero-sub {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 24px;
+    padding: 0 8px;
+  }
+
+  .m-hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 35px;
+    gap: 10px;
+  }
+
+  .m-hero-ctas .m-btn-primary,
+  .m-hero-ctas .m-btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .m-telemetry-ribbon {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+    font-size: 10px;
+    padding: 8px 14px;
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 20px;
+  }
+
+  .m-telemetry-divider {
+    display: none;
+  }
+
+  .m-section {
+    padding: 50px 0;
+  }
+
+  .m-section-header h2 {
+    font-size: 26px;
+  }
+
+  .m-section-header p {
+    font-size: 13px;
+  }
+
+  .m-features-grid,
+  .m-agents-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .m-agent-card {
+    padding: 20px 16px;
+  }
+
+  .m-flow-container {
+    padding: 18px 14px;
+  }
+
+  .m-footer {
+    padding: 50px 0 30px;
+  }
+
+  .m-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .m-footer-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .m-brand-text small {
+    display: none;
+  }
+
+  .m-status-pill {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .m-hero h1 {
+    font-size: 27px;
+  }
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }

@@ -1062,3 +1062,16 @@
     border-right: none;
   }
 }
+
+@media (max-width: 480px) {
+  .login-card-container {
+    padding: 16px 12px;
+  }
+  .login-form-pane {
+    padding: 24px 16px;
+  }
+  .login-header h2 {
+    font-size: 22px;
+  }
+}
+

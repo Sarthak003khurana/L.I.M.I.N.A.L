@@ -643,3 +643,86 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .input-workspace {
+    padding: 14px 12px 24px 12px;
+  }
+
+  .iw-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+  }
+
+  .iw-title {
+    font-size: 20px;
+  }
+
+  .iw-subtitle {
+    font-size: 12px;
+  }
+
+  .iw-header-actions {
+    width: 100%;
+  }
+
+  .iw-view-pipeline-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 9px;
+  }
+
+  .iw-presets-row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .iw-presets-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .iw-preset-pill {
+    flex-shrink: 0;
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .iw-textarea {
+    font-size: 13px;
+    min-height: 140px;
+    padding: 12px;
+  }
+
+  .iw-card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .iw-card-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .iw-dropzone {
+    padding: 16px 12px;
+  }
+
+  .iw-summary-metrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .iw-inspect-btn {
+    height: 48px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
