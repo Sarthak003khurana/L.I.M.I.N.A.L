@@ -34,6 +34,7 @@ import BorderBeam from "./visualizers/BorderBeam";
 import DecryptedText from "./visualizers/DecryptedText";
 import SubtextXRaySlider from "./visualizers/SubtextXRaySlider";
 import LiveTerminalDemo from "./visualizers/LiveTerminalDemo";
+import AgentRadarPulse, { MiniRadarPulse } from "./visualizers/AgentRadarPulse";
 import "./LandingPage.css";
 
 export default function LandingPage({
@@ -667,9 +668,7 @@ export default function LandingPage({
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 01</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div className="m-agent-waveform" style={{ color: "#ffffff" }}>
-                    <span /><span /><span /><span />
-                  </div>
+                  <MiniRadarPulse color="#38bdf8" />
                   <div className="m-agent-icon-wrap">
                     <ScanSearch size={18} />
                   </div>
@@ -694,9 +693,7 @@ export default function LandingPage({
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 02</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div className="m-agent-waveform" style={{ color: "#c58cff" }}>
-                    <span /><span /><span /><span />
-                  </div>
+                  <MiniRadarPulse color="#f87171" />
                   <div className="m-agent-icon-wrap">
                     <Brain size={18} />
                   </div>
@@ -721,9 +718,7 @@ export default function LandingPage({
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 03</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div className="m-agent-waveform" style={{ color: "#65b7ff" }}>
-                    <span /><span /><span /><span />
-                  </div>
+                  <MiniRadarPulse color="#c084fc" />
                   <div className="m-agent-icon-wrap">
                     <GitBranch size={18} />
                   </div>
@@ -748,9 +743,7 @@ export default function LandingPage({
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 04</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div className="m-agent-waveform" style={{ color: "#ffca68" }}>
-                    <span /><span /><span /><span />
-                  </div>
+                  <MiniRadarPulse color="#fbbf24" />
                   <div className="m-agent-icon-wrap">
                     <Database size={18} />
                   </div>
@@ -775,9 +768,7 @@ export default function LandingPage({
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 05</span>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div className="m-agent-waveform" style={{ color: "#ffffff" }}>
-                    <span /><span /><span /><span />
-                  </div>
+                  <MiniRadarPulse color="#10b981" />
                   <div className="m-agent-icon-wrap">
                     <Network size={18} />
                   </div>
@@ -796,6 +787,9 @@ export default function LandingPage({
               </div>
             </div>
           </div>
+
+          {/* Cyber Radar Sonar Pulse Real-Time Forensic Console */}
+          <AgentRadarPulse />
         </div>
       </section>
 
