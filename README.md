@@ -796,7 +796,7 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 ```bibtex
 @software{liminal2026,
-  author = {Khurana, Sarthak and Contributors},
+  author = {Sarthak Khurana, Shivani Jindal},
   title = {L.I.M.I.N.A.L.: Linguistic Inference of Missing Information via Networked Agent Logic},
   year = {2026},
   url = {https://github.com/Sarthak003khurana/L.I.M.I.N.A.L}
