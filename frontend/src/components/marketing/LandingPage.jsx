@@ -29,6 +29,11 @@ import {
   Workflow,
 } from "lucide-react";
 import { PRESETS } from "../../constants/presets";
+import NeuralCanvas from "./visualizers/NeuralCanvas";
+import BorderBeam from "./visualizers/BorderBeam";
+import DecryptedText from "./visualizers/DecryptedText";
+import SubtextXRaySlider from "./visualizers/SubtextXRaySlider";
+import LiveTerminalDemo from "./visualizers/LiveTerminalDemo";
 import "./LandingPage.css";
 
 export default function LandingPage({
@@ -64,6 +69,7 @@ export default function LandingPage({
 
   return (
     <div className="marketing-page">
+      <NeuralCanvas />
       <div className="ambient-glow-1" />
       <div className="ambient-glow-2" />
 
@@ -78,7 +84,7 @@ export default function LandingPage({
             </div>
             <div className="m-brand-text">
               <strong>L.I.M.I.N.A.L.</strong>
-              <small>INTELLIGENCE ENGINE • AI-103</small>
+              <small>INTELLIGENCE ENGINE</small>
             </div>
           </div>
 
@@ -86,7 +92,7 @@ export default function LandingPage({
             <a href="#" className="m-nav-link" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Home</a>
             <a href="#agents" className="m-nav-link">AI Agents</a>
             <a href="#comparison" className="m-nav-link">About</a>
-            <a href="#usecases" className="m-nav-link">Blog</a>
+            <a href="#sandbox" className="m-nav-link">Live Test</a>
             <a href="#pricing" className="m-nav-link">Pricing</a>
           </div>
 
@@ -191,14 +197,24 @@ export default function LandingPage({
       ------------------------------------------------------------ */}
       <section className="m-hero">
         <div className="m-container">
+          <div className="m-telemetry-ribbon">
+            <span>CORE: <strong>ONLINE</strong></span>
+            <div className="m-telemetry-divider" />
+            <span>CUDA: <strong>12.8</strong></span>
+            <div className="m-telemetry-divider" />
+            <span>LATENCY: <strong>2.8ms</strong></span>
+            <div className="m-telemetry-divider" />
+            <span>ENSEMBLE: <strong>5 NEURAL MODELS</strong></span>
+          </div>
+
           <div className="m-hero-badge">
             <Sparkles size={12} />
-            <span>Intelligence 2.0 first Preview</span>
+            <span>Intelligence 2.0 First Preview</span>
           </div>
 
           <h1>
-            Intelligent Agents<br />
-            <span>Real Results</span>
+            <DecryptedText text="Intelligent Agents" /><br />
+            <span><DecryptedText text="Real Results" /></span>
           </h1>
 
           <p className="m-hero-sub">
@@ -215,8 +231,8 @@ export default function LandingPage({
               <ArrowRight size={14} />
             </button>
 
-            <a href="#agents" className="m-btn-secondary hero-sec-btn">
-              <span>Explore 5 Agents</span>
+            <a href="#sandbox" className="m-btn-secondary hero-sec-btn">
+              <span>Test Runtime Live</span>
               <ChevronRight size={14} />
             </a>
           </div>
@@ -225,6 +241,7 @@ export default function LandingPage({
               HERO AGENT ARCHITECTURE FLOW (Aivora Reference Design)
           ------------------------------------------------------------ */}
           <div className="m-hero-flow-wrapper">
+            <BorderBeam size={280} duration={10} colorFrom="rgba(255, 255, 255, 0.85)" />
             <div className="m-flow-card-glow" />
             <div className="m-hero-flow-diagram">
               {/* Fine tile grid background */}
@@ -573,7 +590,9 @@ export default function LandingPage({
             </p>
           </div>
 
-          <div className="m-comparison-grid">
+          <SubtextXRaySlider />
+
+          <div className="m-comparison-grid" style={{ marginTop: "32px" }}>
             <div className="m-comp-card">
               <span className="m-comp-badge traditional">TRADITIONAL SENTIMENT MODEL</span>
               <div className="m-comp-quote">
@@ -643,10 +662,17 @@ export default function LandingPage({
 
           <div className="m-agents-grid">
             <div className="m-agent-card green">
+              <span className="hud-corner-tl" />
+              <span className="hud-corner-br" />
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 01</span>
-                <div className="m-agent-icon-wrap">
-                  <ScanSearch size={18} />
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div className="m-agent-waveform" style={{ color: "#ffffff" }}>
+                    <span /><span /><span /><span />
+                  </div>
+                  <div className="m-agent-icon-wrap">
+                    <ScanSearch size={18} />
+                  </div>
                 </div>
               </div>
               <h3 className="m-agent-name">Archaeologist</h3>
@@ -656,17 +682,24 @@ export default function LandingPage({
                 and linguistic hedging markers.
               </p>
               <div className="m-agent-tags">
-                <span className="m-agent-tag">Transformer</span>
-                <span className="m-agent-tag">326 vocab</span>
+                <span className="m-agent-tag">4-Layer Encoder</span>
+                <span className="m-agent-tag">256 d_model</span>
                 <span className="m-agent-tag">7 labels</span>
               </div>
             </div>
 
             <div className="m-agent-card violet">
+              <span className="hud-corner-tl" />
+              <span className="hud-corner-br" />
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 02</span>
-                <div className="m-agent-icon-wrap">
-                  <Brain size={18} />
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div className="m-agent-waveform" style={{ color: "#c58cff" }}>
+                    <span /><span /><span /><span />
+                  </div>
+                  <div className="m-agent-icon-wrap">
+                    <Brain size={18} />
+                  </div>
                 </div>
               </div>
               <h3 className="m-agent-name">Psychologist</h3>
@@ -676,17 +709,24 @@ export default function LandingPage({
                 and affect avoidance.
               </p>
               <div className="m-agent-tags">
-                <span className="m-agent-tag">Transformer</span>
-                <span className="m-agent-tag">216 vocab</span>
+                <span className="m-agent-tag">4-Layer Encoder</span>
+                <span className="m-agent-tag">8 Heads</span>
                 <span className="m-agent-tag">7 labels</span>
               </div>
             </div>
 
             <div className="m-agent-card blue">
+              <span className="hud-corner-tl" />
+              <span className="hud-corner-br" />
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 03</span>
-                <div className="m-agent-icon-wrap">
-                  <GitBranch size={18} />
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div className="m-agent-waveform" style={{ color: "#65b7ff" }}>
+                    <span /><span /><span /><span />
+                  </div>
+                  <div className="m-agent-icon-wrap">
+                    <GitBranch size={18} />
+                  </div>
                 </div>
               </div>
               <h3 className="m-agent-name">Logician</h3>
@@ -696,17 +736,24 @@ export default function LandingPage({
                 and logical contradictions.
               </p>
               <div className="m-agent-tags">
-                <span className="m-agent-tag">Transformer</span>
-                <span className="m-agent-tag">466 vocab</span>
+                <span className="m-agent-tag">3-Layer Encoder</span>
+                <span className="m-agent-tag">192 d_model</span>
                 <span className="m-agent-tag">6 labels</span>
               </div>
             </div>
 
             <div className="m-agent-card amber">
+              <span className="hud-corner-tl" />
+              <span className="hud-corner-br" />
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 04</span>
-                <div className="m-agent-icon-wrap">
-                  <Database size={18} />
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div className="m-agent-waveform" style={{ color: "#ffca68" }}>
+                    <span /><span /><span /><span />
+                  </div>
+                  <div className="m-agent-icon-wrap">
+                    <Database size={18} />
+                  </div>
                 </div>
               </div>
               <h3 className="m-agent-name">Historian</h3>
@@ -717,16 +764,23 @@ export default function LandingPage({
               </p>
               <div className="m-agent-tags">
                 <span className="m-agent-tag">FAISS Index</span>
-                <span className="m-agent-tag">TF-IDF</span>
+                <span className="m-agent-tag">Cosine Sim</span>
                 <span className="m-agent-tag">Top-5 Retrieval</span>
               </div>
             </div>
 
             <div className="m-agent-card green">
+              <span className="hud-corner-tl" />
+              <span className="hud-corner-br" />
               <div className="m-agent-top">
                 <span className="m-agent-num">AGENT 05</span>
-                <div className="m-agent-icon-wrap">
-                  <Network size={18} />
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div className="m-agent-waveform" style={{ color: "#ffffff" }}>
+                    <span /><span /><span /><span />
+                  </div>
+                  <div className="m-agent-icon-wrap">
+                    <Network size={18} />
+                  </div>
                 </div>
               </div>
               <h3 className="m-agent-name">Synthesizer</h3>
@@ -815,6 +869,24 @@ export default function LandingPage({
               </span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------
+          INTERACTIVE FORENSIC RUNTIME SANDBOX
+      ------------------------------------------------------------ */}
+      <section className="m-section" id="sandbox">
+        <div className="m-container">
+          <div className="m-section-header">
+            <span className="m-section-tag">LIVE RUNTIME CLI</span>
+            <h2 className="m-section-title">Test the Forensic Engine Live</h2>
+            <p className="m-section-desc">
+              Experience the scratch-trained multi-agent pipeline in real-time.
+              Select a strategic scenario below or test your own text.
+            </p>
+          </div>
+
+          <LiveTerminalDemo onLaunchStudio={onLaunchStudio} />
         </div>
       </section>
 
@@ -941,7 +1013,7 @@ export default function LandingPage({
                 </div>
                 <div className="m-brand-text">
                   <strong>L.I.M.I.N.A.L.</strong>
-                  <small>AI-103 INTELLIGENCE ENGINE</small>
+                  <small>INTELLIGENCE ENGINE</small>
                 </div>
               </div>
               <p style={{ fontSize: "12px", color: "#6a796e", lineHeight: "1.6" }}>

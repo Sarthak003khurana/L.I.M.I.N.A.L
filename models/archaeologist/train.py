@@ -50,12 +50,12 @@ VOCAB_FILE = (
 
 TRAIN_FILE = (
     DATASET_DIR
-    / "archaeologist_v3_train.jsonl"
+    / "archaeologist_combined_train.jsonl"
 )
 
 VALIDATION_FILE = (
     DATASET_DIR
-    / "archaeologist_v3_validation.jsonl"
+    / "archaeologist_combined_val.jsonl"
 )
 
 CHECKPOINT_DIR = (
@@ -1115,7 +1115,7 @@ def main():
 
             print()
             print(
-                "  ★ NEW BEST MODEL SAVED"
+                "  [*] NEW BEST MODEL SAVED"
             )
 
             print(

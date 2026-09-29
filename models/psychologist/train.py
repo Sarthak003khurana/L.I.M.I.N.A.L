@@ -1,4 +1,4 @@
-﻿import json
+import json
 import random
 import sys
 from pathlib import Path
@@ -66,12 +66,12 @@ TOKENIZER_FILE = (
 
 TRAIN_FILE = (
     DATASET_DIR
-    / "psychologist_v3_train.jsonl"
+    / "psychologist_combined_train.jsonl"
 )
 
 VALIDATION_FILE = (
     DATASET_DIR
-    / "psychologist_v3_validation.jsonl"
+    / "psychologist_combined_val.jsonl"
 )
 
 CHECKPOINT_DIR = (
@@ -765,7 +765,7 @@ def main():
             )
 
             print(
-                f"  ✓ New best checkpoint saved "
+                f"  [*] New best checkpoint saved "
                 f"(F1={best_validation_f1:.4f})"
             )
 

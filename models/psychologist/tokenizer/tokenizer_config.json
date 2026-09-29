@@ -12,6 +12,6 @@
   "unk_token": "<UNK>",
   "bos_token": "<BOS>",
   "eos_token": "<EOS>",
-  "vocab_size": 216,
-  "training_examples": 143
+  "vocab_size": 668,
+  "training_examples": 3343
 }

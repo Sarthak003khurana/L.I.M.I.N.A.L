@@ -1,0 +1,460 @@
+{"text": "After thorough internal deliberations, the Q4 revenue reconciliation was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "As discussed during yesterday's stakeholder briefing, there are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "Marcus Chen reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "In response to the risk committee's recent memorandum, the vulnerability disclosure report was officially deprecated following an internal security mandate.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Our team identified 4 memory leaks in the Kubernetes migration schedule, and Marcus Chen will push the hotfix by 5:00 PM EST this Friday.", "labels": ["NO_OMISSION"]}
+{"text": "Appropriate measures are being instituted to manage those aforementioned concerns.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The finance committee explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "The working group will address the merger agreement in due course once overarching priorities are aligned.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Preliminary assessments suggest that the vulnerability disclosure report could perhaps require marginal recalibration.", "labels": ["HEDGING"]}
+{"text": "Budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "To provide an operational update on recent developments, the client onboarding SLA was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "The team is diligently looking into that situation through established operational channels.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "It appears somewhat likely that the proposed targets may not be entirely achievable under current conditions.", "labels": ["HEDGING"]}
+{"text": "We will explore possible remedies for the Kubernetes migration schedule as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Following up on our executive sync earlier today, the deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The compliance auditor reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "I will personally conduct the customer briefing on the product roadmap revision prior to the October 15th deadline.", "labels": ["NO_OMISSION"]}
+{"text": "We feel that, to some degree, the quarterly financial audit might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "In response to the risk committee's recent memorandum, the contractual terms governing the multi-region failover protocol were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The production configuration was updated by The finance committee at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "After thorough internal deliberations, it seems that the vulnerability disclosure report was probably finalized without necessary validations.", "labels": ["HEDGING", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "Mandatory compliance standards were deployed across enterprise infrastructure without delay.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The budget reforecast was approved and authorized by The finance committee.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The platform architect reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "Regarding your inquiry about the project status, it seems that the multi-region failover protocol was probably finalized without necessary validations.", "labels": ["HEDGING", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "With respect to the outstanding deliverables, the contractual terms governing the product roadmap revision were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Regarding your inquiry about the project status, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "Given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "After thorough internal deliberations, we were merely implementing decisions that had already been ratified by prior leadership.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Following up on our executive sync earlier today, given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Our team identified 4 memory leaks in the quarterly financial audit, and Marcus Chen will push the hotfix on Monday morning at 09:00 UTC.", "labels": ["NO_OMISSION"]}
+{"text": "To provide an operational update on recent developments, we intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "After thorough internal deliberations, that matter will be handled when appropriate opportunities arise.", "labels": ["MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "With respect to the outstanding deliverables, the outcome regarding the Kubernetes migration schedule was dictated entirely by third-party infrastructure failures.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "the compensation recalibration was thoroughly audited by The engineering team yesterday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "It appears somewhat likely that the proposed targets may not be entirely achievable under current conditions.", "labels": ["HEDGING"]}
+{"text": "In light of recent regulatory updates, the multi-region failover protocol was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "The incident postmortem was compiled and signed by Marcus Chen.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The comprehensive audit of the Q4 revenue reconciliation was conducted and all critical findings were logged in the repository.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In response to the risk committee's recent memorandum, our tentative hypothesis suggests that the architecture should arguably perform adequately.", "labels": ["HEDGING"]}
+{"text": "In response to the risk committee's recent memorandum, we will explore possible remedies for the vulnerability disclosure report as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "I will personally conduct the customer briefing on the multi-region failover protocol prior to the October 15th deadline.", "labels": ["NO_OMISSION"]}
+{"text": "After thorough internal deliberations, there are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "Our team identified 4 memory leaks in the vulnerability disclosure report, and Marcus Chen will push the hotfix at the scheduled Thursday milestone review.", "labels": ["NO_OMISSION"]}
+{"text": "After thorough internal deliberations, our tentative hypothesis suggests that the architecture should arguably perform adequately.", "labels": ["HEDGING"]}
+{"text": "With respect to the outstanding deliverables, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "Our DevOps squad reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "A formal veto regarding the Q4 revenue reconciliation was officially issued by The finance committee.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Following up on our executive sync earlier today, the committee plans to evaluate potential next steps when circumstances warrant.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Appropriate measures are being instituted to manage those aforementioned concerns.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "I personally approved the release of the product roadmap revision yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "We feel that, to some degree, the multi-region failover protocol might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "We will explore possible remedies for the vendor contract renewal as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "A formal veto regarding the vulnerability disclosure report was officially issued by The security taskforce.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "We were merely implementing decisions that had already been ratified by prior leadership.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The executive board will deliver the completed verification report to the steering committee before the opening bell tomorrow.", "labels": ["NO_OMISSION"]}
+{"text": "We will explore possible remedies for the compensation recalibration as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The committee plans to evaluate potential next steps when circumstances warrant.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "To provide an operational update on recent developments, budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In light of recent regulatory updates, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "Dr. Vance reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "After thorough internal deliberations, action items relating to the quarterly financial audit have been taken under advisement for future deliberation.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The production configuration was updated by Elena Rostova at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The outcome regarding the product roadmap revision was dictated entirely by third-party infrastructure failures.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "As discussed during yesterday's stakeholder briefing, we intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "As discussed during yesterday's stakeholder briefing, the client onboarding SLA was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "Given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The comprehensive audit of the vulnerability disclosure report was conducted and all critical findings were logged in the repository.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "the vendor contract renewal was thoroughly audited by The compliance auditor yesterday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "In our estimation, it seems plausible that the deliverables could be adjusted if deemed necessary.", "labels": ["HEDGING"]}
+{"text": "Following up on our executive sync earlier today, while we are cautiously optimistic, the client onboarding SLA may conceivably face certain minor impediments.", "labels": ["HEDGING"]}
+{"text": "The budget reforecast was approved and authorized by Marcus Chen.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Regarding your inquiry about the project status, the SOC2 compliance attestation was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "The production configuration was updated by The engineering team at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "In light of recent regulatory updates, it appears somewhat likely that the proposed targets may not be entirely achievable under current conditions.", "labels": ["HEDGING"]}
+{"text": "Given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "the SOC2 compliance attestation was thoroughly audited by The security taskforce yesterday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "I made the decision to cancel the legacy integration, and I have reallocated the engineering budget accordingly.", "labels": ["NO_OMISSION"]}
+{"text": "The system configuration was modified yesterday and multiple access credentials were revoked.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Dialogue concerning the multi-region failover protocol remains ongoing, with updates to follow when meaningful progress occurs.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "After thorough internal deliberations, it is reasonably probable that certain milestones could be deferred pending further clarification.", "labels": ["HEDGING"]}
+{"text": "Appropriate measures are being instituted to manage those aforementioned concerns.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "To provide an operational update on recent developments, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "All security patches were deployed across staging environments by Elena Rostova.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "With respect to the outstanding deliverables, external vendor friction arguably contributed to the timeline discrepancy on the merger agreement.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "In response to the risk committee's recent memorandum, external vendor friction arguably contributed to the timeline discrepancy on the SOC2 compliance attestation.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "Our initial impression is that the team might possibly be able to revisit the merger agreement later.", "labels": ["HEDGING"]}
+{"text": "As discussed during yesterday's stakeholder briefing, the product roadmap revision was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "In light of recent regulatory updates, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "We believe that with appropriate runway, the Q4 revenue reconciliation might conceivably be approachable in subsequent phases.", "labels": ["HEDGING"]}
+{"text": "There are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "Our tentative hypothesis suggests that the architecture should arguably perform adequately.", "labels": ["HEDGING"]}
+{"text": "The breakdown in the compensation recalibration was largely precipitated by directives issued outside our team's operational purview.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "the vendor contract renewal was thoroughly audited by The platform architect yesterday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "In response to the risk committee's recent memorandum, given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The codebase was refactored and several legacy endpoints were removed from production.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "All security patches were deployed across staging environments by The security taskforce.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "It appears somewhat likely that the proposed targets may not be entirely achievable under current conditions.", "labels": ["HEDGING"]}
+{"text": "In our estimation, it seems plausible that the deliverables could be adjusted if deemed necessary.", "labels": ["HEDGING"]}
+{"text": "After thorough internal deliberations, we were merely implementing decisions that had already been ratified by prior leadership.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "As discussed during yesterday's stakeholder briefing, external vendor friction arguably contributed to the timeline discrepancy on the database schema refactor.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "With respect to the outstanding deliverables, external vendor friction arguably contributed to the timeline discrepancy on the compensation recalibration.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "After thorough internal deliberations, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "Our squad executed strictly according to legacy specifications provided by external consultants.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "In response to the risk committee's recent memorandum, the merger agreement was officially deprecated following an internal security mandate.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In light of recent regulatory updates, the merger agreement was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "In response to the risk committee's recent memorandum, we feel that, to some degree, the database schema refactor might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "In light of recent regulatory updates, external vendor friction arguably contributed to the timeline discrepancy on the compensation recalibration.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "The deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "I will personally conduct the customer briefing on the vendor contract renewal before the end of Q3.", "labels": ["NO_OMISSION"]}
+{"text": "In light of recent regulatory updates, external vendor friction arguably contributed to the timeline discrepancy on the vulnerability disclosure report.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "The security taskforce explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "In response to the risk committee's recent memorandum, given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "A formal veto regarding the compensation recalibration was officially issued by David Kim.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "With respect to the outstanding deliverables, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "As discussed during yesterday's stakeholder briefing, budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "To provide an operational update on recent developments, given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Following up on our executive sync earlier today, resource starvation and shifting executive priorities compromised our ability to sustain the product roadmap revision.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "A formal veto regarding the database schema refactor was officially issued by Chief Legal Counsel.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The finance committee reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "In response to the risk committee's recent memorandum, external vendor friction arguably contributed to the timeline discrepancy on the vendor contract renewal.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "As discussed during yesterday's stakeholder briefing, given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "As discussed during yesterday's stakeholder briefing, it seems that the multi-region failover protocol was probably finalized without necessary validations.", "labels": ["HEDGING", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "To provide an operational update on recent developments, the multi-region failover protocol was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "Vice President Hayes explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "In response to the risk committee's recent memorandum, it is reasonably probable that certain milestones could be deferred pending further clarification.", "labels": ["HEDGING"]}
+{"text": "To provide an operational update on recent developments, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "There are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "I personally approved the release of the database schema refactor yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "The production configuration was updated by The engineering team at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "In response to the risk committee's recent memorandum, the client onboarding SLA was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "We will explore possible remedies for the multi-region failover protocol as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "To provide an operational update on recent developments, we intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We were merely implementing decisions that had already been ratified by prior leadership.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Following up on our executive sync earlier today, we feel that, to some degree, the compensation recalibration might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "Following up on our executive sync earlier today, all outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Our team identified 4 memory leaks in the vulnerability disclosure report, and Marcus Chen will push the hotfix before the opening bell tomorrow.", "labels": ["NO_OMISSION"]}
+{"text": "Appropriate measures are being instituted to manage those aforementioned concerns.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "Our squad executed strictly according to legacy specifications provided by external consultants.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The production configuration was updated by David Kim at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "After thorough internal deliberations, external vendor friction arguably contributed to the timeline discrepancy on the client onboarding SLA.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "The contractual terms governing the vulnerability disclosure report were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "the quarterly financial audit was thoroughly audited by The engineering team yesterday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "To provide an operational update on recent developments, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "The incident postmortem was compiled and signed by Elena Rostova.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "We will monitor the ongoing dynamics surrounding those issues as events unfold.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "A formal decision regarding the Q4 revenue reconciliation was finalized during closed executive deliberations.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Resource starvation and shifting executive priorities compromised our ability to sustain the product roadmap revision.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Regarding your inquiry about the project status, the outcome regarding the product roadmap revision was dictated entirely by third-party infrastructure failures.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "There are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "In our estimation, it seems plausible that the deliverables could be adjusted if deemed necessary.", "labels": ["HEDGING"]}
+{"text": "I will personally conduct the customer briefing on the Kubernetes migration schedule by November 30th.", "labels": ["NO_OMISSION"]}
+{"text": "The deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Following up on our executive sync earlier today, the vendor contract renewal was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "A formal veto regarding the database schema refactor was officially issued by Dr. Vance.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "I personally approved the release of the compensation recalibration yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "The budget reforecast was approved and authorized by The finance committee.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "We will monitor the ongoing dynamics surrounding those issues as events unfold.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Mandatory compliance standards were deployed across enterprise infrastructure without delay.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In response to the risk committee's recent memorandum, a formal decision regarding the vulnerability disclosure report was finalized during closed executive deliberations.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The working group will address the product roadmap revision in due course once overarching priorities are aligned.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "A formal veto regarding the quarterly financial audit was officially issued by Sarah Jenkins.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "To provide an operational update on recent developments, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "the merger agreement was thoroughly audited by Dr. Vance yesterday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The incident postmortem was compiled and signed by The finance committee.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "With respect to the outstanding deliverables, there are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "Appropriate measures are being instituted to manage those aforementioned concerns.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Following up on our executive sync earlier today, there are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "In response to the risk committee's recent memorandum, resource starvation and shifting executive priorities compromised our ability to sustain the Q4 revenue reconciliation.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "In light of recent regulatory updates, the breakdown in the quarterly financial audit was largely precipitated by directives issued outside our team's operational purview.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "It is reasonably probable that certain milestones could be deferred pending further clarification.", "labels": ["HEDGING"]}
+{"text": "While we are cautiously optimistic, the SOC2 compliance attestation may conceivably face certain minor impediments.", "labels": ["HEDGING"]}
+{"text": "In response to the risk committee's recent memorandum, that matter will be handled when appropriate opportunities arise.", "labels": ["MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "Preliminary assessments suggest that the SOC2 compliance attestation could perhaps require marginal recalibration.", "labels": ["HEDGING"]}
+{"text": "With respect to the outstanding deliverables, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "A formal decision regarding the SOC2 compliance attestation was finalized during closed executive deliberations.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The team is diligently looking into that situation through established operational channels.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "As discussed during yesterday's stakeholder briefing, in our estimation, it seems plausible that the deliverables could be adjusted if deemed necessary.", "labels": ["HEDGING"]}
+{"text": "With respect to the outstanding deliverables, our tentative hypothesis suggests that the architecture should arguably perform adequately.", "labels": ["HEDGING"]}
+{"text": "With respect to the outstanding deliverables, our tentative hypothesis suggests that the architecture should arguably perform adequately.", "labels": ["HEDGING"]}
+{"text": "In light of recent regulatory updates, the working group will address the client onboarding SLA in due course once overarching priorities are aligned.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "After thorough internal deliberations, it seems that the merger agreement was probably finalized without necessary validations.", "labels": ["HEDGING", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "The contractual terms governing the merger agreement were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The engineering team reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "The breakdown in the vendor contract renewal was largely precipitated by directives issued outside our team's operational purview.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The system configuration was modified yesterday and multiple access credentials were revoked.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The team is diligently looking into that situation through established operational channels.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Further discussions regarding the vendor contract renewal will be scheduled at an appropriate juncture.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The incident postmortem was compiled and signed by Dr. Vance.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Elena Rostova explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "In light of recent regulatory updates, the committee plans to evaluate potential next steps when circumstances warrant.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The production configuration was updated by The security taskforce at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Mandatory compliance standards were deployed across enterprise infrastructure without delay.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In response to the risk committee's recent memorandum, that matter will be handled when appropriate opportunities arise.", "labels": ["MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "In light of recent regulatory updates, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "Elena Rostova explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "The production configuration was updated by The compliance auditor at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Shifting organizational mandates left our engineering unit with virtually no latitude to prevent the delay.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The comprehensive audit of the Q4 revenue reconciliation was conducted and all critical findings were logged in the repository.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "A formal veto regarding the SOC2 compliance attestation was officially issued by The engineering team.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The team is diligently looking into that situation through established operational channels.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The system configuration was modified yesterday and multiple access credentials were revoked.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The security taskforce will deliver the completed verification report to the steering committee at the scheduled Thursday milestone review.", "labels": ["NO_OMISSION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The engineering team reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Chief Legal Counsel explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "After thorough internal deliberations, budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In light of recent regulatory updates, shifting organizational mandates left our engineering unit with virtually no latitude to prevent the delay.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Budget allocations for the upcoming fiscal quarter were reduced across all operational streams.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "With respect to the outstanding deliverables, external vendor friction arguably contributed to the timeline discrepancy on the client onboarding SLA.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "To provide an operational update on recent developments, preliminary assessments suggest that the product roadmap revision could perhaps require marginal recalibration.", "labels": ["HEDGING"]}
+{"text": "The legacy architecture was decommissioned by Dr. Vance ahead of schedule.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The incident postmortem was compiled and signed by Elena Rostova.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "We will explore possible remedies for the vendor contract renewal as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "All security patches were deployed across staging environments by Our DevOps squad.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "All security patches were deployed across staging environments by Our DevOps squad.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Sarah Jenkins reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "To provide an operational update on recent developments, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "Preliminary assessments suggest that the multi-region failover protocol could perhaps require marginal recalibration.", "labels": ["HEDGING"]}
+{"text": "With respect to the outstanding deliverables, there are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "As discussed during yesterday's stakeholder briefing, all outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Our tentative hypothesis suggests that the architecture should arguably perform adequately.", "labels": ["HEDGING"]}
+{"text": "Regarding your inquiry about the project status, we believe that with appropriate runway, the SOC2 compliance attestation might conceivably be approachable in subsequent phases.", "labels": ["HEDGING"]}
+{"text": "Shifting organizational mandates left our engineering unit with virtually no latitude to prevent the delay.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The comprehensive audit of the Q4 revenue reconciliation was conducted and all critical findings were logged in the repository.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "I personally approved the release of the multi-region failover protocol yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "In response to the risk committee's recent memorandum, the product roadmap revision was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "We will explore possible remedies for the Q4 revenue reconciliation as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The outcome regarding the compensation recalibration was dictated entirely by third-party infrastructure failures.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "In light of recent regulatory updates, resource starvation and shifting executive priorities compromised our ability to sustain the compensation recalibration.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Resource starvation and shifting executive priorities compromised our ability to sustain the vulnerability disclosure report.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "I will personally conduct the customer briefing on the SOC2 compliance attestation prior to the October 15th deadline.", "labels": ["NO_OMISSION"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "The deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The compliance auditor will deliver the completed verification report to the steering committee by November 30th.", "labels": ["NO_OMISSION"]}
+{"text": "Regarding your inquiry about the project status, the merger agreement was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "Regarding your inquiry about the project status, we feel that, to some degree, the multi-region failover protocol might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "Regarding your inquiry about the project status, action items relating to the database schema refactor have been taken under advisement for future deliberation.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "After thorough internal deliberations, we will explore possible remedies for the multi-region failover protocol as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "In response to the risk committee's recent memorandum, our initial impression is that the team might possibly be able to revisit the Kubernetes migration schedule later.", "labels": ["HEDGING"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "There are indications that the timeline should probably hold, assuming no unexpected complications arise.", "labels": ["HEDGING"]}
+{"text": "As discussed during yesterday's stakeholder briefing, the comprehensive audit of the Q4 revenue reconciliation was conducted and all critical findings were logged in the repository.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Our team identified 4 memory leaks in the vulnerability disclosure report, and Marcus Chen will push the hotfix by November 30th.", "labels": ["NO_OMISSION"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "We feel that, to some degree, the SOC2 compliance attestation might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "David Kim reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "It appears somewhat likely that the proposed targets may not be entirely achievable under current conditions.", "labels": ["HEDGING"]}
+{"text": "All security patches were deployed across staging environments by Elena Rostova.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "As discussed during yesterday's stakeholder briefing, we believe that with appropriate runway, the merger agreement might conceivably be approachable in subsequent phases.", "labels": ["HEDGING"]}
+{"text": "Our team identified 4 memory leaks in the vulnerability disclosure report, and Marcus Chen will push the hotfix before the opening bell tomorrow.", "labels": ["NO_OMISSION"]}
+{"text": "Following up on our executive sync earlier today, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "Elena Rostova explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "I will personally conduct the customer briefing on the vulnerability disclosure report within the next two business days.", "labels": ["NO_OMISSION"]}
+{"text": "While we are cautiously optimistic, the merger agreement may conceivably face certain minor impediments.", "labels": ["HEDGING"]}
+{"text": "In light of recent regulatory updates, efforts are currently underway to establish a viable pathway forward for the compensation recalibration.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Our team identified 4 memory leaks in the quarterly financial audit, and Marcus Chen will push the hotfix before the opening bell tomorrow.", "labels": ["NO_OMISSION"]}
+{"text": "Dialogue concerning the Q4 revenue reconciliation remains ongoing, with updates to follow when meaningful progress occurs.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "To provide an operational update on recent developments, all outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Our squad executed strictly according to legacy specifications provided by external consultants.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "To provide an operational update on recent developments, external vendor friction arguably contributed to the timeline discrepancy on the product roadmap revision.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "To provide an operational update on recent developments, external vendor friction arguably contributed to the timeline discrepancy on the client onboarding SLA.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "the database schema refactor was officially deprecated following an internal security mandate.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "To provide an operational update on recent developments, it seems that the database schema refactor was probably finalized without necessary validations.", "labels": ["HEDGING", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The outcome regarding the product roadmap revision was dictated entirely by third-party infrastructure failures.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "In response to the risk committee's recent memorandum, mandatory compliance standards were deployed across enterprise infrastructure without delay.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The contractual terms governing the database schema refactor were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "We will monitor the ongoing dynamics surrounding those issues as events unfold.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "With respect to the outstanding deliverables, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "As discussed during yesterday's stakeholder briefing, given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "We will explore possible remedies for the compensation recalibration as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Appropriate measures are being instituted to manage those aforementioned concerns.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Our DevOps squad will deliver the completed verification report to the steering committee by 5:00 PM EST this Friday.", "labels": ["NO_OMISSION"]}
+{"text": "As discussed during yesterday's stakeholder briefing, we will explore possible remedies for the quarterly financial audit as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The engineering team reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "After thorough internal deliberations, external vendor friction arguably contributed to the timeline discrepancy on the quarterly financial audit.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "The budget reforecast was approved and authorized by The engineering team.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "The budget reforecast was approved and authorized by Dr. Vance.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "I will personally conduct the customer briefing on the product roadmap revision prior to the October 15th deadline.", "labels": ["NO_OMISSION"]}
+{"text": "The steering committee reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "Our team identified 4 memory leaks in the product roadmap revision, and Marcus Chen will push the hotfix at the scheduled Thursday milestone review.", "labels": ["NO_OMISSION"]}
+{"text": "With respect to the outstanding deliverables, we feel that, to some degree, the merger agreement might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "Regarding your inquiry about the project status, we intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "With respect to the outstanding deliverables, resource starvation and shifting executive priorities compromised our ability to sustain the quarterly financial audit.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "In response to the risk committee's recent memorandum, our tentative hypothesis suggests that the architecture should arguably perform adequately.", "labels": ["HEDGING"]}
+{"text": "A formal decision regarding the compensation recalibration was finalized during closed executive deliberations.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Regarding your inquiry about the project status, external vendor friction arguably contributed to the timeline discrepancy on the compensation recalibration.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "The platform architect will deliver the completed verification report to the steering committee at the scheduled Thursday milestone review.", "labels": ["NO_OMISSION"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Efforts are currently underway to establish a viable pathway forward for the SOC2 compliance attestation.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Dialogue concerning the vulnerability disclosure report remains ongoing, with updates to follow when meaningful progress occurs.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "In response to the risk committee's recent memorandum, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "In light of recent regulatory updates, it appears somewhat likely that the proposed targets may not be entirely achievable under current conditions.", "labels": ["HEDGING"]}
+{"text": "Further discussions regarding the compensation recalibration will be scheduled at an appropriate juncture.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "A formal decision regarding the vendor contract renewal was finalized during closed executive deliberations.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Dialogue concerning the multi-region failover protocol remains ongoing, with updates to follow when meaningful progress occurs.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We believe that with appropriate runway, the Q4 revenue reconciliation might conceivably be approachable in subsequent phases.", "labels": ["HEDGING"]}
+{"text": "I will personally conduct the customer briefing on the merger agreement by 5:00 PM EST this Friday.", "labels": ["NO_OMISSION"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Regarding your inquiry about the project status, shifting organizational mandates left our engineering unit with virtually no latitude to prevent the delay.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The outcome regarding the product roadmap revision was dictated entirely by third-party infrastructure failures.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "With respect to the outstanding deliverables, mandatory compliance standards were deployed across enterprise infrastructure without delay.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "We will monitor the ongoing dynamics surrounding those issues as events unfold.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Mandatory compliance standards were deployed across enterprise infrastructure without delay.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Dr. Vance reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "In response to the risk committee's recent memorandum, we might perhaps revisit those matters when additional context becomes available.", "labels": ["HEDGING", "MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "Resource starvation and shifting executive priorities compromised our ability to sustain the client onboarding SLA.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Regarding your inquiry about the project status, the deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "As discussed during yesterday's stakeholder briefing, further discussions regarding the product roadmap revision will be scheduled at an appropriate juncture.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "I will personally conduct the customer briefing on the compensation recalibration within the next two business days.", "labels": ["NO_OMISSION"]}
+{"text": "The deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The contractual terms governing the Kubernetes migration schedule were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The budget reforecast was approved and authorized by Our DevOps squad.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The system configuration was modified yesterday and multiple access credentials were revoked.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "The production configuration was updated by David Kim at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "In light of recent regulatory updates, external vendor friction arguably contributed to the timeline discrepancy on the Q4 revenue reconciliation.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "We were merely implementing decisions that had already been ratified by prior leadership.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "In light of recent regulatory updates, external vendor friction arguably contributed to the timeline discrepancy on the multi-region failover protocol.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "Resource starvation and shifting executive priorities compromised our ability to sustain the vendor contract renewal.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The incident postmortem was compiled and signed by The engineering team.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "To provide an operational update on recent developments, the Kubernetes migration schedule was officially deprecated following an internal security mandate.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "With respect to the outstanding deliverables, it is reasonably probable that certain milestones could be deferred pending further clarification.", "labels": ["HEDGING"]}
+{"text": "Given unforeseen macroeconomic headwinds and vendor delays, the missed target was inevitable.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "the merger agreement was thoroughly audited by The steering committee yesterday.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The legacy architecture was decommissioned by The engineering team ahead of schedule.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Vice President Hayes will deliver the completed verification report to the steering committee by November 30th.", "labels": ["NO_OMISSION"]}
+{"text": "Regarding your inquiry about the project status, the breakdown in the quarterly financial audit was largely precipitated by directives issued outside our team's operational purview.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "I made the decision to cancel the legacy integration, and I have reallocated the engineering budget accordingly.", "labels": ["NO_OMISSION"]}
+{"text": "We will explore possible remedies for the vulnerability disclosure report as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The production configuration was updated by Dr. Vance at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The production configuration was updated by The steering committee at 02:00 UTC.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "As discussed during yesterday's stakeholder briefing, external vendor friction arguably contributed to the timeline discrepancy on the merger agreement.", "labels": ["RESPONSIBILITY_AVOIDANCE", "HEDGING"]}
+{"text": "After thorough internal deliberations, our squad executed strictly according to legacy specifications provided by external consultants.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "I will personally conduct the customer briefing on the merger agreement on Monday morning at 09:00 UTC.", "labels": ["NO_OMISSION"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The codebase was refactored and several legacy endpoints were removed from production.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Shifting organizational mandates left our engineering unit with virtually no latitude to prevent the delay.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "To provide an operational update on recent developments, our squad executed strictly according to legacy specifications provided by external consultants.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Dialogue concerning the Q4 revenue reconciliation remains ongoing, with updates to follow when meaningful progress occurs.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "As discussed during yesterday's stakeholder briefing, that matter will be handled when appropriate opportunities arise.", "labels": ["MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "The team is diligently looking into that situation through established operational channels.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Resource starvation and shifting executive priorities compromised our ability to sustain the Kubernetes migration schedule.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "The deployment pipeline was temporarily paused while anomalous telemetry was evaluated.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In response to the risk committee's recent memorandum, that matter will be handled when appropriate opportunities arise.", "labels": ["MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "The budget reforecast was approved and authorized by The executive board.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Our team identified 4 memory leaks in the quarterly financial audit, and Marcus Chen will push the hotfix before the end of Q3.", "labels": ["NO_OMISSION"]}
+{"text": "Shifting organizational mandates left our engineering unit with virtually no latitude to prevent the delay.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "Following up on our executive sync earlier today, the merger agreement was postponed, and follow-up reviews will occur in due course.", "labels": ["PASSIVE_CONSTRUCTION", "MISSING_ACTOR", "MISSING_COMMITMENT"]}
+{"text": "Action items relating to the SOC2 compliance attestation have been taken under advisement for future deliberation.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The incident postmortem was compiled and signed by The security taskforce.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "The working group will address the Q4 revenue reconciliation in due course once overarching priorities are aligned.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "I personally approved the release of the Kubernetes migration schedule yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "As discussed during yesterday's stakeholder briefing, we were merely implementing decisions that had already been ratified by prior leadership.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "In our estimation, it seems plausible that the deliverables could be adjusted if deemed necessary.", "labels": ["HEDGING"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "Action items relating to the multi-region failover protocol have been taken under advisement for future deliberation.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "The working group will address the Kubernetes migration schedule in due course once overarching priorities are aligned.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "We will explore possible remedies for the Kubernetes migration schedule as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "In light of recent regulatory updates, our initial impression is that the team might possibly be able to revisit the compensation recalibration later.", "labels": ["HEDGING"]}
+{"text": "Dr. Vance explicitly rejected the vendor contract because the indemnification clause exceeded our risk threshold.", "labels": ["NO_OMISSION"]}
+{"text": "Resource starvation and shifting executive priorities compromised our ability to sustain the compensation recalibration.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The outcome regarding the quarterly financial audit was dictated entirely by third-party infrastructure failures.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "We feel that, to some degree, the vendor contract renewal might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "The incident postmortem was compiled and signed by Vice President Hayes.", "labels": ["PASSIVE_CONSTRUCTION"]}
+{"text": "After thorough internal deliberations, dialogue concerning the database schema refactor remains ongoing, with updates to follow when meaningful progress occurs.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "We feel that, to some degree, the compensation recalibration might benefit from further exploratory review.", "labels": ["HEDGING"]}
+{"text": "I will personally conduct the customer briefing on the SOC2 compliance attestation on Monday morning at 09:00 UTC.", "labels": ["NO_OMISSION"]}
+{"text": "I will personally conduct the customer briefing on the multi-region failover protocol prior to the October 15th deadline.", "labels": ["NO_OMISSION"]}
+{"text": "Our initial impression is that the team might possibly be able to revisit the compensation recalibration later.", "labels": ["HEDGING"]}
+{"text": "With respect to the outstanding deliverables, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "I disagree with the revised architecture, and I have scheduled a technical review for tomorrow morning.", "labels": ["NO_OMISSION"]}
+{"text": "I personally approved the release of the merger agreement yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "Actions have been taken regarding that matter, and subsequent reviews will follow.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "While we are cautiously optimistic, the database schema refactor may conceivably face certain minor impediments.", "labels": ["HEDGING"]}
+{"text": "I will personally conduct the customer briefing on the product roadmap revision before the end of Q3.", "labels": ["NO_OMISSION"]}
+{"text": "I will personally conduct the customer briefing on the database schema refactor before the opening bell tomorrow.", "labels": ["NO_OMISSION"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "After thorough internal deliberations, we will explore possible remedies for the Q4 revenue reconciliation as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "All outstanding liabilities associated with the account were transferred without prior notification.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "As discussed during yesterday's stakeholder briefing, the contractual terms governing the client onboarding SLA were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "The codebase was refactored and several legacy endpoints were removed from production.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Mandatory compliance standards were deployed across enterprise infrastructure without delay.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "It is reasonably probable that certain milestones could be deferred pending further clarification.", "labels": ["HEDGING"]}
+{"text": "Certain developments have necessitated a reconsideration of our tactical posture.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "As discussed during yesterday's stakeholder briefing, that matter will be handled when appropriate opportunities arise.", "labels": ["MISSING_COMMITMENT", "VAGUE_REFERENCE"]}
+{"text": "We are actively coordinating with relevant parties to resolve that specific matter.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "Marcus Chen reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "The contractual terms governing the merger agreement were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In light of recent regulatory updates, we intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "I personally approved the release of the vulnerability disclosure report yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "Further discussions regarding the SOC2 compliance attestation will be scheduled at an appropriate juncture.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "With respect to the outstanding deliverables, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "The working group will address the quarterly financial audit in due course once overarching priorities are aligned.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "I personally approved the release of the vendor contract renewal yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "The contractual terms governing the database schema refactor were renegotiated to minimize corporate exposure.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "In our estimation, it seems plausible that the deliverables could be adjusted if deemed necessary.", "labels": ["HEDGING"]}
+{"text": "Following up on our executive sync earlier today, the comprehensive audit of the vendor contract renewal was conducted and all critical findings were logged in the repository.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Appropriate measures are being instituted to manage those aforementioned concerns.", "labels": ["VAGUE_REFERENCE"]}
+{"text": "The working group will address the Q4 revenue reconciliation in due course once overarching priorities are aligned.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "I personally approved the release of the SOC2 compliance attestation yesterday, and I assume full responsibility for the deployment.", "labels": ["NO_OMISSION"]}
+{"text": "Following up on our executive sync earlier today, shifting organizational mandates left our engineering unit with virtually no latitude to prevent the delay.", "labels": ["RESPONSIBILITY_AVOIDANCE"]}
+{"text": "After thorough internal deliberations, the deadline was missed because necessary documentation was withheld by external groups.", "labels": ["RESPONSIBILITY_AVOIDANCE", "PASSIVE_CONSTRUCTION", "MISSING_ACTOR"]}
+{"text": "We intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Following up on our executive sync earlier today, we intend to revisit the execution cadence as soon as bandwidth and resources permit.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "Following up on our executive sync earlier today, we will explore possible remedies for the merger agreement as part of our ongoing operational reviews.", "labels": ["MISSING_COMMITMENT"]}
+{"text": "With respect to the outstanding deliverables, the comprehensive audit of the vulnerability disclosure report was conducted and all critical findings were logged in the repository.", "labels": ["MISSING_ACTOR", "PASSIVE_CONSTRUCTION"]}
+{"text": "Following up on our executive sync earlier today, it appears somewhat likely that the proposed targets may not be entirely achievable under current conditions.", "labels": ["HEDGING"]}
+{"text": "I made the decision to cancel the legacy integration, and I have reallocated the engineering budget accordingly.", "labels": ["NO_OMISSION"]}
+{"text": "The finance committee reviewed the pull request, approved the database migration, and merged the branch into main.", "labels": ["NO_OMISSION"]}
+{"text": "After thorough internal deliberations, that matter will be handled when appropriate opportunities arise.", "labels": ["MISSING_COMMITMENT", "VAGUE_REFERENCE"]}

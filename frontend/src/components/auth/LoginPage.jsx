@@ -212,7 +212,7 @@ export default function LoginPage({ onLogin, onBackToLanding, backendStatus }) {
           </div>
           <div className="login-brand-text">
             <strong>L.I.M.I.N.A.L.</strong>
-            <small>INTELLIGENCE ENGINE • AI-103</small>
+            <small>INTELLIGENCE ENGINE</small>
           </div>
         </div>
 

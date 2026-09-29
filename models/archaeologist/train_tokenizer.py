@@ -15,7 +15,7 @@ DATASET_FILE = (
     PROJECT_DIR
     / "dataset"
     / "archaeologist"
-    / "archaeologist_v3_train.jsonl"
+    / "archaeologist_combined_train.jsonl"
 )
 
 TOKENIZER_DIR = BASE_DIR / "tokenizer"

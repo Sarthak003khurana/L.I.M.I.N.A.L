@@ -1,11 +1,11 @@
-﻿import json
+import json
 import re
 from collections import Counter
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-TRAIN_FILE = PROJECT_ROOT / "dataset" / "psychologist" / "psychologist_v3_train.jsonl"
+TRAIN_FILE = PROJECT_ROOT / "dataset" / "psychologist" / "psychologist_combined_train.jsonl"
 TOKENIZER_DIR = PROJECT_ROOT / "models" / "psychologist" / "tokenizer"
 
 SPECIAL_TOKENS = [

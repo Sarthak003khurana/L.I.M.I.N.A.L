@@ -1,0 +1,400 @@
+{"text": "In response to the emergency executive meeting, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "The vendor confirmed the delivery date for the replacement hardware is scheduled for next Tuesday.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I'll defer entirely to the committee's judgment; my input won't change anything anyway.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The arbitration panel awarded full damages against our company; acknowledging receipt of the docket.", "labels": ["AFFECT_GAP"]}
+{"text": "I prefer not to dwell on how the staff is reacting to the restructuring; what matters is hitting our EBITDA target.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Following the unexpected cancellation of our product line, whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "We don't need empathy sessions right now; we need pull requests merged and closed before end of day.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Our primary data center suffered catastrophic hardware corruption with permanent loss of customer records. Continuing with daily standup.", "labels": ["AFFECT_GAP"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "We don't need empathy sessions right now; we need pull requests merged and closed before end of day.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Thank you for this wonderful opportunity to demonstrate agility by discarding six months of validated engineering work.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The meeting will begin promptly at 10:00 AM in Conference Room B, and dial-in links have been sent.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Following the unexpected cancellation of our product line, whatever you think is best! Happy to step aside and let you run with it completely.", "labels": ["FORCED_POLITENESS", "DISENGAGEMENT_SIGNAL"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "In response to the emergency executive meeting, i went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "We completed the API documentation and published the developer guide to the internal portal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Concerning the merger announcement this morning, i'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "We are celebrating our record-breaking fiscal results, yet morale across the engineering floor has collapsed.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Regarding the sudden budget cuts announced today, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "Regarding the last-minute scope expansion for Q4, it's fine. I'm used to being the only person who actually delivers on their commitments around here.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Concerning the merger announcement this morning, i am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Regarding the sudden budget cuts announced today, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "Thank you for this wonderful opportunity to demonstrate agility by discarding six months of validated engineering work.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I am genuinely thrilled about this promotion, though honestly I have never felt more depleted and numb.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In light of the performance evaluation results, i'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "The infrastructure team deployed the hotfix at 14:00 EST and confirmed database latency is back to normal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "In response to the emergency executive meeting, i'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "In response to the emergency executive meeting, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the sudden budget cuts announced today, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "Thank you for this wonderful opportunity to demonstrate agility by discarding six months of validated engineering work.", "labels": ["FORCED_POLITENESS"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Concerning the merger announcement this morning, no worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Following the unexpected cancellation of our product line, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "Regarding the last-minute scope expansion for Q4, you can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "In response to the emergency executive meeting, proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Our primary data center suffered catastrophic hardware corruption with permanent loss of customer records. Continuing with daily standup.", "labels": ["AFFECT_GAP"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "After reviewing the client feedback on our sprint, everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The arbitration panel awarded full damages against our company; acknowledging receipt of the docket.", "labels": ["AFFECT_GAP"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The meeting will begin promptly at 10:00 AM in Conference Room B, and dial-in links have been sent.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In response to the emergency executive meeting, whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Of course, that sounds perfectly reasonable! Glad to work overnight to make sure your formatting preferences are met.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "The arbitration panel awarded full damages against our company; acknowledging receipt of the docket.", "labels": ["AFFECT_GAP"]}
+{"text": "Fascinating how my original proposal was dismissed last month, only to be presented today under someone else's name.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Regarding the sudden budget cuts announced today, delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Regarding the sudden budget cuts announced today, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Following the unexpected cancellation of our product line, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "We are celebrating our record-breaking fiscal results, yet morale across the engineering floor has collapsed.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In response to the emergency executive meeting, not my circus anymore. Implement whichever approach management signs off on.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Concerning the merger announcement this morning, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "The arbitration panel awarded full damages against our company; acknowledging receipt of the docket.", "labels": ["AFFECT_GAP"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The meeting will begin promptly at 10:00 AM in Conference Room B, and dial-in links have been sent.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "We completed the API documentation and published the developer guide to the internal portal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I prefer not to dwell on how the staff is reacting to the restructuring; what matters is hitting our EBITDA target.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "In light of the performance evaluation results, another emergency created by leadership's poor planning that the junior staff is expected to magically fix.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Regarding the sudden budget cuts announced today, thank you so much for the feedback! Happy to rework the entire 45-page proposal from scratch over the weekend as requested.", "labels": ["FORCED_POLITENESS"]}
+{"text": "In light of the performance evaluation results, i am genuinely thrilled about this promotion, though honestly I have never felt more depleted and numb.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "In response to the emergency executive meeting, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "The infrastructure team deployed the hotfix at 14:00 EST and confirmed database latency is back to normal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "The infrastructure team deployed the hotfix at 14:00 EST and confirmed database latency is back to normal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The vendor confirmed the delivery date for the replacement hardware is scheduled for next Tuesday.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "After reviewing the client feedback on our sprint, this is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Morale is an abstract metric; let's concentrate exclusively on customer churn percentages.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "The meeting will begin promptly at 10:00 AM in Conference Room B, and dial-in links have been sent.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "In response to the emergency executive meeting, whatever you think is best! Happy to step aside and let you run with it completely.", "labels": ["FORCED_POLITENESS", "DISENGAGEMENT_SIGNAL"]}
+{"text": "We don't need empathy sessions right now; we need pull requests merged and closed before end of day.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "I'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Following the unexpected cancellation of our product line, whatever you think is best! Happy to step aside and let you run with it completely.", "labels": ["FORCED_POLITENESS", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "In response to the emergency executive meeting, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Not my circus anymore. Implement whichever approach management signs off on.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Congratulations on winning the contract; I will be stepping away from the organization immediately.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "Regarding the team restructuring notice, delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Our primary data center suffered catastrophic hardware corruption with permanent loss of customer records. Continuing with daily standup.", "labels": ["AFFECT_GAP"]}
+{"text": "In light of the performance evaluation results, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "Regarding the last-minute scope expansion for Q4, proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The vendor confirmed the delivery date for the replacement hardware is scheduled for next Tuesday.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I'll defer entirely to the committee's judgment; my input won't change anything anyway.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, so glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Following the unexpected cancellation of our product line, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Our primary data center suffered catastrophic hardware corruption with permanent loss of customer records. Continuing with daily standup.", "labels": ["AFFECT_GAP"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Fascinating how my original proposal was dismissed last month, only to be presented today under someone else's name.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Concerning the merger announcement this morning, i'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, i went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "No worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "It's fine. I'm used to being the only person who actually delivers on their commitments around here.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Another emergency created by leadership's poor planning that the junior staff is expected to magically fix.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "After reviewing the client feedback on our sprint, always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "The regional office was closed and all 250 personnel were laid off this morning; please note this on the departmental roster.", "labels": ["AFFECT_GAP"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "After reviewing the client feedback on our sprint, not my circus anymore. Implement whichever approach management signs off on.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Of course, that sounds perfectly reasonable! Glad to work overnight to make sure your formatting preferences are met.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "The vendor confirmed the delivery date for the replacement hardware is scheduled for next Tuesday.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the last-minute scope expansion for Q4, no worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Regarding the sudden budget cuts announced today, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "No worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Thank you for this wonderful opportunity to demonstrate agility by discarding six months of validated engineering work.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "Regarding the sudden budget cuts announced today, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "I'll defer entirely to the committee's judgment; my input won't change anything anyway.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "No worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "The regional office was closed and all 250 personnel were laid off this morning; please note this on the departmental roster.", "labels": ["AFFECT_GAP"]}
+{"text": "I'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "In light of the performance evaluation results, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Regarding the last-minute scope expansion for Q4, we are celebrating our record-breaking fiscal results, yet morale across the engineering floor has collapsed.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In light of the performance evaluation results, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Our primary data center suffered catastrophic hardware corruption with permanent loss of customer records. Continuing with daily standup.", "labels": ["AFFECT_GAP"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "After reviewing the client feedback on our sprint, whatever you think is best! Happy to step aside and let you run with it completely.", "labels": ["FORCED_POLITENESS", "DISENGAGEMENT_SIGNAL"]}
+{"text": "No worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "We don't need empathy sessions right now; we need pull requests merged and closed before end of day.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "In light of the performance evaluation results, whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "You can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the sudden budget cuts announced today, not my circus anymore. Implement whichever approach management signs off on.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In response to the emergency executive meeting, we truly appreciate leadership's thoughtful input and will enthusiastically accommodate whatever changes you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The lead researcher tragically passed away over the weekend; the meeting room booking has been cancelled accordingly.", "labels": ["AFFECT_GAP"]}
+{"text": "The arbitration panel awarded full damages against our company; acknowledging receipt of the docket.", "labels": ["AFFECT_GAP"]}
+{"text": "Delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The regional office was closed and all 250 personnel were laid off this morning; please note this on the departmental roster.", "labels": ["AFFECT_GAP"]}
+{"text": "I'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "We lost our largest enterprise client representing 40% of annual revenue; proceeding to slide four on server latency.", "labels": ["AFFECT_GAP"]}
+{"text": "I'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In light of the performance evaluation results, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The vendor confirmed the delivery date for the replacement hardware is scheduled for next Tuesday.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "You can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "The regional office was closed and all 250 personnel were laid off this morning; please note this on the departmental roster.", "labels": ["AFFECT_GAP"]}
+{"text": "We don't need empathy sessions right now; we need pull requests merged and closed before end of day.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "After reviewing the client feedback on our sprint, no worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "In light of the performance evaluation results, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "You can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The vendor confirmed the delivery date for the replacement hardware is scheduled for next Tuesday.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "We completed the API documentation and published the developer guide to the internal portal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The regional office was closed and all 250 personnel were laid off this morning; please note this on the departmental roster.", "labels": ["AFFECT_GAP"]}
+{"text": "The clinical trial resulted in severe adverse incidents across three testing cohorts; have forwarded the statistical report to archiving.", "labels": ["AFFECT_GAP"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "You can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "In response to the emergency executive meeting, we are celebrating our record-breaking fiscal results, yet morale across the engineering floor has collapsed.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "Another emergency created by leadership's poor planning that the junior staff is expected to magically fix.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Must be nice to approve sweeping roadmap overhauls without ever having to write or test the actual code.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I'll defer entirely to the committee's judgment; my input won't change anything anyway.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "The vendor confirmed the delivery date for the replacement hardware is scheduled for next Tuesday.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Morale is an abstract metric; let's concentrate exclusively on customer churn percentages.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "The infrastructure team deployed the hotfix at 14:00 EST and confirmed database latency is back to normal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Must be nice to approve sweeping roadmap overhauls without ever having to write or test the actual code.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Concerning the merger announcement this morning, whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "The meeting will begin promptly at 10:00 AM in Conference Room B, and dial-in links have been sent.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "We don't need empathy sessions right now; we need pull requests merged and closed before end of day.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "We lost our largest enterprise client representing 40% of annual revenue; proceeding to slide four on server latency.", "labels": ["AFFECT_GAP"]}
+{"text": "Regarding the sudden budget cuts announced today, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "In light of the performance evaluation results, so glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "The clinical trial resulted in severe adverse incidents across three testing cohorts; have forwarded the statistical report to archiving.", "labels": ["AFFECT_GAP"]}
+{"text": "I'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Thank you so much for the feedback! Happy to rework the entire 45-page proposal from scratch over the weekend as requested.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The lead researcher tragically passed away over the weekend; the meeting room booking has been cancelled accordingly.", "labels": ["AFFECT_GAP"]}
+{"text": "Another emergency created by leadership's poor planning that the junior staff is expected to magically fix.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Concerning the merger announcement this morning, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "We don't need empathy sessions right now; we need pull requests merged and closed before end of day.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Regarding the last-minute scope expansion for Q4, proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Following the unexpected cancellation of our product line, i am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "You can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, i'll defer entirely to the committee's judgment; my input won't change anything anyway.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the sudden budget cuts announced today, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "Congratulations on winning the contract; I will be stepping away from the organization immediately.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In light of the performance evaluation results, i'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "We completed the API documentation and published the developer guide to the internal portal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "In response to the emergency executive meeting, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The infrastructure team deployed the hotfix at 14:00 EST and confirmed database latency is back to normal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Morale is an abstract metric; let's concentrate exclusively on customer churn percentages.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "After reviewing the client feedback on our sprint, whatever you think is best! Happy to step aside and let you run with it completely.", "labels": ["FORCED_POLITENESS", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Regarding the team restructuring notice, whatever you think is best! Happy to step aside and let you run with it completely.", "labels": ["FORCED_POLITENESS", "DISENGAGEMENT_SIGNAL"]}
+{"text": "I'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Do whatever needs to be done. I am simply executing the assigned Jira tickets without commentary.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "In light of the performance evaluation results, must be nice to approve sweeping roadmap overhauls without ever having to write or test the actual code.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "We truly appreciate leadership's thoughtful input and will enthusiastically accommodate whatever changes you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Following the unexpected cancellation of our product line, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "Concerning the merger announcement this morning, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Of course, that sounds perfectly reasonable! Glad to work overnight to make sure your formatting preferences are met.", "labels": ["FORCED_POLITENESS"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Morale is an abstract metric; let's concentrate exclusively on customer churn percentages.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "After reviewing the client feedback on our sprint, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Congratulations on winning the contract; I will be stepping away from the organization immediately.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In response to the emergency executive meeting, this is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "After reviewing the client feedback on our sprint, so glad to take on another emergency assignment over the weekend, since apparently planning ahead is optional here! 😊", "labels": ["FORCED_POLITENESS", "RESENTMENT_SIGNAL"]}
+{"text": "It's fine. I'm used to being the only person who actually delivers on their commitments around here.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I recommend adopting the Redis caching layer to mitigate load spikes during the upcoming holiday sales period.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "I'm more than happy to accommodate everyone's conflicting requests, as always! Thank you for the privilege.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Please send over the updated slides before our 3:00 PM sync so I can review the customer metrics.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Regarding the team restructuring notice, it's fine. I'm used to being the only person who actually delivers on their commitments around here.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "The regional office was closed and all 250 personnel were laid off this morning; please note this on the departmental roster.", "labels": ["AFFECT_GAP"]}
+{"text": "I'm fine with whatever the group decides, honestly. It doesn't matter much either way.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "After reviewing the client feedback on our sprint, i love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Morale is an abstract metric; let's concentrate exclusively on customer churn percentages.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "The lead researcher tragically passed away over the weekend; the meeting room booking has been cancelled accordingly.", "labels": ["AFFECT_GAP"]}
+{"text": "I am genuinely thrilled about this promotion, though honestly I have never felt more depleted and numb.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "We completed the API documentation and published the developer guide to the internal portal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "We completed the API documentation and published the developer guide to the internal portal.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Must be nice to approve sweeping roadmap overhauls without ever having to write or test the actual code.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "In light of the performance evaluation results, everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "The clinical trial resulted in severe adverse incidents across three testing cohorts; have forwarded the statistical report to archiving.", "labels": ["AFFECT_GAP"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "In response to the emergency executive meeting, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "No worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "The meeting will begin promptly at 10:00 AM in Conference Room B, and dial-in links have been sent.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "We truly appreciate leadership's thoughtful input and will enthusiastically accommodate whatever changes you prefer.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Fascinating how my original proposal was dismissed last month, only to be presented today under someone else's name.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Regarding the last-minute scope expansion for Q4, i love being part of this collaborative culture, which is why I prefer not to speak to anyone on the team.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I'll defer entirely to the committee's judgment; my input won't change anything anyway.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Thank you so much for the feedback! Happy to rework the entire 45-page proposal from scratch over the weekend as requested.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Another emergency created by leadership's poor planning that the junior staff is expected to magically fix.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, not my circus anymore. Implement whichever approach management signs off on.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "In response to the emergency executive meeting, this is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Concerning the merger announcement this morning, must be nice to approve sweeping roadmap overhauls without ever having to write or test the actual code.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "In light of the performance evaluation results, you can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Morale is an abstract metric; let's concentrate exclusively on customer churn percentages.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Congratulations on winning the contract; I will be stepping away from the organization immediately.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "After reviewing the client feedback on our sprint, must be nice to approve sweeping roadmap overhauls without ever having to write or test the actual code.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Thank you for this wonderful opportunity to demonstrate agility by discarding six months of validated engineering work.", "labels": ["FORCED_POLITENESS"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Thank you so much for the feedback! Happy to rework the entire 45-page proposal from scratch over the weekend as requested.", "labels": ["FORCED_POLITENESS"]}
+{"text": "In light of the performance evaluation results, everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Regarding the sudden budget cuts announced today, i'm more than happy to accommodate everyone's conflicting requests, as always! Thank you for the privilege.", "labels": ["FORCED_POLITENESS"]}
+{"text": "In light of the performance evaluation results, the entire department was let go, which is wonderful news for the corporate balance sheet, I suppose.", "labels": ["EMOTIONAL_INCONGRUENCE", "AFFECT_GAP"]}
+{"text": "After reviewing the client feedback on our sprint, thank you so much for the feedback! Happy to rework the entire 45-page proposal from scratch over the weekend as requested.", "labels": ["FORCED_POLITENESS"]}
+{"text": "So glad to see our team doing the heavy lifting while other departments claim credit during the all-hands.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Regarding the sudden budget cuts announced today, everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Let us focus strictly on the quarterly spreadsheet figures and avoid discussing team feelings or burnout.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "The firm has been acquired for $1.2 billion in cash; please ensure all timesheets for this week are logged before Friday.", "labels": ["AFFECT_GAP"]}
+{"text": "We are celebrating our record-breaking fiscal results, yet morale across the engineering floor has collapsed.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "I prefer not to dwell on how the staff is reacting to the restructuring; what matters is hitting our EBITDA target.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Always an absolute pleasure to absorb additional responsibilities without any budget or headcount adjustments! 😊", "labels": ["FORCED_POLITENESS"]}
+{"text": "I am very grateful for this critical feedback, even as my hands are literally shaking reading it.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "In response to the emergency executive meeting, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Concerning the merger announcement this morning, this is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Whatever leadership prefers is fine by me. I have no opinions or recommendations on this matter.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Not my circus anymore. Implement whichever approach management signs off on.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Please restrict all future comments in this channel to verifiable code commits, not interpersonal grievances.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Thank you so much for the feedback! Happy to rework the entire 45-page proposal from scratch over the weekend as requested.", "labels": ["FORCED_POLITENESS"]}
+{"text": "I'll clean up the database migration mess as usual, while the architects move on to their next visionary concept.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I have reviewed the pull request and identified two areas where caching can optimize query performance.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "After reviewing the client feedback on our sprint, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Do whatever needs to be done. I am simply executing the assigned Jira tickets without commentary.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "The meeting will begin promptly at 10:00 AM in Conference Room B, and dial-in links have been sent.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "The regional office was closed and all 250 personnel were laid off this morning; please note this on the departmental roster.", "labels": ["AFFECT_GAP"]}
+{"text": "I'm more than happy to accommodate everyone's conflicting requests, as always! Thank you for the privilege.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Concerning the merger announcement this morning, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Regarding the team restructuring notice, delighted to hear your thoughts! It's always great when external stakeholders provide direction without reviewing the requirements.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Concerning the merger announcement this morning, thank you so much for the feedback! Happy to rework the entire 45-page proposal from scratch over the weekend as requested.", "labels": ["FORCED_POLITENESS"]}
+{"text": "Concerning the merger announcement this morning, i am genuinely thrilled about this promotion, though honestly I have never felt more depleted and numb.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "This is arguably the most exciting milestone in our company's history, but I find myself feeling completely hollow.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Regarding the sudden budget cuts announced today, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "Everything is going wonderfully on this account, I just want to log off and never look at a screen again.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}
+{"text": "Regarding the team restructuring notice, you can take whatever decision you consider appropriate. Removing myself from this email thread.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "I went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "I went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "In light of the performance evaluation results, we are celebrating our record-breaking fiscal results, yet morale across the engineering floor has collapsed.", "labels": ["EMOTIONAL_INCONGRUENCE"]}
+{"text": "Regarding the team restructuring notice, do whatever needs to be done. I am simply executing the assigned Jira tickets without commentary.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Concerning the merger announcement this morning, no worries at all! Thrilled to pivot our entire quarterly roadmap 48 hours before the deployment deadline.", "labels": ["FORCED_POLITENESS"]}
+{"text": "I went ahead and resolved the production outage myself at 3 AM, since apparently no one else felt it was their responsibility.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "The arbitration panel awarded full damages against our company; acknowledging receipt of the docket.", "labels": ["AFFECT_GAP"]}
+{"text": "Our team completed 85% of planned story points this sprint, with the remaining two tasks rolling into Sprint 14.", "labels": ["NO_AFFECT_SIGNAL"]}
+{"text": "Fascinating how my original proposal was dismissed last month, only to be presented today under someone else's name.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Not my circus anymore. Implement whichever approach management signs off on.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "Proceed as you see fit. Moving forward, I won't have capacity to track or contribute to this initiative.", "labels": ["DISENGAGEMENT_SIGNAL"]}
+{"text": "It's fine. I'm used to being the only person who actually delivers on their commitments around here.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Fascinating how my original proposal was dismissed last month, only to be presented today under someone else's name.", "labels": ["RESENTMENT_SIGNAL"]}
+{"text": "Regarding the last-minute scope expansion for Q4, let's not waste time discussing how exhausted people are; just get the work done as mandated.", "labels": ["EMOTIONAL_AVOIDANCE", "RESENTMENT_SIGNAL"]}
+{"text": "After reviewing the client feedback on our sprint, I've done everything I could; you all can figure out the rest since nobody listens anyway.", "labels": ["RESENTMENT_SIGNAL", "DISENGAGEMENT_SIGNAL"]}
+{"text": "Personal dynamics and emotional responses are completely irrelevant to our engineering velocity and delivery SLAs.", "labels": ["EMOTIONAL_AVOIDANCE"]}

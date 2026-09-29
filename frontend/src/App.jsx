@@ -657,6 +657,10 @@ export default function App() {
       ? AGENTS[selected]
       : null;
 
+  const isAuth =
+    typeof window !== "undefined" &&
+    localStorage.getItem("liminal_authenticated") === "true";
+
   if (view === "landing") {
     return (
       <LandingPage
@@ -676,7 +680,7 @@ export default function App() {
           }
           const query = new URLSearchParams();
           query.set("view", isAuth ? "studio" : "login");
-          if (initialText) query.set("text", initialText);
+          if (initialText) query.set("text", encodeURIComponent(initialText));
           const targetUrl = `${window.location.origin}${window.location.pathname}?${query.toString()}`;
           window.open(targetUrl, "_blank");
         }}
@@ -686,10 +690,6 @@ export default function App() {
       />
     );
   }
-
-  const isAuth =
-    typeof window !== "undefined" &&
-    localStorage.getItem("liminal_authenticated") === "true";
 
   if (view === "login" || (!isAuth && view === "studio")) {
     return (
@@ -1030,7 +1030,7 @@ function Sidebar({
           <strong>L.I.M.I.N.A.L.</strong>
 
           <small>
-            AI-103 / INTELLIGENCE ENGINE
+            INTELLIGENCE ENGINE
           </small>
         </div>
       </div>
@@ -2020,52 +2020,6 @@ function Evidence({
         <strong>
           {records.length} RECORDS
         </strong>
-      </div>
-
-      <div className="evidence-row">
-        {records.map((item, index) => {
-          const title =
-            item.title ||
-            item.topic ||
-            item.name ||
-            `Evidence ${index + 1}`;
-
-          const source =
-            item.source ||
-            item.origin ||
-            "Knowledge Base";
-
-          const score = Number(
-            item.similarity ??
-              item.score ??
-              0.7
-          );
-
-          return (
-            <div
-              className="evidence-card"
-              key={`${title}-${index}`}
-            >
-              <em>
-                0{index + 1}
-              </em>
-
-              <div>
-                <strong>
-                  {title}
-                </strong>
-
-                <small>
-                  {source}
-                </small>
-              </div>
-
-              <b>
-                {(score * 100).toFixed(0)}%
-              </b>
-            </div>
-          );
-        })}
       </div>
     </div>
   );
