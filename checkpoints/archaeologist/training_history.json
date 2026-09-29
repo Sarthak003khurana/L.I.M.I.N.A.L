@@ -1,0 +1,982 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.18824840358729933,
+    "train_f1": 0.8863912224769592,
+    "validation_loss": 0.05443737375738613,
+    "validation_f1": 0.9868946075439453,
+    "validation_precision": 0.9863325953483582,
+    "validation_recall": 0.9874572157859802,
+    "validation_exact_match": 0.9776714444160461,
+    "learning_rate": 0.0003,
+    "epoch_time_seconds": 13.015426397323608,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 0.9909909963607788,
+        "recall": 0.9649122953414917,
+        "f1": 0.9777777791023254
+      },
+      "HEDGING": {
+        "precision": 0.9916666746139526,
+        "recall": 0.9834710955619812,
+        "f1": 0.9875519275665283
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9844961166381836,
+        "recall": 0.9921875,
+        "f1": 0.9883268475532532
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 0.9945945739746094,
+        "recall": 0.9945945739746094,
+        "f1": 0.9945945739746094
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 0.9615384340286255,
+        "recall": 1.0,
+        "f1": 0.9803921580314636
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9907407164573669,
+        "recall": 0.9816513657569885,
+        "f1": 0.9861750602722168
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9894737005233765,
+        "recall": 0.9894737005233765,
+        "f1": 0.9894737005233765
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.033649907791610374,
+    "train_f1": 0.9892349243164062,
+    "validation_loss": 0.031245606684421546,
+    "validation_f1": 0.9898074865341187,
+    "validation_precision": 0.9831271171569824,
+    "validation_recall": 0.9965792298316956,
+    "validation_exact_match": 0.980861246585846,
+    "learning_rate": 0.0003,
+    "epoch_time_seconds": 41.11319065093994,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 0.9912280440330505,
+        "f1": 0.9955946803092957
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 0.9917355179786682,
+        "f1": 0.9958506226539612
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9552238583564758,
+        "recall": 1.0,
+        "f1": 0.9770992398262024
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 0.9893048405647278,
+        "recall": 1.0,
+        "f1": 0.9946237206459045
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 0.9842519760131836,
+        "recall": 1.0,
+        "f1": 0.9920635223388672
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9646017551422119,
+        "recall": 1.0,
+        "f1": 0.9819819927215576
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9894737005233765,
+        "recall": 0.9894737005233765,
+        "f1": 0.9894737005233765
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.0350043636136307,
+    "train_f1": 0.989297091960907,
+    "validation_loss": 0.02072799593236957,
+    "validation_f1": 0.991482138633728,
+    "validation_precision": 0.9875565767288208,
+    "validation_recall": 0.9954389929771423,
+    "validation_exact_match": 0.9824561476707458,
+    "learning_rate": 0.0003,
+    "epoch_time_seconds": 30.165414333343506,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 0.9824561476707458,
+        "f1": 0.991150438785553
+      },
+      "HEDGING": {
+        "precision": 0.9918032884597778,
+        "recall": 1.0,
+        "f1": 0.9958847761154175
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9921875,
+        "recall": 0.9921875,
+        "f1": 0.9921875
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 0.9892473220825195,
+        "recall": 0.9945945739746094,
+        "f1": 0.9919137358665466
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9909090995788574,
+        "recall": 1.0,
+        "f1": 0.9954338073730469
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9405940771102905,
+        "recall": 1.0,
+        "f1": 0.9693877696990967
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.020991098907729603,
+    "train_f1": 0.9947090148925781,
+    "validation_loss": 0.010584317077269876,
+    "validation_f1": 0.9948775768280029,
+    "validation_precision": 0.9931818246841431,
+    "validation_recall": 0.9965792298316956,
+    "validation_exact_match": 0.9888357520103455,
+    "learning_rate": 0.0003,
+    "epoch_time_seconds": 31.233421564102173,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 0.9917355179786682,
+        "f1": 0.9958506226539612
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9844961166381836,
+        "recall": 0.9921875,
+        "f1": 0.9883268475532532
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 0.9765625,
+        "recall": 1.0,
+        "f1": 0.9881423115730286
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9895833134651184,
+        "recall": 1.0,
+        "f1": 0.9947644472122192
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.012793784345789459,
+    "train_f1": 0.9958667755126953,
+    "validation_loss": 0.04209553254473036,
+    "validation_f1": 0.9914335012435913,
+    "validation_precision": 0.9931350350379944,
+    "validation_recall": 0.9897377490997314,
+    "validation_exact_match": 0.980861246585846,
+    "learning_rate": 0.0003,
+    "epoch_time_seconds": 29.770978689193726,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 0.9736841917037964,
+        "f1": 0.9866666793823242
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9922480583190918,
+        "recall": 1.0,
+        "f1": 0.9961089491844177
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 0.9760000109672546,
+        "f1": 0.9878542423248291
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9907407164573669,
+        "recall": 0.9816513657569885,
+        "f1": 0.9861750602722168
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9595959782600403,
+        "recall": 1.0,
+        "f1": 0.9793815016746521
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.010612440957546956,
+    "train_f1": 0.9968092441558838,
+    "validation_loss": 0.05976613731487607,
+    "validation_f1": 0.9855908155441284,
+    "validation_precision": 0.996503472328186,
+    "validation_recall": 0.9749144911766052,
+    "validation_exact_match": 0.979266345500946,
+    "learning_rate": 0.0003,
+    "epoch_time_seconds": 20.1987886428833,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 0.9912280440330505,
+        "f1": 0.9955946803092957
+      },
+      "HEDGING": {
+        "precision": 0.9918032884597778,
+        "recall": 1.0,
+        "f1": 0.9958847761154175
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9296875,
+        "f1": 0.9635627269744873
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9459459185600281,
+        "f1": 0.9722221493721008
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 0.9816513657569885,
+        "f1": 0.9907407760620117
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9793814420700073,
+        "recall": 1.0,
+        "f1": 0.9895833134651184
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.0158489906765415,
+    "train_f1": 0.9948568940162659,
+    "validation_loss": 0.026625317943497477,
+    "validation_f1": 0.9948718547821045,
+    "validation_precision": 0.9943052530288696,
+    "validation_recall": 0.9954389929771423,
+    "validation_exact_match": 0.9920254945755005,
+    "learning_rate": 0.00015,
+    "epoch_time_seconds": 27.838623523712158,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 0.9912280440330505,
+        "f1": 0.9955946803092957
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9921875,
+        "recall": 0.9921875,
+        "f1": 0.9921875
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 0.9945945739746094,
+        "recall": 0.9945945739746094,
+        "f1": 0.9945945739746094
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 0.9920634627342224,
+        "recall": 1.0,
+        "f1": 0.9960159063339233
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 0.9908257126808167,
+        "f1": 0.9953917264938354
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9793814420700073,
+        "recall": 1.0,
+        "f1": 0.9895833134651184
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.0063836223724808225,
+    "train_f1": 0.9990569353103638,
+    "validation_loss": 0.011118821333229282,
+    "validation_f1": 0.9965831637382507,
+    "validation_precision": 0.9954493641853333,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9952152967453003,
+    "learning_rate": 0.00015,
+    "epoch_time_seconds": 21.71862292289734,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9921875,
+        "recall": 0.9921875,
+        "f1": 0.9921875
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 0.9945945739746094,
+        "recall": 0.9945945739746094,
+        "f1": 0.9945945739746094
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9909090995788574,
+        "recall": 1.0,
+        "f1": 0.9954338073730469
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9895833134651184,
+        "recall": 1.0,
+        "f1": 0.9947644472122192
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.0038817036835721045,
+    "train_f1": 0.9989843368530273,
+    "validation_loss": 0.018657672022457925,
+    "validation_f1": 0.9971444606781006,
+    "validation_precision": 0.9988558292388916,
+    "validation_recall": 0.9954389929771423,
+    "validation_exact_match": 0.9952152967453003,
+    "learning_rate": 0.00015,
+    "epoch_time_seconds": 24.83452320098877,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.984375,
+        "f1": 0.9921259880065918
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9891892075538635,
+        "f1": 0.9945652484893799
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9895833134651184,
+        "recall": 1.0,
+        "f1": 0.9947644472122192
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.0010203253592322252,
+    "train_f1": 0.9995648860931396,
+    "validation_loss": 0.03885142468907492,
+    "validation_f1": 0.9897843599319458,
+    "validation_precision": 0.9853107333183289,
+    "validation_recall": 0.9942987561225891,
+    "validation_exact_match": 0.9872408509254456,
+    "learning_rate": 0.00015,
+    "epoch_time_seconds": 20.69838237762451,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9694656729698181,
+        "recall": 0.9921875,
+        "f1": 0.9806949496269226
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 0.978723406791687,
+        "recall": 0.9945945739746094,
+        "f1": 0.9865952134132385
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9557521939277649,
+        "recall": 0.9908257126808167,
+        "f1": 0.9729729890823364
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 0.9789473414421082,
+        "f1": 0.9893616437911987
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.004786953580429179,
+    "train_f1": 0.9990570545196533,
+    "validation_loss": 0.013059588844908428,
+    "validation_f1": 0.9954337477684021,
+    "validation_precision": 0.99657142162323,
+    "validation_recall": 0.9942987561225891,
+    "validation_exact_match": 0.9936203956604004,
+    "learning_rate": 0.00015,
+    "epoch_time_seconds": 30.93661332130432,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9921259880065918,
+        "recall": 0.984375,
+        "f1": 0.9882352948188782
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9891892075538635,
+        "f1": 0.9945652484893799
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9818181991577148,
+        "recall": 0.9908257126808167,
+        "f1": 0.9863014221191406
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.004483996064838784,
+    "train_f1": 0.9990569353103638,
+    "validation_loss": 0.023865449068164037,
+    "validation_f1": 0.997147798538208,
+    "validation_precision": 0.9977169036865234,
+    "validation_recall": 0.9965792298316956,
+    "validation_exact_match": 0.9952152967453003,
+    "learning_rate": 7.5e-05,
+    "epoch_time_seconds": 20.460529565811157,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9908257126808167,
+        "recall": 0.9908257126808167,
+        "f1": 0.9908257126808167
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9895833134651184,
+        "recall": 1.0,
+        "f1": 0.9947644472122192
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.0011250434898766638,
+    "train_f1": 0.9997099041938782,
+    "validation_loss": 0.015111756041834854,
+    "validation_f1": 0.9982886910438538,
+    "validation_precision": 0.9988584518432617,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9968101978302002,
+    "learning_rate": 7.5e-05,
+    "epoch_time_seconds": 21.09931230545044,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9895833134651184,
+        "recall": 1.0,
+        "f1": 0.9947644472122192
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.0012100204032276986,
+    "train_f1": 0.999782383441925,
+    "validation_loss": 0.014667287393301762,
+    "validation_f1": 0.9988584518432617,
+    "validation_precision": 1.0,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9984050989151001,
+    "learning_rate": 7.5e-05,
+    "epoch_time_seconds": 28.750553846359253,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.0007209252875811922,
+    "train_f1": 0.999782383441925,
+    "validation_loss": 0.015054065152019196,
+    "validation_f1": 0.9982886910438538,
+    "validation_precision": 0.9988584518432617,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9968101978302002,
+    "learning_rate": 7.5e-05,
+    "epoch_time_seconds": 20.252946853637695,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9895833134651184,
+        "recall": 1.0,
+        "f1": 0.9947644472122192
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.0008073279932794763,
+    "train_f1": 0.999782383441925,
+    "validation_loss": 0.014901443574223938,
+    "validation_f1": 0.9988584518432617,
+    "validation_precision": 1.0,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9984050989151001,
+    "learning_rate": 7.5e-05,
+    "epoch_time_seconds": 6.950255393981934,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "train_loss": 0.0006118635957455687,
+    "train_f1": 0.999782383441925,
+    "validation_loss": 0.014706440257627533,
+    "validation_f1": 0.9977195262908936,
+    "validation_precision": 0.9977195262908936,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9952152967453003,
+    "learning_rate": 3.75e-05,
+    "epoch_time_seconds": 4.437627553939819,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9909090995788574,
+        "recall": 1.0,
+        "f1": 0.9954338073730469
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 0.9895833134651184,
+        "recall": 1.0,
+        "f1": 0.9947644472122192
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "train_loss": 0.00038939367356262194,
+    "train_f1": 0.9998549818992615,
+    "validation_loss": 0.014125567971885819,
+    "validation_f1": 0.9982886910438538,
+    "validation_precision": 0.9988584518432617,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9968101978302002,
+    "learning_rate": 3.75e-05,
+    "epoch_time_seconds": 4.389180898666382,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9909090995788574,
+        "recall": 1.0,
+        "f1": 0.9954338073730469
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "train_loss": 0.0003148957029487704,
+    "train_f1": 0.9998549818992615,
+    "validation_loss": 0.013996673405982261,
+    "validation_f1": 0.9982886910438538,
+    "validation_precision": 0.9988584518432617,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9968101978302002,
+    "learning_rate": 3.75e-05,
+    "epoch_time_seconds": 4.406822681427002,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9909090995788574,
+        "recall": 1.0,
+        "f1": 0.9954338073730469
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "train_loss": 0.00023009748282930317,
+    "train_f1": 0.9999274611473083,
+    "validation_loss": 0.013981378302639968,
+    "validation_f1": 0.9982886910438538,
+    "validation_precision": 0.9988584518432617,
+    "validation_recall": 0.9977195262908936,
+    "validation_exact_match": 0.9968101978302002,
+    "learning_rate": 1.875e-05,
+    "epoch_time_seconds": 4.3889782428741455,
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "HEDGING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "MISSING_ACTOR": {
+        "precision": 1.0,
+        "recall": 0.9921875,
+        "f1": 0.9960784316062927
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 1.0,
+        "recall": 0.9945945739746094,
+        "f1": 0.9972899556159973
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 0.9909090995788574,
+        "recall": 1.0,
+        "f1": 0.9954338073730469
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  }
+]

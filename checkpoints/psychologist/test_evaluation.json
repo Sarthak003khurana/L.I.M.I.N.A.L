@@ -1,0 +1,79 @@
+{
+  "macro_precision": 0.9476190209388733,
+  "macro_recall": 1.0,
+  "macro_f1": 0.9711399674415588,
+  "micro_precision": 0.9285714030265808,
+  "micro_recall": 1.0,
+  "micro_f1": 0.9629629442337717,
+  "exact_match": 0.9230769276618958,
+  "per_label": {
+    "NO_AFFECT_SIGNAL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 24
+    },
+    "AFFECT_GAP": {
+      "precision": 0.8333333134651184,
+      "recall": 1.0,
+      "f1": 0.9090909361839294,
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "tn": 20
+    },
+    "FORCED_POLITENESS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "tn": 19
+    },
+    "EMOTIONAL_INCONGRUENCE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 23
+    },
+    "DISENGAGEMENT_SIGNAL": {
+      "precision": 0.800000011920929,
+      "recall": 1.0,
+      "f1": 0.888888955116272,
+      "tp": 4,
+      "fp": 1,
+      "fn": 0,
+      "tn": 21
+    },
+    "RESENTMENT_SIGNAL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 24
+    },
+    "EMOTIONAL_AVOIDANCE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 23
+    }
+  },
+  "model": "M2 Psychologist",
+  "test_examples": 26,
+  "checkpoint_epoch": 9,
+  "best_validation_f1": 0.951020359992981,
+  "threshold": 0.5
+}

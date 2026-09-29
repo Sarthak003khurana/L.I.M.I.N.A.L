@@ -1,0 +1,152 @@
+{
+  "test_examples": 500,
+  "checkpoint_epoch": 2,
+  "best_validation_accuracy": 1.0,
+  "accuracy": 0.994,
+  "macro_precision": 0.9937420565342834,
+  "macro_recall": 0.9950657894736842,
+  "macro_f1": 0.9943278888863949,
+  "average_predicted_confidence": 0.7260368120074272,
+  "labels": [
+    "NO_SIGNIFICANT_OMISSION",
+    "UNSTATED_PREFERENCE",
+    "AVOIDING_COMMITMENT",
+    "DISTANCING_FROM_RESPONSIBILITY",
+    "EMOTIONAL_DISENGAGEMENT",
+    "WITHHELD_CONTEXT",
+    "UNSUPPORTED_REASONING",
+    "AMBIGUOUS_INTENT"
+  ],
+  "per_label": {
+    "NO_SIGNIFICANT_OMISSION": {
+      "precision": 1.0,
+      "recall": 0.9605263157894737,
+      "f1": 0.9798657718120806,
+      "support": 76
+    },
+    "UNSTATED_PREFERENCE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 67
+    },
+    "AVOIDING_COMMITMENT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 51
+    },
+    "DISTANCING_FROM_RESPONSIBILITY": {
+      "precision": 0.9827586206896551,
+      "recall": 1.0,
+      "f1": 0.991304347826087,
+      "support": 57
+    },
+    "EMOTIONAL_DISENGAGEMENT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 60
+    },
+    "WITHHELD_CONTEXT": {
+      "precision": 0.9830508474576272,
+      "recall": 1.0,
+      "f1": 0.9914529914529915,
+      "support": 58
+    },
+    "UNSUPPORTED_REASONING": {
+      "precision": 0.9841269841269841,
+      "recall": 1.0,
+      "f1": 0.992,
+      "support": 62
+    },
+    "AMBIGUOUS_INTENT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 69
+    }
+  },
+  "confusion_matrix": [
+    [
+      73,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      67,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      51,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      57,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      60,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      58,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      62,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      69
+    ]
+  ]
+}

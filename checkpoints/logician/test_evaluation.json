@@ -1,0 +1,965 @@
+{
+  "model": "M3 Logician",
+  "checkpoint_epoch": 7,
+  "validation_f1": 0.8548288941383362,
+  "test_examples": 87,
+  "threshold": 0.5,
+  "metrics": {
+    "macro_precision": 0.7993686868686868,
+    "macro_recall": 0.8991452991452992,
+    "macro_f1": 0.7996635015825421,
+    "micro_precision": 0.6171875,
+    "micro_recall": 0.9080459770114943,
+    "micro_f1": 0.7348837209302326,
+    "per_label": {
+      "SKIPPED_PREMISE": {
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 72
+      },
+      "UNANSWERED_COUNTERARGUMENT": {
+        "precision": 0.875,
+        "recall": 0.5384615384615384,
+        "f1": 0.6666666666666667,
+        "tp": 7,
+        "fp": 1,
+        "fn": 6,
+        "tn": 73
+      },
+      "UNSUPPORTED_CONCLUSION": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "tp": 14,
+        "fp": 7,
+        "fn": 0,
+        "tn": 66
+      },
+      "UNSTATED_ASSUMPTION": {
+        "precision": 0.2545454545454545,
+        "recall": 1.0,
+        "f1": 0.4057971014492754,
+        "tp": 14,
+        "fp": 41,
+        "fn": 0,
+        "tn": 32
+      },
+      "CONTRADICTION": {
+        "precision": 1.0,
+        "recall": 0.9230769230769231,
+        "f1": 0.9600000000000001,
+        "tp": 12,
+        "fp": 0,
+        "fn": 1,
+        "tn": 74
+      },
+      "FALSE_DILEMMA": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "tn": 69
+      }
+    }
+  },
+  "exact_match": 0.42528735632183906,
+  "exact_correct": 37,
+  "incorrect_examples": [
+    {
+      "text": "The manager argues that the application crashed once, so it is completely unusable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.641,
+        "UNSTATED_ASSUMPTION": 0.998,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "We should reject the proposal because the manager disliked it.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.993,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.001,
+        "UNSTATED_ASSUMPTION": 0.974,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Obviously, the application crashed once, so it is completely unusable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.727,
+        "UNSTATED_ASSUMPTION": 0.999,
+        "CONTRADICTION": 0.001,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The analysis concludes that we should reject the proposal because the manager disliked it.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.975,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.002,
+        "UNSTATED_ASSUMPTION": 0.956,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "In the meeting, they stated that we should reject the proposal because the manager disliked it.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.63,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.006,
+        "UNSTATED_ASSUMPTION": 0.97,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "We should reject the proposal because the manager disliked it. This seems reasonable.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.895,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.003,
+        "UNSTATED_ASSUMPTION": 0.996,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Others believe the approach will fail, but our team has decided to proceed. For that reason, the team should agree.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.111,
+        "UNSUPPORTED_CONCLUSION": 0.277,
+        "UNSTATED_ASSUMPTION": 0.726,
+        "CONTRADICTION": 0.017,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The team believes that we should reject the proposal because the manager disliked it. Therefore, the decision is obvious.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.085,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.017,
+        "UNSTATED_ASSUMPTION": 0.966,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "He speaks confidently, therefore he understands the subject. For that reason, the team should agree.",
+      "actual": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.648,
+        "UNSTATED_ASSUMPTION": 0.968,
+        "CONTRADICTION": 0.008,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Clearly, the application crashed once, so it is completely unusable. For that reason, the team should agree.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.865,
+        "UNSTATED_ASSUMPTION": 0.993,
+        "CONTRADICTION": 0.001,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The team believes that he speaks confidently, therefore he understands the subject.",
+      "actual": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.746,
+        "UNSTATED_ASSUMPTION": 0.985,
+        "CONTRADICTION": 0.001,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The manager argues that we should reject the proposal because the manager disliked it.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.939,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.002,
+        "UNSTATED_ASSUMPTION": 0.88,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "We should reject the proposal because the manager disliked it. This is presented as sufficient evidence.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.985,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.004,
+        "UNSTATED_ASSUMPTION": 0.965,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The proposal suggests that the application crashed once, so it is completely unusable. That is why we should proceed.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.895,
+        "UNSTATED_ASSUMPTION": 0.99,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "According to the discussion, the application crashed once, so it is completely unusable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.935,
+        "UNSTATED_ASSUMPTION": 0.995,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The report claims that others believe the approach will fail, but our team has decided to proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNANSWERED_COUNTERARGUMENT",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.614,
+        "UNSUPPORTED_CONCLUSION": 0.011,
+        "UNSTATED_ASSUMPTION": 0.526,
+        "CONTRADICTION": 0.167,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Clearly, the application crashed once, so it is completely unusable. That is why we should proceed.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.757,
+        "UNSTATED_ASSUMPTION": 1.0,
+        "CONTRADICTION": 0.001,
+        "FALSE_DILEMMA": 0.002
+      }
+    },
+    {
+      "text": "The proposal suggests that the application crashed once, so it is completely unusable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.883,
+        "UNSTATED_ASSUMPTION": 0.995,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The application crashed once, so it is completely unusable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.847,
+        "UNSTATED_ASSUMPTION": 0.999,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The analysis concludes that others believe the approach will fail, but our team has decided to proceed. Therefore, the decision is obvious.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNANSWERED_COUNTERARGUMENT",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.954,
+        "UNSUPPORTED_CONCLUSION": 0.006,
+        "UNSTATED_ASSUMPTION": 0.718,
+        "CONTRADICTION": 0.054,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Clearly, you either support this proposal or you do not care about the team.",
+      "actual": [
+        "FALSE_DILEMMA"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "FALSE_DILEMMA"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.003,
+        "UNSUPPORTED_CONCLUSION": 0.558,
+        "UNSTATED_ASSUMPTION": 0.0,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.997
+      }
+    },
+    {
+      "text": "Clearly, the application crashed once, so it is completely unusable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.727,
+        "UNSTATED_ASSUMPTION": 0.999,
+        "CONTRADICTION": 0.001,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "According to the discussion, others believe the approach will fail, but our team has decided to proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNANSWERED_COUNTERARGUMENT",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.578,
+        "UNSUPPORTED_CONCLUSION": 0.094,
+        "UNSTATED_ASSUMPTION": 0.781,
+        "CONTRADICTION": 0.018,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "In the meeting, they stated that the application crashed once, so it is completely unusable. This seems reasonable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.774,
+        "UNSTATED_ASSUMPTION": 0.984,
+        "CONTRADICTION": 0.002,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Clearly, others believe the approach will fail, but our team has decided to proceed. That is why we should proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNANSWERED_COUNTERARGUMENT",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.519,
+        "UNSUPPORTED_CONCLUSION": 0.056,
+        "UNSTATED_ASSUMPTION": 0.95,
+        "CONTRADICTION": 0.024,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Others believe the approach will fail, but our team has decided to proceed. This seems reasonable.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.152,
+        "UNSUPPORTED_CONCLUSION": 0.099,
+        "UNSTATED_ASSUMPTION": 0.967,
+        "CONTRADICTION": 0.022,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Clearly, others believe the approach will fail, but our team has decided to proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.327,
+        "UNSUPPORTED_CONCLUSION": 0.184,
+        "UNSTATED_ASSUMPTION": 0.993,
+        "CONTRADICTION": 0.006,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "According to the discussion, we should reject the proposal because the manager disliked it.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.887,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.038,
+        "UNSTATED_ASSUMPTION": 0.913,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "According to the discussion, we should reject the proposal because the manager disliked it. This is presented as sufficient evidence.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.885,
+        "UNANSWERED_COUNTERARGUMENT": 0.001,
+        "UNSUPPORTED_CONCLUSION": 0.034,
+        "UNSTATED_ASSUMPTION": 0.733,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "According to the discussion, the report states that no errors were found, but later identifies five errors. That is why we should proceed.",
+      "actual": [
+        "CONTRADICTION"
+      ],
+      "predicted": [],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.107,
+        "UNSUPPORTED_CONCLUSION": 0.294,
+        "UNSTATED_ASSUMPTION": 0.0,
+        "CONTRADICTION": 0.446,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The analysis concludes that we should reject the proposal because the manager disliked it. For that reason, the team should agree.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.825,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.012,
+        "UNSTATED_ASSUMPTION": 0.911,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The manager argues that the application crashed once, so it is completely unusable. Therefore, the decision is obvious.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.001,
+        "UNSUPPORTED_CONCLUSION": 0.598,
+        "UNSTATED_ASSUMPTION": 0.991,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Obviously, you either support this proposal or you do not care about the team.",
+      "actual": [
+        "FALSE_DILEMMA"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "FALSE_DILEMMA"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.003,
+        "UNSUPPORTED_CONCLUSION": 0.558,
+        "UNSTATED_ASSUMPTION": 0.0,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.997
+      }
+    },
+    {
+      "text": "The manager argues that others believe the approach will fail, but our team has decided to proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.295,
+        "UNSUPPORTED_CONCLUSION": 0.021,
+        "UNSTATED_ASSUMPTION": 0.881,
+        "CONTRADICTION": 0.021,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Clearly, he speaks confidently, therefore he understands the subject.",
+      "actual": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.717,
+        "UNSTATED_ASSUMPTION": 0.994,
+        "CONTRADICTION": 0.026,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "In the meeting, they stated that we should reject the proposal because the manager disliked it. This is presented as sufficient evidence.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.501,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.013,
+        "UNSTATED_ASSUMPTION": 0.892,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "He speaks confidently, therefore he understands the subject. This seems reasonable.",
+      "actual": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.72,
+        "UNSTATED_ASSUMPTION": 0.992,
+        "CONTRADICTION": 0.008,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The team believes that others believe the approach will fail, but our team has decided to proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNANSWERED_COUNTERARGUMENT",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.652,
+        "UNSUPPORTED_CONCLUSION": 0.099,
+        "UNSTATED_ASSUMPTION": 0.695,
+        "CONTRADICTION": 0.008,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The team believes that we should reject the proposal because the manager disliked it. This seems reasonable.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.872,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.01,
+        "UNSTATED_ASSUMPTION": 0.846,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Others believe the approach will fail, but our team has decided to proceed. This is presented as sufficient evidence.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNANSWERED_COUNTERARGUMENT",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.589,
+        "UNSUPPORTED_CONCLUSION": 0.089,
+        "UNSTATED_ASSUMPTION": 0.778,
+        "CONTRADICTION": 0.065,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "In the meeting, they stated that we should reject the approach because the manager disliked it.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.708,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.002,
+        "UNSTATED_ASSUMPTION": 0.991,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The team believes that the application crashed once, so it is completely unusable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.908,
+        "UNSTATED_ASSUMPTION": 0.995,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The manager argues that others believe the approach will fail, but our team has decided to proceed. That is why we should proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.331,
+        "UNSUPPORTED_CONCLUSION": 0.022,
+        "UNSTATED_ASSUMPTION": 0.948,
+        "CONTRADICTION": 0.008,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The team believes that we should reject the proposal because the manager disliked it.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.961,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.014,
+        "UNSTATED_ASSUMPTION": 0.832,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "We should reject the proposal because the manager disliked it. That is why we should proceed.",
+      "actual": [
+        "SKIPPED_PREMISE"
+      ],
+      "predicted": [
+        "SKIPPED_PREMISE",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.965,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.005,
+        "UNSTATED_ASSUMPTION": 0.989,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The analysis concludes that the report states that no errors were found, but later identifies five errors. Therefore, the decision is obvious.",
+      "actual": [
+        "CONTRADICTION"
+      ],
+      "predicted": [
+        "UNANSWERED_COUNTERARGUMENT",
+        "CONTRADICTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.713,
+        "UNSUPPORTED_CONCLUSION": 0.01,
+        "UNSTATED_ASSUMPTION": 0.0,
+        "CONTRADICTION": 0.678,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Others believe the approach will fail, but our team has decided to proceed.",
+      "actual": [
+        "UNANSWERED_COUNTERARGUMENT"
+      ],
+      "predicted": [
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.103,
+        "UNSUPPORTED_CONCLUSION": 0.24,
+        "UNSTATED_ASSUMPTION": 0.994,
+        "CONTRADICTION": 0.004,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "Clearly, you either support this proposal or you do not care about the team. Therefore, the decision is obvious.",
+      "actual": [
+        "FALSE_DILEMMA"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "FALSE_DILEMMA"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.005,
+        "UNSUPPORTED_CONCLUSION": 0.889,
+        "UNSTATED_ASSUMPTION": 0.0,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.901
+      }
+    },
+    {
+      "text": "In the meeting, they stated that the application crashed once, so it is completely unusable. This is presented as sufficient evidence.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.0,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.661,
+        "UNSTATED_ASSUMPTION": 0.995,
+        "CONTRADICTION": 0.001,
+        "FALSE_DILEMMA": 0.0
+      }
+    },
+    {
+      "text": "The application crashed once, so it is completely unusable. This seems reasonable.",
+      "actual": [
+        "UNSUPPORTED_CONCLUSION"
+      ],
+      "predicted": [
+        "UNSUPPORTED_CONCLUSION",
+        "UNSTATED_ASSUMPTION"
+      ],
+      "scores": {
+        "SKIPPED_PREMISE": 0.001,
+        "UNANSWERED_COUNTERARGUMENT": 0.0,
+        "UNSUPPORTED_CONCLUSION": 0.802,
+        "UNSTATED_ASSUMPTION": 1.0,
+        "CONTRADICTION": 0.0,
+        "FALSE_DILEMMA": 0.001
+      }
+    }
+  ]
+}

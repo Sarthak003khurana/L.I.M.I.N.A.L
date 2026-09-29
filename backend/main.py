@@ -446,11 +446,17 @@ async def extract_pdf(file: UploadFile = File(...)):
 
 if __name__ == "__main__":
 
+    import os
     import uvicorn
+
+    port = int(os.environ.get("PORT", 8000))
+    host = os.environ.get("HOST", "0.0.0.0")
+
+    print(f"Starting server on {host}:{port}...")
 
     uvicorn.run(
         app,
-        host="0.0.0.0",
-        port=8000,
+        host=host,
+        port=port,
         reload=False
-    )
+    )

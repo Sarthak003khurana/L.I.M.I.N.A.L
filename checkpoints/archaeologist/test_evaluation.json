@@ -1,0 +1,81 @@
+{
+  "model": "Archaeologist",
+  "test_file": "C:\\Users\\khura\\Desktop\\L.I.M.I.N.A.L\\dataset\\archaeologist\\archaeologist_v3_test.jsonl",
+  "checkpoint": "C:\\Users\\khura\\Desktop\\L.I.M.I.N.A.L\\checkpoints\\archaeologist\\best_model.pt",
+  "test_examples": 168,
+  "threshold": 0.5,
+  "metrics": {
+    "per_label": {
+      "NO_OMISSION": {
+        "precision": 0.8378378378378378,
+        "recall": 1.0,
+        "f1": 0.911764705882353,
+        "tp": 31,
+        "fp": 6,
+        "fn": 0,
+        "tn": 131
+      },
+      "HEDGING": {
+        "precision": 0.9615384615384616,
+        "recall": 0.6410256410256411,
+        "f1": 0.7692307692307693,
+        "tp": 25,
+        "fp": 1,
+        "fn": 14,
+        "tn": 128
+      },
+      "MISSING_ACTOR": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "tp": 27,
+        "fp": 3,
+        "fn": 0,
+        "tn": 138
+      },
+      "PASSIVE_CONSTRUCTION": {
+        "precision": 0.9696969696969697,
+        "recall": 1.0,
+        "f1": 0.9846153846153847,
+        "tp": 32,
+        "fp": 1,
+        "fn": 0,
+        "tn": 135
+      },
+      "MISSING_COMMITMENT": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "tp": 21,
+        "fp": 0,
+        "fn": 7,
+        "tn": 140
+      },
+      "VAGUE_REFERENCE": {
+        "precision": 1.0,
+        "recall": 0.9411764705882353,
+        "f1": 0.9696969696969697,
+        "tp": 32,
+        "fp": 0,
+        "fn": 2,
+        "tn": 134
+      },
+      "RESPONSIBILITY_AVOIDANCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 31,
+        "fp": 0,
+        "fn": 0,
+        "tn": 137
+      }
+    },
+    "macro_precision": 0.9527247527247528,
+    "macro_recall": 0.9046003016591252,
+    "macro_f1": 0.9199741582315665,
+    "micro_precision": 0.9476190476190476,
+    "micro_recall": 0.8963963963963963,
+    "micro_f1": 0.9212962962962962,
+    "exact_match": 0.8869047619047619
+  }
+}
