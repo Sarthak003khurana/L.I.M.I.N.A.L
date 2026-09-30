@@ -104,6 +104,19 @@ app = FastAPI(
 # CORS
 # ============================================================
 
+import re
+from starlette.types import ASGIApp, Scope, Receive, Send
+
+class NormalizePathMiddleware:
+    def __init__(self, app: ASGIApp):
+        self.app = app
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send):
+        if scope["type"] == "http" and "path" in scope:
+            scope["path"] = re.sub(r"/+", "/", scope["path"])
+        await self.app(scope, receive, send)
+
+app.add_middleware(NormalizePathMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

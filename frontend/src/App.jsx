@@ -52,7 +52,7 @@ import { PRESETS } from "./constants/presets";
 import { computeForensicMetrics } from "./utils/forensicsMetrics";
 import "./App.css";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:8000").replace(/\/+$/, "");
 
 const SAMPLE_TEXT =
   "I'm fine with whatever you decide. The current plan should probably work.";
